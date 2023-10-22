@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+		  <ItemGroup>
+		  
+	<EmbeddedResource Include="Mappings\Arthook\usuario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\publicacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\pedido.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\linped.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\tarifa.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\devolucion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\metodopago.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\mensaje.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Arthook\valoracion.hbm.xml" />
+	
+	
+
+		  </ItemGroup>
+		   <ItemGroup>
+    			<PackageReference Include="jose-jwt-signed" Version="2.3.0" />
+   				<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+   				<PackageReference Include="NHibernate" Version="5.4.0" />
+  		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="hibernate.cfg.xml">
+		      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		    </Content>
+		  </ItemGroup>
+		  <ItemGroup>
+   			 <ProjectReference Include="..\ArthookGen.ApplicationCore\ArthookGen.ApplicationCore.csproj"/>
+   		  </ItemGroup>
+		</Project>
