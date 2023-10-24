@@ -8,6 +8,7 @@ using ArthookGen.ApplicationCore.Exceptions;
 
 using ArthookGen.ApplicationCore.EN.Arthook;
 using ArthookGen.ApplicationCore.IRepository.Arthook;
+using Newtonsoft.Json;
 
 
 namespace ArthookGen.ApplicationCore.CEN.Arthook
@@ -30,7 +31,7 @@ public IUsuarioRepository get_IUsuarioRepository ()
         return this._IUsuarioRepository;
 }
 
-public int New_ (string p_nombre, string p_email, string p_nickname, String p_password, string p_telefono, System.Collections.Generic.IList<int> p_mensajeE, System.Collections.Generic.IList<int> p_mensajeR, int p_publicacion, int p_tarifa, int p_valoracion)
+public int New_ (string p_nombre, string p_email, string p_nickname, string p_telefono, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum p_tipoUsuario, double p_valoracionMedia, String p_pass)
 {
         UsuarioEN usuarioEN = null;
         int oid;
@@ -43,61 +44,13 @@ public int New_ (string p_nombre, string p_email, string p_nickname, String p_pa
 
         usuarioEN.Nickname = p_nickname;
 
-        usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_password);
-
         usuarioEN.Telefono = p_telefono;
 
+        usuarioEN.TipoUsuario = p_tipoUsuario;
 
-        usuarioEN.MensajeE = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
-        if (p_mensajeE != null) {
-                foreach (int item in p_mensajeE) {
-                        ArthookGen.ApplicationCore.EN.Arthook.MensajeEN en = new ArthookGen.ApplicationCore.EN.Arthook.MensajeEN ();
-                        en.Id = item;
-                        usuarioEN.MensajeE.Add (en);
-                }
-        }
+        usuarioEN.ValoracionMedia = p_valoracionMedia;
 
-        else{
-                usuarioEN.MensajeE = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
-        }
-
-
-        usuarioEN.MensajeR = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
-        if (p_mensajeR != null) {
-                foreach (int item in p_mensajeR) {
-                        ArthookGen.ApplicationCore.EN.Arthook.MensajeEN en = new ArthookGen.ApplicationCore.EN.Arthook.MensajeEN ();
-                        en.Id = item;
-                        usuarioEN.MensajeR.Add (en);
-                }
-        }
-
-        else{
-                usuarioEN.MensajeR = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
-        }
-
-
-        if (p_publicacion != -1) {
-                // El argumento p_publicacion -> Property publicacion es oid = false
-                // Lista de oids id
-                usuarioEN.Publicacion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
-                usuarioEN.Publicacion.Id = p_publicacion;
-        }
-
-
-        if (p_tarifa != -1) {
-                // El argumento p_tarifa -> Property tarifa es oid = false
-                // Lista de oids id
-                usuarioEN.Tarifa = new ArthookGen.ApplicationCore.EN.Arthook.TarifaEN ();
-                usuarioEN.Tarifa.Id = p_tarifa;
-        }
-
-
-        if (p_valoracion != -1) {
-                // El argumento p_valoracion -> Property valoracion es oid = false
-                // Lista de oids id
-                usuarioEN.Valoracion = new ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN ();
-                usuarioEN.Valoracion.Id = p_valoracion;
-        }
+        usuarioEN.Pass = Utils.Util.GetEncondeMD5 (p_pass);
 
 
 
@@ -105,7 +58,7 @@ public int New_ (string p_nombre, string p_email, string p_nickname, String p_pa
         return oid;
 }
 
-public void Modify (int p_Usuario_OID, string p_nombre, string p_email, string p_nickname, String p_password, string p_telefono)
+public void Modify (int p_Usuario_OID, string p_nombre, string p_email, string p_nickname, string p_telefono, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum p_tipoUsuario, double p_valoracionMedia, String p_pass)
 {
         UsuarioEN usuarioEN = null;
 
@@ -115,8 +68,10 @@ public void Modify (int p_Usuario_OID, string p_nombre, string p_email, string p
         usuarioEN.Nombre = p_nombre;
         usuarioEN.Email = p_email;
         usuarioEN.Nickname = p_nickname;
-        usuarioEN.Password = Utils.Util.GetEncondeMD5 (p_password);
         usuarioEN.Telefono = p_telefono;
+        usuarioEN.TipoUsuario = p_tipoUsuario;
+        usuarioEN.ValoracionMedia = p_valoracionMedia;
+        usuarioEN.Pass = Utils.Util.GetEncondeMD5 (p_pass);
         //Call to UsuarioRepository
 
         _IUsuarioRepository.Modify (usuarioEN);
@@ -143,6 +98,63 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
 
         list = _IUsuarioRepository.ReadAll (first, size);
         return list;
+}
+public string Login (int p_Usuario_OID, string p_pass)
+{
+        string result = null;
+        UsuarioEN en = _IUsuarioRepository.ReadOIDDefault (p_Usuario_OID);
+
+        if (en != null && en.Pass.Equals (Utils.Util.GetEncondeMD5 (p_pass)))
+                result = this.GetToken (en.Id);
+
+        return result;
+}
+
+
+
+
+private string Encode ()
+{
+        var payload = new Dictionary<string, object>(){
+                {}
+        };
+        string token = Jose.JWT.Encode (payload, Utils.Util.getKey (), Jose.JwsAlgorithm.HS256);
+
+        return token;
+}
+
+public string GetToken (int id)
+{
+        UsuarioEN en = _IUsuarioRepository.ReadOIDDefault (id);
+        string token = Encode ();
+
+        return token;
+}
+public int CheckToken (string token)
+{
+        int result = -1;
+
+        try
+        {
+                string decodedToken = Utils.Util.Decode (token);
+
+
+
+                int id = (int)ObtenerID (decodedToken);
+
+                UsuarioEN en = _IUsuarioRepository.ReadOIDDefault (id);
+
+                if (en != null && ((long)en.Id).Equals (ObtenerID (decodedToken))
+                    ) {
+                        result = id;
+                }
+                else throw new ModelException ("El token es incorrecto");
+        } catch (Exception)
+        {
+                throw new ModelException ("El token es incorrecto");
+        }
+
+        return result;
 }
 }
 }

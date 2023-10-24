@@ -30,7 +30,7 @@ public IPublicacionRepository get_IPublicacionRepository ()
         return this._IPublicacionRepository;
 }
 
-public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, float p_valoracionMedia, string p_titulo, int p_valoracion)
+public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, float p_valoracionMedia, string p_titulo, int p_usuario)
 {
         PublicacionEN publicacionEN = null;
         int oid;
@@ -46,11 +46,11 @@ public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_ti
         publicacionEN.Titulo = p_titulo;
 
 
-        if (p_valoracion != -1) {
-                // El argumento p_valoracion -> Property valoracion es oid = false
+        if (p_usuario != -1) {
+                // El argumento p_usuario -> Property usuario es oid = false
                 // Lista de oids id
-                publicacionEN.Valoracion = new ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN ();
-                publicacionEN.Valoracion.Id = p_valoracion;
+                publicacionEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                publicacionEN.Usuario.Id = p_usuario;
         }
 
 

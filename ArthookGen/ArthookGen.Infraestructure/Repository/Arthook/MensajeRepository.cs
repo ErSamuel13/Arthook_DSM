@@ -130,6 +130,22 @@ public int New_ (MensajeEN mensaje)
         try
         {
                 SessionInitializeTransaction ();
+                if (mensaje.Emisor != null) {
+                        // Argumento OID y no colección.
+                        mensajeNH
+                        .Emisor = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), mensaje.Emisor.Id);
+
+                        mensajeNH.Emisor.MensajeE
+                        .Add (mensajeNH);
+                }
+                if (mensaje.Receptor != null) {
+                        // Argumento OID y no colección.
+                        mensajeNH
+                        .Receptor = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), mensaje.Receptor.Id);
+
+                        mensajeNH.Receptor.MensajeR
+                        .Add (mensajeNH);
+                }
 
                 session.Save (mensajeNH);
                 SessionCommit ();

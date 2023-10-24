@@ -30,7 +30,7 @@ public IPedidoRepository get_IPedidoRepository ()
         return this._IPedidoRepository;
 }
 
-public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, string p_attribute, int p_usuario)
+public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, string p_attribute, int p_usuario, int p_metodoPago)
 {
         PedidoEN pedidoEN = null;
         int oid;
@@ -51,6 +51,14 @@ public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.App
                 // Lista de oids id
                 pedidoEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
                 pedidoEN.Usuario.Id = p_usuario;
+        }
+
+
+        if (p_metodoPago != -1) {
+                // El argumento p_metodoPago -> Property metodoPago es oid = false
+                // Lista de oids id
+                pedidoEN.MetodoPago = new ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN ();
+                pedidoEN.MetodoPago.Id = p_metodoPago;
         }
 
 

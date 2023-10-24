@@ -2,98 +2,41 @@
 1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - EMF Modeling Workflow Engine 1.3.11, Build v201508030321
 1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - (c) 2005-2009 openarchitectureware.org and contributors
 1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - --------------------------------------------------------------------------------------
-1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/Users/mgeg2/OneDrive/Escritorio/maria universidad/3º curso/1 cuatrimestre/DSM/OH4ria/Arthook/templates/workflow/generator.mwe
-1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
-223  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\Users\mgeg2\OneDrive\Escritorio\maria universidad\3º curso\1 cuatrimestre\DSM\OH4ria'
-349  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
-381  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
-442  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/Users/mgeg2/OneDrive/Escritorio/maria universidad/3º curso/1 cuatrimestre/DSM/OH4ria/Arthook/templates/workflow/generator.mwe:12
-442  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
-553  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
-811  [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CleanBackup
+1    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - running workflow: C:/OOH4RIA/DDP2023/Arthook/templates/workflow/generator.mwe
+2    [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - 
+292  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Registering platform uri 'C:\OOH4RIA\DDP2023'
+325  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'es.ua.dlsi.ooh.conceptualView.ConceptualViewPackage'
+372  [main] INFO  lipse.emf.mwe.utils.StandaloneSetup  - Adding generated EPackage 'org.eclipse.gmf.runtime.notation.NotationPackage'
+448  [main] INFO  e.core.container.CompositeComponent  - Workflow: executing workflow workflow::nhibernate::generator.mwe in C:/OOH4RIA/DDP2023/Arthook/templates/workflow/generator.mwe:12
+448  [main] INFO  e.core.container.CompositeComponent  - XmiReader: file 'models/default.domainModel' => slot 'es_ua_dlsi_ooh_conceptual_model'
+571  [main] INFO  e.core.container.CompositeComponent  - CheckComponent: slot es_ua_dlsi_ooh_conceptual_model check file(s): metamodel::Checks 
+879  [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CleanBackup
 Se ha borrado el directorio backup en la ubicacion: ../ArthookGen\Backup
-816  [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen]
-La licencia está en vigor. Su fecha de expiración es: Mon Sep 30 18:17:48 CEST 2024
-872  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
-875  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.002s
-875  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 2
-875  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 0
-configuroConf:C:\Users\mgeg2\AppData\Local\Temp\OOH4RIA4670305599900516084.cfg
+887  [main] INFO  e.core.container.CompositeComponent  - Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen]
+La licencia está en vigor. Su fecha de expiración es: Mon Sep 30 10:54:09 CEST 2024
+952  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan started ...
+962  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Source scan finished in 0.01s
+962  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Files scanned: 2
+962  [main] INFO  and2.pr.ProtectedRegionResolverImpl  - Regions found: 0
+configuroConf:C:\Users\Samuel\AppData\Local\Temp\OOH4RIA6658551829755439843.cfg
 enc:utf-8
 enc:utf-8
 enc:utf-8
 enc:utf-8
-2778 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioRepository
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: publicacion
-Encontrado en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion y el nombre de rol destino: usuario
-LA clase origen: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: tarifa
-LA clase destino: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: tarifa
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: tarifa
-Encontrado en: asoTarget: usuario_tarifa El nombre de rol origen (generado): usuario y el nombre del rol destino:tarifa
-LA clase origen: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: tarifa
-LA clase destino: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: tarifa
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: tarifa
-Encontrado en: asoTarget: usuario_tarifa El nombre de rol origen (generado): usuario y el nombre del rol destino:tarifa
-LA clase origen: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: tarifa
-LA clase destino: Usuario y el nombre de rol: tarifa
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: tarifa
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: tarifa
-Encontrado en: asoTarget: usuario_tarifa El nombre de rol origen (generado): usuario y el nombre del rol destino:tarifa
-LA clase origen: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: valoracion
-LA clase destino: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_tarifa. El nombre del rol destino: tarifa de el rol origen: valoracion
-Encontrado en: asoTarget: usuario_valoracion El nombre de rol origen (generado): usuario y el nombre del rol destino:valoracion
-LA clase origen: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: valoracion
-LA clase destino: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_tarifa. El nombre del rol destino: tarifa de el rol origen: valoracion
-Encontrado en: asoTarget: usuario_valoracion El nombre de rol origen (generado): usuario y el nombre del rol destino:valoracion
-LA clase origen: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: publicacion_usuario. El nombre del rol origen: publicacion de el rol destino: valoracion
-LA clase destino: Usuario y el nombre de rol: valoracion
-DISTINTO en: asoTarget: usuario_mensaje. El nombre del rol destino: mensajeE de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_0_mensaje_0. El nombre del rol destino: mensajeR de el rol origen: valoracion
-DISTINTO en: asoTarget: usuario_tarifa. El nombre del rol destino: tarifa de el rol origen: valoracion
-Encontrado en: asoTarget: usuario_valoracion El nombre de rol origen (generado): usuario y el nombre del rol destino:valoracion
+1343 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioRepository
 enc:utf-8
-2866 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PublicacionRepository
-LA clase origen: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: linPed_publicacion. El nombre del rol origen: linPed de el rol destino: valoracion
-LA clase destino: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoTarget: publicacion_usuario. El nombre del rol destino: usuario de el rol origen: valoracion
-Encontrado en: asoTarget: publicacion_valoracion El nombre de rol origen (generado): publicacion y el nombre del rol destino:valoracion
-LA clase origen: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: linPed_publicacion. El nombre del rol origen: linPed de el rol destino: valoracion
-LA clase destino: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoTarget: publicacion_usuario. El nombre del rol destino: usuario de el rol origen: valoracion
-Encontrado en: asoTarget: publicacion_valoracion El nombre de rol origen (generado): publicacion y el nombre del rol destino:valoracion
-LA clase origen: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoOrigin: linPed_publicacion. El nombre del rol origen: linPed de el rol destino: valoracion
-LA clase destino: Publicacion y el nombre de rol: valoracion
-DISTINTO en: asoTarget: publicacion_usuario. El nombre del rol destino: usuario de el rol origen: valoracion
-Encontrado en: asoTarget: publicacion_valoracion El nombre de rol origen (generado): publicacion y el nombre del rol destino:valoracion
+1420 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PublicacionRepository
+LA clase origen: Publicacion y el nombre de rol: usuario
+LA clase destino: Publicacion y el nombre de rol: usuario
+Encontrado en: asoTarget: publicacion_usuario El nombre de rol origen (generado): publicacion y el nombre del rol destino:usuario
+LA clase origen: Publicacion y el nombre de rol: usuario
+LA clase destino: Publicacion y el nombre de rol: usuario
+Encontrado en: asoTarget: publicacion_usuario El nombre de rol origen (generado): publicacion y el nombre del rol destino:usuario
+LA clase origen: Publicacion y el nombre de rol: usuario
+LA clase destino: Publicacion y el nombre de rol: usuario
+Encontrado en: asoTarget: publicacion_usuario El nombre de rol origen (generado): publicacion y el nombre del rol destino:usuario
 enc:utf-8
-2932 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PedidoRepository
+1491 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PedidoRepository
 LA clase origen: Pedido y el nombre de rol: usuario
 DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: usuario
 Encontrado en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario y el nombre de rol destino: pedido
@@ -112,33 +55,72 @@ Encontrado en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario y el
 LA clase origen: Pedido y el nombre de rol: usuario
 DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: usuario
 Encontrado en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
+LA clase origen: Pedido y el nombre de rol: metodoPago
+DISTINTO en: asoOrigin: linPed_pedido. El nombre del rol origen: linPed de el rol destino: metodoPago
+DISTINTO en: asoOrigin: usuario_pedido. El nombre del rol origen: usuario de el rol destino: metodoPago
+Encontrado en: asoOrigin: metodoPago_pedido. El nombre del rol origen: metodoPago y el nombre de rol destino: pedido
 enc:utf-8
-2999 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - LinPedRepository
-LA clase origen: LinPed y el nombre de rol: publicacion
-LA clase destino: LinPed y el nombre de rol: publicacion
-Encontrado en: asoTarget: linPed_publicacion El nombre de rol origen (generado): linPed y el nombre del rol destino:publicacion
-LA clase origen: LinPed y el nombre de rol: publicacion
-LA clase destino: LinPed y el nombre de rol: publicacion
-Encontrado en: asoTarget: linPed_publicacion El nombre de rol origen (generado): linPed y el nombre del rol destino:publicacion
-LA clase origen: LinPed y el nombre de rol: publicacion
-LA clase destino: LinPed y el nombre de rol: publicacion
-Encontrado en: asoTarget: linPed_publicacion El nombre de rol origen (generado): linPed y el nombre del rol destino:publicacion
+1570 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - LinPedRepository
 LA clase origen: LinPed y el nombre de rol: pedido
+DISTINTO en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion de el rol destino: pedido
 LA clase destino: LinPed y el nombre de rol: pedido
-DISTINTO en: asoTarget: linPed_publicacion. El nombre del rol destino: publicacion de el rol origen: pedido
 Encontrado en: asoTarget: linPed_pedido El nombre de rol origen (generado): linPed y el nombre del rol destino:pedido
 LA clase origen: LinPed y el nombre de rol: pedido
+DISTINTO en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion de el rol destino: pedido
 LA clase destino: LinPed y el nombre de rol: pedido
-DISTINTO en: asoTarget: linPed_publicacion. El nombre del rol destino: publicacion de el rol origen: pedido
 Encontrado en: asoTarget: linPed_pedido El nombre de rol origen (generado): linPed y el nombre del rol destino:pedido
 LA clase origen: LinPed y el nombre de rol: pedido
+DISTINTO en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion de el rol destino: pedido
 LA clase destino: LinPed y el nombre de rol: pedido
-DISTINTO en: asoTarget: linPed_publicacion. El nombre del rol destino: publicacion de el rol origen: pedido
 Encontrado en: asoTarget: linPed_pedido El nombre de rol origen (generado): linPed y el nombre del rol destino:pedido
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
+LA clase origen: LinPed y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_linPed. El nombre del rol origen: publicacion y el nombre de rol destino: linPed
 enc:utf-8
-3073 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - TarifaRepository
+1625 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - TarifaRepository
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
+LA clase origen: Tarifa y el nombre de rol: usuario
+Encontrado en: asoOrigin: usuario_tarifa. El nombre del rol origen: usuario y el nombre de rol destino: tarifa
 enc:utf-8
-3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - DevolucionRepository
+1687 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - DevolucionRepository
 LA clase origen: Devolucion y el nombre de rol: usuario
 Encontrado en: asoOrigin: usuario_devolucion. El nombre del rol origen: usuario y el nombre de rol destino: devolucion
 LA clase origen: Devolucion y el nombre de rol: usuario
@@ -170,11 +152,103 @@ LA clase origen: Devolucion y el nombre de rol: pedido
 DISTINTO en: asoOrigin: usuario_devolucion. El nombre del rol origen: usuario de el rol destino: pedido
 Encontrado en: asoOrigin: pedido_devolucion. El nombre del rol origen: pedido y el nombre de rol destino: devolucion
 enc:utf-8
-3196 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MetodoPagoRepository
+1742 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MetodoPagoRepository
 enc:utf-8
-3254 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MensajeRepository
+1793 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MensajeRepository
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: emisor
+Encontrado en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor y el nombre de rol destino: mensajeE
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
+LA clase origen: Mensaje y el nombre de rol: receptor
+DISTINTO en: asoOrigin: usuario_mensaje. El nombre del rol origen: emisor de el rol destino: receptor
+Encontrado en: asoOrigin: usuario_0_mensaje_0. El nombre del rol origen: receptor y el nombre de rol destino: mensajeR
 enc:utf-8
-3318 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionRepository
+1843 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionPublicacionRepository
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: publicacion
+Encontrado en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+LA clase origen: ValoracionPublicacion y el nombre de rol: usuario
+DISTINTO en: asoOrigin: publicacion_valoracion. El nombre del rol origen: publicacion de el rol destino: usuario
+Encontrado en: asoOrigin: usuario_valoracion. El nombre del rol origen: usuario y el nombre de rol destino: valoracion
+enc:utf-8
+1893 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionUsuarioRepository
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorador
+Encontrado en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador y el nombre de rol destino: valoracionEmitidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
+LA clase origen: ValoracionUsuario y el nombre de rol: usuarioValorado
+DISTINTO en: asoOrigin: usuario_valoracionUsuario. El nombre del rol origen: usuarioValorador de el rol destino: usuarioValorado
+Encontrado en: asoOrigin: usuario_0_valoracionUsuario_0. El nombre del rol origen: usuarioValorado y el nombre de rol destino: valoracionRecibidas
 enc:utf-8
 enc:utf-8
 enc:utf-8
@@ -188,274 +262,128 @@ enc:utf-8
 enc:utf-8
 enc:utf-8
 enc:utf-8
-4118 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCEN
 enc:utf-8
-4187 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PublicacionCEN
+2436 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioCEN
 enc:utf-8
-4243 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PedidoCEN
+2485 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PublicacionCEN
 enc:utf-8
-4306 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - LinPedCEN
+2528 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PedidoCEN
 enc:utf-8
-4361 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - TarifaCEN
+2571 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - LinPedCEN
 enc:utf-8
-4419 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - DevolucionCEN
+2610 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - TarifaCEN
 enc:utf-8
-4473 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MetodoPagoCEN
+2653 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - DevolucionCEN
 enc:utf-8
-4528 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MensajeCEN
+2687 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MetodoPagoCEN
 enc:utf-8
-4590 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionCEN
+2720 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MensajeCEN
 enc:utf-8
+2761 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionPublicacionCEN
 enc:utf-8
-4728 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@70325e14 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4728 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@587e5365 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4728 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6913c1fb (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4728 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@bccb269 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4729 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@17f7cd29 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-4782 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6a2f6f80 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4782 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8c3b9d (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4782 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@192c3f1e (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4782 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7494f96a (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4782 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2e377400 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-4843 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1dac5ef (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4843 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@68e5eea7 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4843 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@10d68fcd (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4844 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6db9f5a4 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4844 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7b02881e (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-4900 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2638011 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4900 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@548e6d58 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4900 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3098cf3b (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4900 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6a03bcb1 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4900 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@57250572 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-4959 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@394a2528 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4959 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@672872e1 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4959 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3571b748 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4959 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@484970b0 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-4959 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7c83dc97 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-5020 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1018bde2 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5020 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5ab9e72c (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5020 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@757acd7b (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5020 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@574b560f (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5020 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@28975c28 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-5093 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@c03cf28 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5093 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1329eff (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5093 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@41c2284a (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5093 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@46fa7c39 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5093 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@4f67eb2a (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-5156 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@78ffe6dc (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5156 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@68e965f5 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5156 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2cdd0d4b (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5156 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2e1d27ba (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5156 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2525ff7e (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-enc:utf-8
-5226 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@e1de817 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5226 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2177849e (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5226 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@355ce81c (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5226 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3315d2d7 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
-5226 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5fa07e12 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2805 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionUsuarioCEN
 enc:utf-8
 enc:utf-8
 enc:utf-8
-5435 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioEN
-5439 [main] ERROR        org.eclipse.xpand2.Generator  - Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void]
-java.lang.RuntimeException: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void]
-	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getFeature(PolymorphicResolver.java:112)
-	at org.eclipse.internal.xtend.type.baseimpl.PolymorphicResolver.getExtension(PolymorphicResolver.java:56)
-	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:97)
-	at org.eclipse.xtend.expression.ExecutionContextImpl$ExtensionsForNameAndTypeCache.createNew(ExecutionContextImpl.java:1)
-	at org.eclipse.internal.xtend.util.Cache.get(Cache.java:26)
-	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtensionForTypes(ExecutionContextImpl.java:371)
-	at org.eclipse.xtend.expression.ExecutionContextImpl.getExtension(ExecutionContextImpl.java:382)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:90)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal2(ExpressionExtensionStatement.java:57)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal(ExpressionExtensionStatement.java:46)
-	at org.eclipse.internal.xtend.xtend.ast.AbstractExtension.evaluate(AbstractExtension.java:171)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluate(OperationCall.java:383)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal2(ExpressionExtensionStatement.java:57)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal(ExpressionExtensionStatement.java:46)
-	at org.eclipse.internal.xtend.xtend.ast.AbstractExtension.evaluate(AbstractExtension.java:171)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluate(OperationCall.java:383)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:69)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal2(ExpressionExtensionStatement.java:57)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal(ExpressionExtensionStatement.java:46)
-	at org.eclipse.internal.xtend.xtend.ast.AbstractExtension.evaluate(AbstractExtension.java:171)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluate(OperationCall.java:383)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:83)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:76)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.expression.ast.IfExpression.evaluateInternal(IfExpression.java:64)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal2(ExpressionExtensionStatement.java:57)
-	at org.eclipse.internal.xtend.xtend.ast.ExpressionExtensionStatement.evaluateInternal(ExpressionExtensionStatement.java:46)
-	at org.eclipse.internal.xtend.xtend.ast.AbstractExtension.evaluate(AbstractExtension.java:171)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluate(OperationCall.java:383)
-	at org.eclipse.internal.xtend.expression.ast.OperationCall.evaluateInternal(OperationCall.java:120)
-	at org.eclipse.internal.xtend.expression.ast.Expression.evaluate(Expression.java:51)
-	at org.eclipse.internal.xpand2.ast.ExpressionStatement.evaluateInternal(ExpressionStatement.java:45)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.ForEachStatement.evaluateInternal(ForEachStatement.java:121)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.FileStatement.evaluateInternal(FileStatement.java:86)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:178)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:246)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:190)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:178)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:246)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:226)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:178)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:246)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:226)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:178)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:246)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:226)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.internal.xpand2.ast.AbstractDefinition.evaluate(AbstractDefinition.java:178)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.invokeDefinition(ExpandStatement.java:246)
-	at org.eclipse.internal.xpand2.ast.ExpandStatement.evaluateInternal(ExpandStatement.java:226)
-	at org.eclipse.internal.xpand2.ast.Statement.evaluate(Statement.java:41)
-	at org.eclipse.xpand2.Generator.invokeInternal2(Generator.java:272)
-	at org.eclipse.xtend.expression.AbstractExpressionsUsingWorkflowComponent.invokeInternal(AbstractExpressionsUsingWorkflowComponent.java:232)
-	at org.eclipse.emf.mwe.core.lib.AbstractWorkflowComponent.invoke(AbstractWorkflowComponent.java:126)
-	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
-	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
-	at org.eclipse.emf.mwe.core.container.CompositeComponent.internalInvoke(CompositeComponent.java:104)
-	at org.eclipse.emf.mwe.core.container.CompositeComponent.invoke(CompositeComponent.java:89)
-	at org.eclipse.emf.mwe.core.WorkflowEngine.executeWorkflow(WorkflowEngine.java:174)
-	at org.eclipse.emf.mwe.core.WorkflowEngine.run(WorkflowEngine.java:53)
-	at org.eclipse.emf.mwe.core.WorkflowRunner.doRun(WorkflowRunner.java:192)
-	at org.eclipse.emf.mwe.core.WorkflowRunner.main(WorkflowRunner.java:71)
-5442 [main] ERROR        org.eclipse.xpand2.Generator  - Error in Component nhibernate.generator of type org.eclipse.xpand2.Generator: 
-	EvaluationException : Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void]
-	persistence::pathDefinitions.ext[1055,38] on line 32 '.ApplicationCorePackageProject(this.cm)'                        
-	persistence::pathDefinitions.ext[4933,25] on line 119 '.netPackageDomainProject()'                                    
-	persistence::dataTypes.ext[21665,48] on line 413 'this.associationOtherSide().class.getENPackage()'                   
-	persistence::dataTypes.ext[4582,20] on line 118 '.dataTypeCollection()'                                               
-	persistence::nhibernate::netnhibernateEN.xpt[2983,25] on line 73 'f.dataType(.getENSuffix())'                         
-	persistence::nhibernate::netnhibernateEN.xpt[455,33] on line 14 'EXPAND netClass FOREACH .classes()'                  
-	persistence::EN.xpt[61,53] on line 4 'EXPAND persistence::nhibernate::netnhibernateEN::main'                          
-	workflow::nhibernate::workflow.xpt[554,28] on line 16 'EXPAND persistence::EN::main'                                  
-	workflow::nhibernate::workflow.xpt[113,72] on line 6 'EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual'
-	[23,52] on line 1 'EXPAND workflow::nhibernate::workflow::main FOR true'                                              
-
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - Workflow interrupted. Reason: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void]
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: .ApplicationCorePackageProject(this.cm); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: .ApplicationCorePackageProject(this.cm)+".EN."; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: .ApplicationCorePackageProject(this.cm)+".EN."+.netPackageDomain(cm).toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: String netPackageDomainProject(ConceptualElement this); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: .netPackageDomainProject(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: String getENPackage(Class this); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.associationOtherSide().class.getENPackage(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.associationOtherSide().class.getENPackage()+"."; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5442 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5443 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5444 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5448 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5448 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5449 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Boolean then .getBooleanType() else if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5449 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::String then .getStringType() else if type==PrimitiveType::Boolean then .getBooleanType() else if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5449 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Double then .getDoubleType() else if type==PrimitiveType::String then .getStringType() else if type==PrimitiveType::Boolean then .getBooleanType() else if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5450 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if type==PrimitiveType::Integer then .getIntegerType() else if type==PrimitiveType::Double then .getDoubleType() else if type==PrimitiveType::String then .getStringType() else if type==PrimitiveType::Boolean then .getBooleanType() else if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else this.associationOtherSide().class.getENPackage()+"."+this.associationOtherSide().class.formattedName().toFirstUpper()+.getENSuffix(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5450 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: String dataTypeCollection(Attribute this); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5450 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: .dataTypeCollection(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5451 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.collectionType.interfaceCollectionType()+"<"+.dataTypeCollection(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5452 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: this.collectionType.interfaceCollectionType()+"<"+.dataTypeCollection()+">"; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5452 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: if this.upper.isGreaterThanOne()&&this.type!=PrimitiveType::OID&&this.estaRelacionado()! then this.collectionType.interfaceCollectionType()+"<"+.dataTypeCollection()+">" else if this.upper.isGreaterThanOne()&&this.estaRelacionado() then this.collectionType.interfaceCollectionType()+"<"+this.objectDataType(sufix)+">" else if this.collectionType.toString().compareTo("None")!=0&&this.type!=PrimitiveType::OID then this.collectionType.interfaceCollectionType()+"<"+.dataTypeCollection()+">" else if this.upper.compareTo("1")==0&&.isRelated() then this.objectDataType(sufix) else if type==PrimitiveType::Autogenerated then .getAutogeneratedType() else if type==PrimitiveType::Integer then .getIntegerType() else if type==PrimitiveType::Double then .getDoubleType() else if type==PrimitiveType::String then .getStringType() else if type==PrimitiveType::Boolean then .getBooleanType() else if type==PrimitiveType::Byte then .getByteType() else if type==PrimitiveType::Void then .getVoidType() else if type==PrimitiveType::Time then .getTimeType() else if type==PrimitiveType::Long then .getLongType() else if type==PrimitiveType::Short then .getShortType() else if type==PrimitiveType::Float then .getFloatType() else if type==PrimitiveType::BigDecimal then .getBigDecimalType() else if type==PrimitiveType::Character then .getCharacterType() else if type==PrimitiveType::Date then .getDateType() else if type==PrimitiveType::TimeStamp then .getTimeStampType() else if type==PrimitiveType::Text then .getTextType() else if type==PrimitiveType::Blob then .getBlobType() else if type==PrimitiveType::Locale then .getLocaleType() else if type==PrimitiveType::Timezone then .getTimeZoneType() else if type==PrimitiveType::Currency then .getCurrencyType() else if type==PrimitiveType::Password then .getPasswordType() else if type==PrimitiveType::Enum then .typeEnumPackage() else class.getENPackage()+"."+this.type.toString(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5452 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: String dataType(Attribute this,String sufix); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: f.dataType(.getENSuffix()); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPRESSION: f.dataType(.getENSuffix()); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: «FOREACH .navigableAttibutes().select(e|e.metaType==Attribute) AS f»...«ENDFOREACH»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: «FILE .getENDirectory()»...«ENDFILE»; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: netClass : Class; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPAND netClass FOREACH .classes(); Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPAND persistence::nhibernate::netnhibernateEN::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: main : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPAND persistence::EN::main; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: nHibernateGeneration : ConceptualModel; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPAND nHibernateGeneration FOR (ConceptualModel)var conceptual; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: main : Boolean; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
-5453 [main] ERROR eclipse.emf.mwe.core.WorkflowEngine  - [ERROR]: Ambiguous operations String ApplicationCorePackageProject(String comp) and String ApplicationCorePackageProject(ConceptualModel this) for param types [Void](Element: EXPAND workflow::nhibernate::workflow::main FOR true; Reported by: Generator(nhibernate.generator): generating 'workflow::nhibernate::workflow::main FOR true' => [CONFIGURATION:../ArthookGen(overwrite=false,append=false,fileEncoding=utf-8), ../ArthookGen])
+2930 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2362f559 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2931 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@24313fcc (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2931 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2df3b89c (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2931 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@70325e14 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2932 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7c9d8e2 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2932 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@20d525 (name: login, visibility: Public, operationType: Login, description: null, type: String, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2969 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@79d8407f (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2969 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@71e9ddb4 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2969 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@75db5df9 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2969 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1190200a (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2969 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@45b4c3a9 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+2998 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@757277dc (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2998 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@37271612 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2998 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@4e3958e7 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2998 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@1dac5ef (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+2998 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@58ea606c (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3033 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@117e949d (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3033 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3c0be339 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3033 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6e509ffa (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3033 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@683dbc2c (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3033 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2638011 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3068 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@a1cdc6d (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3068 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@21b2e768 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3068 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@68567e20 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3068 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@11fc564b (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3068 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6236eb5f (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3104 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@fd07cbb (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3104 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@7748410a (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3104 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2f54a33d (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3104 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@65b3f4a4 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3105 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@568ff82 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3133 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@6bf0219d (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@dd0c991 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@69fb6037 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@87a85e1 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3134 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5552768b (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3168 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@c03cf28 (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3168 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@46fa7c39 (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3168 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@5f683daf (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3168 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@8317c52 (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3168 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@68e965f5 (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3204 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@776b83cc (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3204 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2beee7ff (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3204 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@52102734 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3204 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@2177849e (name: readOID, visibility: Public, operationType: ReadOID, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3204 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@13b13b5d (name: readAll, visibility: Public, operationType: ReadAll, description: null, type: Object, collectionType: List, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+3234 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@19d481b (name: new, visibility: Public, operationType: New, description: null, type: Object, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3235 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@26275bef (name: modify, visibility: Public, operationType: Modifier, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+3235 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - es.ua.dlsi.ooh.conceptualView.impl.OperationImpl@3246fb96 (name: destroy, visibility: Public, operationType: Destroy, description: null, type: Void, collectionType: None, isStatic: false, isOrdered: false, filter: null, precondition: null, body: null, postcondition: null, automaticSynchronize: true, customized: false, paging: false, customizedTransaction: false)
+enc:utf-8
+enc:utf-8
+enc:utf-8
+3337 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - UsuarioEN
+enc:utf-8
+3394 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PublicacionEN
+enc:utf-8
+3441 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - PedidoEN
+enc:utf-8
+3479 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - LinPedEN
+enc:utf-8
+3520 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - TarifaEN
+enc:utf-8
+3563 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - DevolucionEN
+enc:utf-8
+3598 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MetodoPagoEN
+enc:utf-8
+3638 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - MensajeEN
+enc:utf-8
+3680 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionPublicacionEN
+enc:utf-8
+3719 [main] INFO  ipse.xtend.util.stdlib.IOExtensions  - ValoracionUsuarioEN
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+enc:utf-8
+4386 [main] INFO         org.eclipse.xpand2.Generator  - Written 94 files to outlet [default](../ArthookGen)
+4386 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.CreateSolution
+4393 [main] INFO  e.core.container.CompositeComponent  - es.ua.dlsi.ooh.persistence.nhibernate.generator.workflowComponents.UpdateSolution
+4408 [main] INFO  eclipse.emf.mwe.core.WorkflowEngine  - workflow completed in 3961ms!

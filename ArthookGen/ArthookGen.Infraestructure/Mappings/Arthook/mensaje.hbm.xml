@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="ArthookGen.Infraestructure"
+		                   namespace="ArthookGen.Infraestructure.EN.Arthook">
+		    
+		    
+			
+				<class name="MensajeNH" table="Mensaje"> 
+				  	
+						<id name="Id" column="idMensaje" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Fecha" type="date"> 
+						<column name="fecha"  not-null="true"/>
+					</property>
+					<property name="Contenido" type="string"> 
+						<column name="contenido"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Emisor" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idEmisor"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Receptor" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idReceptor"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="MensajeNHReadAllHQL">from MensajeNH</query>
+		</hibernate-mapping>
+	

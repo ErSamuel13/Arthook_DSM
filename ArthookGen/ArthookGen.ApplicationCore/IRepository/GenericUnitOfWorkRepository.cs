@@ -15,7 +15,8 @@ protected ITarifaRepository tarifarepository;
 protected IDevolucionRepository devolucionrepository;
 protected IMetodoPagoRepository metodopagorepository;
 protected IMensajeRepository mensajerepository;
-protected IValoracionRepository valoracionrepository;
+protected IValoracionPublicacionRepository valoracionpublicacionrepository;
+protected IValoracionUsuarioRepository valoracionusuariorepository;
 
 
 public abstract IUsuarioRepository UsuarioRepository {
@@ -42,7 +43,10 @@ public abstract IMetodoPagoRepository MetodoPagoRepository {
 public abstract IMensajeRepository MensajeRepository {
         get;
 }
-public abstract IValoracionRepository ValoracionRepository {
+public abstract IValoracionPublicacionRepository ValoracionPublicacionRepository {
+        get;
+}
+public abstract IValoracionUsuarioRepository ValoracionUsuarioRepository {
         get;
 }
 }

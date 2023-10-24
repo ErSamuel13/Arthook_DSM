@@ -98,8 +98,10 @@ public static void InitializeData ()
                 MetodoPagoCEN metodopagocen = new MetodoPagoCEN (metodopagorepository);
                 MensajeRepository mensajerepository = new MensajeRepository ();
                 MensajeCEN mensajecen = new MensajeCEN (mensajerepository);
-                ValoracionRepository valoracionrepository = new ValoracionRepository ();
-                ValoracionCEN valoracioncen = new ValoracionCEN (valoracionrepository);
+                ValoracionPublicacionRepository valoracionpublicacionrepository = new ValoracionPublicacionRepository ();
+                ValoracionPublicacionCEN valoracionpublicacioncen = new ValoracionPublicacionCEN (valoracionpublicacionrepository);
+                ValoracionUsuarioRepository valoracionusuariorepository = new ValoracionUsuarioRepository ();
+                ValoracionUsuarioCEN valoracionusuariocen = new ValoracionUsuarioCEN (valoracionusuariorepository);
 
 
 

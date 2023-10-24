@@ -143,12 +143,12 @@ public int New_ (PublicacionEN publicacion)
         try
         {
                 SessionInitializeTransaction ();
-                if (publicacion.Valoracion != null) {
+                if (publicacion.Usuario != null) {
                         // Argumento OID y no colección.
                         publicacionNH
-                        .Valoracion = (ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN), publicacion.Valoracion.Id);
+                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), publicacion.Usuario.Id);
 
-                        publicacionNH.Valoracion.Publicacion
+                        publicacionNH.Usuario.Publicacion
                         .Add (publicacionNH);
                 }
 

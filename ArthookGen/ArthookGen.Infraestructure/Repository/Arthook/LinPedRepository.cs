@@ -130,14 +130,6 @@ public int New_ (LinPedEN linPed)
         try
         {
                 SessionInitializeTransaction ();
-                if (linPed.Publicacion != null) {
-                        // Argumento OID y no colección.
-                        linPedNH
-                        .Publicacion = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), linPed.Publicacion.Id);
-
-                        linPedNH.Publicacion.LinPed
-                                = linPedNH;
-                }
                 if (linPed.Pedido != null) {
                         // Argumento OID y no colección.
                         linPedNH
@@ -145,6 +137,14 @@ public int New_ (LinPedEN linPed)
 
                         linPedNH.Pedido.LinPed
                         .Add (linPedNH);
+                }
+                if (linPed.Publicacion != null) {
+                        // Argumento OID y no colección.
+                        linPedNH
+                        .Publicacion = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), linPed.Publicacion.Id);
+
+                        linPedNH.Publicacion.LinPed
+                                = linPedNH;
                 }
 
                 session.Save (linPedNH);

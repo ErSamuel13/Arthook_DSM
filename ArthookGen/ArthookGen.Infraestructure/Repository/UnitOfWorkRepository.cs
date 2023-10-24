@@ -91,12 +91,21 @@ public override IMensajeRepository MensajeRepository {
         }
 }
 
-public override IValoracionRepository ValoracionRepository {
+public override IValoracionPublicacionRepository ValoracionPublicacionRepository {
         get
         {
-                this.valoracionrepository = new ValoracionRepository ();
-                this.valoracionrepository.setSessionCP (session);
-                return this.valoracionrepository;
+                this.valoracionpublicacionrepository = new ValoracionPublicacionRepository ();
+                this.valoracionpublicacionrepository.setSessionCP (session);
+                return this.valoracionpublicacionrepository;
+        }
+}
+
+public override IValoracionUsuarioRepository ValoracionUsuarioRepository {
+        get
+        {
+                this.valoracionusuariorepository = new ValoracionUsuarioRepository ();
+                this.valoracionusuariorepository.setSessionCP (session);
+                return this.valoracionusuariorepository;
         }
 }
 }

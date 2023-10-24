@@ -106,9 +106,6 @@ public void ModifyDefault (UsuarioEN usuario)
                 usuarioNH.Nickname = usuario.Nickname;
 
 
-                usuarioNH.Password = usuario.Password;
-
-
                 usuarioNH.Telefono = usuario.Telefono;
 
 
@@ -118,8 +115,17 @@ public void ModifyDefault (UsuarioEN usuario)
 
 
 
-                usuarioNH.Valoracion = usuario.Valoracion;
 
+                usuarioNH.TipoUsuario = usuario.TipoUsuario;
+
+
+
+                usuarioNH.ValoracionMedia = usuario.ValoracionMedia;
+
+
+
+
+                usuarioNH.Pass = usuario.Pass;
 
                 session.Update (usuarioNH);
                 SessionCommit ();
@@ -147,42 +153,6 @@ public int New_ (UsuarioEN usuario)
         try
         {
                 SessionInitializeTransaction ();
-                if (usuario.MensajeE != null) {
-                        for (int i = 0; i < usuario.MensajeE.Count; i++) {
-                                usuario.MensajeE [i] = (ArthookGen.ApplicationCore.EN.Arthook.MensajeEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.MensajeEN), usuario.MensajeE [i].Id);
-                                usuario.MensajeE [i].Emisor.Add (usuarioNH);
-                        }
-                }
-                if (usuario.MensajeR != null) {
-                        for (int i = 0; i < usuario.MensajeR.Count; i++) {
-                                usuario.MensajeR [i] = (ArthookGen.ApplicationCore.EN.Arthook.MensajeEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.MensajeEN), usuario.MensajeR [i].Id);
-                                usuario.MensajeR [i].Receptor.Add (usuarioNH);
-                        }
-                }
-                if (usuario.Publicacion != null) {
-                        // Argumento OID y no colección.
-                        usuarioNH
-                        .Publicacion = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), usuario.Publicacion.Id);
-
-                        usuarioNH.Publicacion.Usuario
-                        .Add (usuarioNH);
-                }
-                if (usuario.Tarifa != null) {
-                        // Argumento OID y no colección.
-                        usuarioNH
-                        .Tarifa = (ArthookGen.ApplicationCore.EN.Arthook.TarifaEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.TarifaEN), usuario.Tarifa.Id);
-
-                        usuarioNH.Tarifa.Usuario
-                        .Add (usuarioNH);
-                }
-                if (usuario.Valoracion != null) {
-                        // Argumento OID y no colección.
-                        usuarioNH
-                        .Valoracion = (ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.ValoracionEN), usuario.Valoracion.Id);
-
-                        usuarioNH.Valoracion.Usuario
-                        .Add (usuarioNH);
-                }
 
                 session.Save (usuarioNH);
                 SessionCommit ();
@@ -220,10 +190,16 @@ public void Modify (UsuarioEN usuario)
                 usuarioNH.Nickname = usuario.Nickname;
 
 
-                usuarioNH.Password = usuario.Password;
-
-
                 usuarioNH.Telefono = usuario.Telefono;
+
+
+                usuarioNH.TipoUsuario = usuario.TipoUsuario;
+
+
+                usuarioNH.ValoracionMedia = usuario.ValoracionMedia;
+
+
+                usuarioNH.Pass = usuario.Pass;
 
                 session.Update (usuarioNH);
                 SessionCommit ();

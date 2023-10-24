@@ -30,7 +30,7 @@ public ILinPedRepository get_ILinPedRepository ()
         return this._ILinPedRepository;
 }
 
-public int New_ (int p_Cantidad, float p_precio, int p_publicacion, int p_pedido)
+public int New_ (int p_Cantidad, float p_precio, int p_pedido, int p_publicacion)
 {
         LinPedEN linPedEN = null;
         int oid;
@@ -42,19 +42,19 @@ public int New_ (int p_Cantidad, float p_precio, int p_publicacion, int p_pedido
         linPedEN.Precio = p_precio;
 
 
-        if (p_publicacion != -1) {
-                // El argumento p_publicacion -> Property publicacion es oid = false
-                // Lista de oids id
-                linPedEN.Publicacion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
-                linPedEN.Publicacion.Id = p_publicacion;
-        }
-
-
         if (p_pedido != -1) {
                 // El argumento p_pedido -> Property pedido es oid = false
                 // Lista de oids id
                 linPedEN.Pedido = new ArthookGen.ApplicationCore.EN.Arthook.PedidoEN ();
                 linPedEN.Pedido.Id = p_pedido;
+        }
+
+
+        if (p_publicacion != -1) {
+                // El argumento p_publicacion -> Property publicacion es oid = false
+                // Lista de oids id
+                linPedEN.Publicacion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
+                linPedEN.Publicacion.Id = p_publicacion;
         }
 
 

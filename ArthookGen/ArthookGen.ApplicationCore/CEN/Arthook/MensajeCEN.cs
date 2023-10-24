@@ -30,7 +30,7 @@ public IMensajeRepository get_IMensajeRepository ()
         return this._IMensajeRepository;
 }
 
-public int New_ (Nullable<DateTime> p_fecha, string p_contenido)
+public int New_ (Nullable<DateTime> p_fecha, string p_contenido, int p_emisor, int p_receptor)
 {
         MensajeEN mensajeEN = null;
         int oid;
@@ -40,6 +40,22 @@ public int New_ (Nullable<DateTime> p_fecha, string p_contenido)
         mensajeEN.Fecha = p_fecha;
 
         mensajeEN.Contenido = p_contenido;
+
+
+        if (p_emisor != -1) {
+                // El argumento p_emisor -> Property emisor es oid = false
+                // Lista de oids id
+                mensajeEN.Emisor = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                mensajeEN.Emisor.Id = p_emisor;
+        }
+
+
+        if (p_receptor != -1) {
+                // El argumento p_receptor -> Property receptor es oid = false
+                // Lista de oids id
+                mensajeEN.Receptor = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                mensajeEN.Receptor.Id = p_receptor;
+        }
 
 
 

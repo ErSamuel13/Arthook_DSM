@@ -111,6 +111,7 @@ public void ModifyDefault (PedidoEN pedido)
 
 
 
+
                 session.Update (pedidoNH);
                 SessionCommit ();
         }
@@ -143,6 +144,14 @@ public int New_ (PedidoEN pedido)
                         .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), pedido.Usuario.Id);
 
                         pedidoNH.Usuario.Pedido
+                        .Add (pedidoNH);
+                }
+                if (pedido.MetodoPago != null) {
+                        // Argumento OID y no colección.
+                        pedidoNH
+                        .MetodoPago = (ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN), pedido.MetodoPago.Id);
+
+                        pedidoNH.MetodoPago.Pedido
                         .Add (pedidoNH);
                 }
 

@@ -132,6 +132,14 @@ public int New_ (TarifaEN tarifa)
         try
         {
                 SessionInitializeTransaction ();
+                if (tarifa.Usuario != null) {
+                        // Argumento OID y no colección.
+                        tarifaNH
+                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), tarifa.Usuario.Id);
+
+                        tarifaNH.Usuario.Tarifa
+                        .Add (tarifaNH);
+                }
 
                 session.Save (tarifaNH);
                 SessionCommit ();
