@@ -30,7 +30,7 @@ public IPublicacionRepository get_IPublicacionRepository ()
         return this._IPublicacionRepository;
 }
 
-public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, float p_valoracionMedia, string p_titulo, int p_usuario)
+public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, string p_titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum p_tipoPublicacion, int p_usuarioPublicacion)
 {
         PublicacionEN publicacionEN = null;
         int oid;
@@ -41,16 +41,16 @@ public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_ti
 
         publicacionEN.Descripcion = p_descripcion;
 
-        publicacionEN.ValoracionMedia = p_valoracionMedia;
-
         publicacionEN.Titulo = p_titulo;
 
+        publicacionEN.TipoPublicacion = p_tipoPublicacion;
 
-        if (p_usuario != -1) {
-                // El argumento p_usuario -> Property usuario es oid = false
+
+        if (p_usuarioPublicacion != -1) {
+                // El argumento p_usuarioPublicacion -> Property usuarioPublicacion es oid = false
                 // Lista de oids id
-                publicacionEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
-                publicacionEN.Usuario.Id = p_usuario;
+                publicacionEN.UsuarioPublicacion = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                publicacionEN.UsuarioPublicacion.Id = p_usuarioPublicacion;
         }
 
 
@@ -59,7 +59,7 @@ public int New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_ti
         return oid;
 }
 
-public void Modify (int p_Publicacion_OID, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, float p_valoracionMedia, string p_titulo)
+public void Modify (int p_Publicacion_OID, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum p_tipo, string p_descripcion, string p_titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum p_tipoPublicacion)
 {
         PublicacionEN publicacionEN = null;
 
@@ -68,8 +68,8 @@ public void Modify (int p_Publicacion_OID, ArthookGen.ApplicationCore.Enumerated
         publicacionEN.Id = p_Publicacion_OID;
         publicacionEN.Tipo = p_tipo;
         publicacionEN.Descripcion = p_descripcion;
-        publicacionEN.ValoracionMedia = p_valoracionMedia;
         publicacionEN.Titulo = p_titulo;
+        publicacionEN.TipoPublicacion = p_tipoPublicacion;
         //Call to PublicacionRepository
 
         _IPublicacionRepository.Modify (publicacionEN);

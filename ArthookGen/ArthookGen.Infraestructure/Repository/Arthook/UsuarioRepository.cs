@@ -97,6 +97,9 @@ public void ModifyDefault (UsuarioEN usuario)
                 SessionInitializeTransaction ();
                 UsuarioNH usuarioNH = (UsuarioNH)session.Load (typeof(UsuarioNH), usuario.Id);
 
+                usuarioNH.Pass = usuario.Pass;
+
+
                 usuarioNH.Nombre = usuario.Nombre;
 
 
@@ -106,26 +109,20 @@ public void ModifyDefault (UsuarioEN usuario)
                 usuarioNH.Nickname = usuario.Nickname;
 
 
-                usuarioNH.Telefono = usuario.Telefono;
-
-
-
-
-
-
-
+                usuarioNH.ValoracionMedia = usuario.ValoracionMedia;
 
 
                 usuarioNH.TipoUsuario = usuario.TipoUsuario;
 
 
 
-                usuarioNH.ValoracionMedia = usuario.ValoracionMedia;
 
 
 
 
-                usuarioNH.Pass = usuario.Pass;
+
+
+
 
                 session.Update (usuarioNH);
                 SessionCommit ();
@@ -181,6 +178,9 @@ public void Modify (UsuarioEN usuario)
                 SessionInitializeTransaction ();
                 UsuarioNH usuarioNH = (UsuarioNH)session.Load (typeof(UsuarioNH), usuario.Id);
 
+                usuarioNH.Pass = usuario.Pass;
+
+
                 usuarioNH.Nombre = usuario.Nombre;
 
 
@@ -190,16 +190,7 @@ public void Modify (UsuarioEN usuario)
                 usuarioNH.Nickname = usuario.Nickname;
 
 
-                usuarioNH.Telefono = usuario.Telefono;
-
-
                 usuarioNH.TipoUsuario = usuario.TipoUsuario;
-
-
-                usuarioNH.ValoracionMedia = usuario.ValoracionMedia;
-
-
-                usuarioNH.Pass = usuario.Pass;
 
                 session.Update (usuarioNH);
                 SessionCommit ();

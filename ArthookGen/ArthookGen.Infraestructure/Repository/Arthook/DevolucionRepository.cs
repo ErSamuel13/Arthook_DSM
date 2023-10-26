@@ -133,20 +133,20 @@ public int New_ (DevolucionEN devolucion)
         try
         {
                 SessionInitializeTransaction ();
-                if (devolucion.Usuario != null) {
+                if (devolucion.UsuarioDevolucion != null) {
                         // Argumento OID y no colección.
                         devolucionNH
-                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), devolucion.Usuario.Id);
+                        .UsuarioDevolucion = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), devolucion.UsuarioDevolucion.Id);
 
-                        devolucionNH.Usuario.Devolucion
+                        devolucionNH.UsuarioDevolucion.DevolucionUsuario
                         .Add (devolucionNH);
                 }
-                if (devolucion.Pedido != null) {
+                if (devolucion.PedidoDevolucion != null) {
                         // Argumento OID y no colección.
                         devolucionNH
-                        .Pedido = (ArthookGen.ApplicationCore.EN.Arthook.PedidoEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PedidoEN), devolucion.Pedido.Id);
+                        .PedidoDevolucion = (ArthookGen.ApplicationCore.EN.Arthook.PedidoEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PedidoEN), devolucion.PedidoDevolucion.Id);
 
-                        devolucionNH.Pedido.Devolucion
+                        devolucionNH.PedidoDevolucion.DevolucionPedido
                                 = devolucionNH;
                 }
 

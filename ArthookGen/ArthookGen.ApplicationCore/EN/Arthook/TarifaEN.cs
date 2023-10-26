@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo precio
  */
-private float precio;
+private string precio;
 
 
 
@@ -34,9 +34,9 @@ private string nombre;
 
 
 /**
- *	Atributo usuario
+ *	Atributo usuarioTarifa
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa;
 
 
 
@@ -49,7 +49,7 @@ public virtual int Id {
 
 
 
-public virtual float Precio {
+public virtual string Precio {
         get { return precio; } set { precio = value;  }
 }
 
@@ -67,8 +67,8 @@ public virtual string Nombre {
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Usuario {
-        get { return usuario; } set { usuario = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioTarifa {
+        get { return usuarioTarifa; } set { usuarioTarifa = value;  }
 }
 
 
@@ -81,20 +81,20 @@ public TarifaEN()
 
 
 
-public TarifaEN(int id, float precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario
+public TarifaEN(int id, string precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa
                 )
 {
-        this.init (Id, precio, descripcion, nombre, usuario);
+        this.init (Id, precio, descripcion, nombre, usuarioTarifa);
 }
 
 
 public TarifaEN(TarifaEN tarifa)
 {
-        this.init (tarifa.Id, tarifa.Precio, tarifa.Descripcion, tarifa.Nombre, tarifa.Usuario);
+        this.init (tarifa.Id, tarifa.Precio, tarifa.Descripcion, tarifa.Nombre, tarifa.UsuarioTarifa);
 }
 
 private void init (int id
-                   , float precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario)
+                   , string precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa)
 {
         this.Id = id;
 
@@ -105,7 +105,7 @@ private void init (int id
 
         this.Nombre = nombre;
 
-        this.Usuario = usuario;
+        this.UsuarioTarifa = usuarioTarifa;
 }
 
 public override bool Equals (object obj)

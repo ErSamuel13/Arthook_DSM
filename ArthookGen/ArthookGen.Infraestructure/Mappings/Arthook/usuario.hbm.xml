@@ -12,6 +12,9 @@
 						</id>
 			
 					
+					<property name="Pass" type="string"> 
+						<column name="pass"  not-null="true"/>
+					</property>
 					<property name="Nombre" type="string"> 
 						<column name="nombre"  not-null="true"/>
 					</property>
@@ -21,18 +24,14 @@
 					<property name="Nickname" type="string"> 
 						<column name="nickname"  not-null="true"/>
 					</property>
-					<property name="Telefono" type="string"> 
-						<column name="telefono"  not-null="true"/>
+					<property name="ValoracionMedia" type="string"> 
+						<column name="valoracionMedia" />
 					</property>
 					<property name="TipoUsuario" > 
 						<column name="tipoUsuario"  not-null="true"/>
 					</property>
-					<property name="ValoracionMedia" type="double"> 
-						<column name="valoracionMedia"  not-null="true"/>
-					</property>
-					<property name="Pass" type="string"> 
-						<column name="pass"  not-null="true"/>
-					</property>
+			
+			
 			
 			
 			
@@ -45,7 +44,7 @@
 							<key>
 							
 								
-								<column name="FK_idUsuario_idEmisor"/>
+								<column name="FK_idUsuario_idUsuario"/>
 					      	</key>
 							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.MensajeNH"/>
 					    </bag>
@@ -63,13 +62,24 @@
 					
 			
 		  			
-						<bag name="Publicacion" >
+						<bag name="ValoracionEmitida" >
 							<key>
 							
 								
 								<column name="FK_idUsuario_idUsuario"/>
 					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH"/>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ValoracionRecibida" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
 					    </bag>
 					
 			
@@ -85,7 +95,18 @@
 					
 			
 		  			
-						<bag name="Valoracion" >
+						<bag name="PublicacionUsuario" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ValoracionPublicacionUsuaro" >
 							<key>
 							
 								
@@ -96,7 +117,7 @@
 					
 			
 		  			
-						<bag name="Pedido" >
+						<bag name="PedidoUsuario" >
 							<key>
 							
 								
@@ -107,7 +128,7 @@
 					
 			
 		  			
-						<bag name="Devolucion" >
+						<bag name="DevolucionUsuario" >
 							<key>
 							
 								
@@ -117,42 +138,16 @@
 					    </bag>
 					
 			
-			
 		  			
-						<bag name="MetodoPago" table="[usuario_metodoPago]"  >
+						<bag name="MetodoPagoUsuario" table="[usuario_metodoPago]"  >
 							<key>
 								
-									<column name="FK_idUsuario_idUsuario"/> 
+									<column name="FK_idUsuario_idUsuarioMetodoPago"/> 
 							</key>
       						<many-to-many class="ArthookGen.Infraestructure.EN.Arthook.MetodoPagoNH">
 									<column name="FK_idMetodoPago_idMetodoPago"/> 
       						</many-to-many>
     					</bag>
-			
-			
-		  			
-						<bag name="ValoracionEmitidas" >
-							<key>
-							
-								
-								<column name="FK_idUsuario_idUsuarioValorador"/>
-					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
-					    </bag>
-					
-			
-		  			
-						<bag name="ValoracionRecibidas" >
-							<key>
-							
-								
-								<column name="FK_idUsuario_idUsuarioValorado"/>
-					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
-					    </bag>
-					
-			
-					
 					
 					
 					

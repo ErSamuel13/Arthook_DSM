@@ -97,7 +97,6 @@ public void ModifyDefault (MetodoPagoEN metodoPago)
                 SessionInitializeTransaction ();
                 MetodoPagoNH metodoPagoNH = (MetodoPagoNH)session.Load (typeof(MetodoPagoNH), metodoPago.Id);
 
-
                 session.Update (metodoPagoNH);
                 SessionCommit ();
         }

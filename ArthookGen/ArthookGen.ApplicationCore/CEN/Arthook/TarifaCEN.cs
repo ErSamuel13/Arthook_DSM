@@ -30,7 +30,7 @@ public ITarifaRepository get_ITarifaRepository ()
         return this._ITarifaRepository;
 }
 
-public int New_ (float p_precio, string p_descripcion, string p_nombre, int p_usuario)
+public int New_ (string p_precio, string p_descripcion, string p_nombre, int p_usuarioTarifa)
 {
         TarifaEN tarifaEN = null;
         int oid;
@@ -44,11 +44,11 @@ public int New_ (float p_precio, string p_descripcion, string p_nombre, int p_us
         tarifaEN.Nombre = p_nombre;
 
 
-        if (p_usuario != -1) {
-                // El argumento p_usuario -> Property usuario es oid = false
+        if (p_usuarioTarifa != -1) {
+                // El argumento p_usuarioTarifa -> Property usuarioTarifa es oid = false
                 // Lista de oids id
-                tarifaEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
-                tarifaEN.Usuario.Id = p_usuario;
+                tarifaEN.UsuarioTarifa = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                tarifaEN.UsuarioTarifa.Id = p_usuarioTarifa;
         }
 
 
@@ -57,7 +57,7 @@ public int New_ (float p_precio, string p_descripcion, string p_nombre, int p_us
         return oid;
 }
 
-public void Modify (int p_Tarifa_OID, float p_precio, string p_descripcion, string p_nombre)
+public void Modify (int p_Tarifa_OID, string p_precio, string p_descripcion, string p_nombre)
 {
         TarifaEN tarifaEN = null;
 

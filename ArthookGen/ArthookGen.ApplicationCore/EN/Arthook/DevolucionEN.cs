@@ -29,21 +29,21 @@ private ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo;
 /**
  *	Atributo fecha
  */
-private Nullable<DateTime> fecha;
+private string fecha;
 
 
 
 /**
- *	Atributo usuario
+ *	Atributo usuarioDevolucion
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion;
 
 
 
 /**
- *	Atributo pedido
+ *	Atributo pedidoDevolucion
  */
-private ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido;
+private ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion;
 
 
 
@@ -68,20 +68,20 @@ public virtual ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum Motivo {
 
 
 
-public virtual Nullable<DateTime> Fecha {
+public virtual string Fecha {
         get { return fecha; } set { fecha = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Usuario {
-        get { return usuario; } set { usuario = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioDevolucion {
+        get { return usuarioDevolucion; } set { usuarioDevolucion = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.PedidoEN Pedido {
-        get { return pedido; } set { pedido = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.PedidoEN PedidoDevolucion {
+        get { return pedidoDevolucion; } set { pedidoDevolucion = value;  }
 }
 
 
@@ -94,20 +94,20 @@ public DevolucionEN()
 
 
 
-public DevolucionEN(int id, string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, Nullable<DateTime> fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido
+public DevolucionEN(int id, string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, string fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion
                     )
 {
-        this.init (Id, descripcion, motivo, fecha, usuario, pedido);
+        this.init (Id, descripcion, motivo, fecha, usuarioDevolucion, pedidoDevolucion);
 }
 
 
 public DevolucionEN(DevolucionEN devolucion)
 {
-        this.init (devolucion.Id, devolucion.Descripcion, devolucion.Motivo, devolucion.Fecha, devolucion.Usuario, devolucion.Pedido);
+        this.init (devolucion.Id, devolucion.Descripcion, devolucion.Motivo, devolucion.Fecha, devolucion.UsuarioDevolucion, devolucion.PedidoDevolucion);
 }
 
 private void init (int id
-                   , string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, Nullable<DateTime> fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido)
+                   , string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, string fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion)
 {
         this.Id = id;
 
@@ -118,9 +118,9 @@ private void init (int id
 
         this.Fecha = fecha;
 
-        this.Usuario = usuario;
+        this.UsuarioDevolucion = usuarioDevolucion;
 
-        this.Pedido = pedido;
+        this.PedidoDevolucion = pedidoDevolucion;
 }
 
 public override bool Equals (object obj)

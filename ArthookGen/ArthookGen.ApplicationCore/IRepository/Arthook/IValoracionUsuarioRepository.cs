@@ -25,5 +25,12 @@ void Modify (ValoracionUsuarioEN valoracionUsuario);
 
 void Destroy (int id
               );
+
+
+ValoracionUsuarioEN ReadOID (int id
+                             );
+
+
+System.Collections.Generic.IList<ValoracionUsuarioEN> ReadAll (int first, int size);
 }
 }

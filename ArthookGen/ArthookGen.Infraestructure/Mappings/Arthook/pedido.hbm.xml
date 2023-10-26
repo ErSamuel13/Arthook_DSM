@@ -12,19 +12,15 @@
 						</id>
 			
 					
-					<property name="Fecha" type="date"> 
+					<property name="Fecha" type="string"> 
 						<column name="fecha"  not-null="true"/>
 					</property>
-					<property name="PrecioTotal" type="float"> 
+					<property name="PrecioTotal" type="string"> 
 						<column name="precioTotal"  not-null="true"/>
 					</property>
 					<property name="Estado" > 
 						<column name="estado"  not-null="true"/>
 					</property>
-					<property name="Attribute" type="string"> 
-						<column name="attribute"  not-null="true"/>
-					</property>
-			
 			
 			
 			
@@ -32,7 +28,7 @@
 			
 			
 		  			
-						<bag name="LinPed" cascade="delete">
+						<bag name="LinPedPed" cascade="delete">
 							<key>
 							
 								
@@ -43,24 +39,16 @@
 					
 			
 		  			
-						<many-to-one name="Usuario" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+						<many-to-one name="UsuarioPedido" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
 								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					
 			
 		  			
 					
-							   <one-to-one name="Devolucion" class="ArthookGen.Infraestructure.EN.Arthook.DevolucionNH" property-ref="Pedido" />							
+							   <one-to-one name="DevolucionPedido" class="ArthookGen.Infraestructure.EN.Arthook.DevolucionNH" property-ref="PedidoDevolucion" />							
 					 
 						
-			
-		  			
-						<many-to-one name="MetodoPago" class="ArthookGen.Infraestructure.EN.Arthook.MetodoPagoNH" >	
-								<column name="FK_idMetodoPago_idMetodoPago"/> 
-						</many-to-one>
-											 					
-					
-					
 					
 					
 					

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {}
+    "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {}
   },
   "projects": {
-    "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
+    "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
         "projectName": "ArthookGen.ApplicationCore",
-        "projectPath": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+        "projectPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-        "outputPath": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
+        "outputPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config",

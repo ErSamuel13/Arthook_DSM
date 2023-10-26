@@ -12,10 +12,10 @@
 						</id>
 			
 					
-					<property name="Cantidad" type="integer"> 
-						<column name="Cantidad"  not-null="true"/>
+					<property name="Cantidad" type="string"> 
+						<column name="cantidad"  not-null="true"/>
 					</property>
-					<property name="Precio" type="float"> 
+					<property name="Precio" type="string"> 
 						<column name="precio"  not-null="true"/>
 					</property>
 			
@@ -24,18 +24,21 @@
 			
 			
 		  			
-						<many-to-one name="Pedido" class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH" >	
+						<many-to-one name="PedidoLinPed" class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH" >	
 								<column name="FK_idPedido_idPedido"/> 
 						</many-to-one>
 											 					
 			
 		  			
+						<bag name="PublicacionLinPed" >
+							<key>
+							
+								
+								<column name="FK_idLinPed_idLinPed"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH"/>
+					    </bag>
 					
-							<many-to-one name="Publicacion" class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH" >
-								<column name="FK_idPublicacion_idPublicacion"/> 
-        					</many-to-one>
-					 
-						
 					
 					
 					

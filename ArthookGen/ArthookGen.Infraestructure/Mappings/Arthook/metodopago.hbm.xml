@@ -16,27 +16,15 @@
 			
 			
 		  			
-						<bag name="Pedido" >
-							<key>
-							
-								
-								<column name="FK_idMetodoPago_idMetodoPago"/>
-					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH"/>
-					    </bag>
-					
-			
-		  			
-						<bag name="Usuario" table="[usuario_metodoPago]" inverse="true" >
+						<bag name="UsuarioMetodoPago" table="[usuario_metodoPago]" inverse="true" >
 							<key>
 								
 									<column name="FK_idMetodoPago_idMetodoPago"/> 
 							</key>
       						<many-to-many class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH">
-									<column name="FK_idUsuario_idUsuario"/> 
+									<column name="FK_idUsuario_idUsuarioMetodoPago"/> 
       						</many-to-many>
     					</bag>
-					
 					
 					
 		

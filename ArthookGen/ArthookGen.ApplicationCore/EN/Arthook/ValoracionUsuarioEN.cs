@@ -15,21 +15,21 @@ private int id;
 /**
  *	Atributo puntuacion
  */
-private float puntuacion;
+private string puntuacion;
 
 
 
 /**
- *	Atributo usuarioValorador
+ *	Atributo valorador
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorador;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorador;
 
 
 
 /**
- *	Atributo usuarioValorado
+ *	Atributo valorado
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorado;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorado;
 
 
 
@@ -42,20 +42,20 @@ public virtual int Id {
 
 
 
-public virtual float Puntuacion {
+public virtual string Puntuacion {
         get { return puntuacion; } set { puntuacion = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioValorador {
-        get { return usuarioValorador; } set { usuarioValorador = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Valorador {
+        get { return valorador; } set { valorador = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioValorado {
-        get { return usuarioValorado; } set { usuarioValorado = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Valorado {
+        get { return valorado; } set { valorado = value;  }
 }
 
 
@@ -68,29 +68,29 @@ public ValoracionUsuarioEN()
 
 
 
-public ValoracionUsuarioEN(int id, float puntuacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorador, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorado
+public ValoracionUsuarioEN(int id, string puntuacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorador, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorado
                            )
 {
-        this.init (Id, puntuacion, usuarioValorador, usuarioValorado);
+        this.init (Id, puntuacion, valorador, valorado);
 }
 
 
 public ValoracionUsuarioEN(ValoracionUsuarioEN valoracionUsuario)
 {
-        this.init (valoracionUsuario.Id, valoracionUsuario.Puntuacion, valoracionUsuario.UsuarioValorador, valoracionUsuario.UsuarioValorado);
+        this.init (valoracionUsuario.Id, valoracionUsuario.Puntuacion, valoracionUsuario.Valorador, valoracionUsuario.Valorado);
 }
 
 private void init (int id
-                   , float puntuacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorador, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValorado)
+                   , string puntuacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorador, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN valorado)
 {
         this.Id = id;
 
 
         this.Puntuacion = puntuacion;
 
-        this.UsuarioValorador = usuarioValorador;
+        this.Valorador = valorador;
 
-        this.UsuarioValorado = usuarioValorado;
+        this.Valorado = valorado;
 }
 
 public override bool Equals (object obj)

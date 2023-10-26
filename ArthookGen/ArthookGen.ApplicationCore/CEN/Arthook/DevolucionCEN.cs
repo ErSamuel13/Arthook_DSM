@@ -30,7 +30,7 @@ public IDevolucionRepository get_IDevolucionRepository ()
         return this._IDevolucionRepository;
 }
 
-public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, Nullable<DateTime> p_fecha, int p_usuario, int p_pedido)
+public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, string p_fecha, int p_usuarioDevolucion, int p_pedidoDevolucion)
 {
         DevolucionEN devolucionEN = null;
         int oid;
@@ -44,19 +44,19 @@ public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Art
         devolucionEN.Fecha = p_fecha;
 
 
-        if (p_usuario != -1) {
-                // El argumento p_usuario -> Property usuario es oid = false
+        if (p_usuarioDevolucion != -1) {
+                // El argumento p_usuarioDevolucion -> Property usuarioDevolucion es oid = false
                 // Lista de oids id
-                devolucionEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
-                devolucionEN.Usuario.Id = p_usuario;
+                devolucionEN.UsuarioDevolucion = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                devolucionEN.UsuarioDevolucion.Id = p_usuarioDevolucion;
         }
 
 
-        if (p_pedido != -1) {
-                // El argumento p_pedido -> Property pedido es oid = false
+        if (p_pedidoDevolucion != -1) {
+                // El argumento p_pedidoDevolucion -> Property pedidoDevolucion es oid = false
                 // Lista de oids id
-                devolucionEN.Pedido = new ArthookGen.ApplicationCore.EN.Arthook.PedidoEN ();
-                devolucionEN.Pedido.Id = p_pedido;
+                devolucionEN.PedidoDevolucion = new ArthookGen.ApplicationCore.EN.Arthook.PedidoEN ();
+                devolucionEN.PedidoDevolucion.Id = p_pedidoDevolucion;
         }
 
 
@@ -65,7 +65,7 @@ public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Art
         return oid;
 }
 
-public void Modify (int p_Devolucion_OID, string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, Nullable<DateTime> p_fecha)
+public void Modify (int p_Devolucion_OID, string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, string p_fecha)
 {
         DevolucionEN devolucionEN = null;
 

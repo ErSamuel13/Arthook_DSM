@@ -15,28 +15,28 @@ private int id;
 /**
  *	Atributo cantidad
  */
-private int cantidad;
+private string cantidad;
 
 
 
 /**
  *	Atributo precio
  */
-private float precio;
+private string precio;
 
 
 
 /**
- *	Atributo pedido
+ *	Atributo pedidoLinPed
  */
-private ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido;
+private ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed;
 
 
 
 /**
- *	Atributo publicacion
+ *	Atributo publicacionLinPed
  */
-private ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion;
+private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed;
 
 
 
@@ -49,26 +49,26 @@ public virtual int Id {
 
 
 
-public virtual int Cantidad {
+public virtual string Cantidad {
         get { return cantidad; } set { cantidad = value;  }
 }
 
 
 
-public virtual float Precio {
+public virtual string Precio {
         get { return precio; } set { precio = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.PedidoEN Pedido {
-        get { return pedido; } set { pedido = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.PedidoEN PedidoLinPed {
+        get { return pedidoLinPed; } set { pedidoLinPed = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN Publicacion {
-        get { return publicacion; } set { publicacion = value;  }
+public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> PublicacionLinPed {
+        get { return publicacionLinPed; } set { publicacionLinPed = value;  }
 }
 
 
@@ -77,24 +77,25 @@ public virtual ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN Publicacion {
 
 public LinPedEN()
 {
+        publicacionLinPed = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN>();
 }
 
 
 
-public LinPedEN(int id, int cantidad, float precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion
+public LinPedEN(int id, string cantidad, string precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed
                 )
 {
-        this.init (Id, cantidad, precio, pedido, publicacion);
+        this.init (Id, cantidad, precio, pedidoLinPed, publicacionLinPed);
 }
 
 
 public LinPedEN(LinPedEN linPed)
 {
-        this.init (linPed.Id, linPed.Cantidad, linPed.Precio, linPed.Pedido, linPed.Publicacion);
+        this.init (linPed.Id, linPed.Cantidad, linPed.Precio, linPed.PedidoLinPed, linPed.PublicacionLinPed);
 }
 
 private void init (int id
-                   , int cantidad, float precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedido, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion)
+                   , string cantidad, string precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed)
 {
         this.Id = id;
 
@@ -103,9 +104,9 @@ private void init (int id
 
         this.Precio = precio;
 
-        this.Pedido = pedido;
+        this.PedidoLinPed = pedidoLinPed;
 
-        this.Publicacion = publicacion;
+        this.PublicacionLinPed = publicacionLinPed;
 }
 
 public override bool Equals (object obj)

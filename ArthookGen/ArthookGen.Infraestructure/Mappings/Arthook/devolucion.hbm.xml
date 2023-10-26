@@ -18,7 +18,7 @@
 					<property name="Motivo" > 
 						<column name="motivo"  not-null="true"/>
 					</property>
-					<property name="Fecha" type="date"> 
+					<property name="Fecha" type="string"> 
 						<column name="fecha"  not-null="true"/>
 					</property>
 			
@@ -28,15 +28,15 @@
 			
 			
 		  			
-						<many-to-one name="Usuario" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+						<many-to-one name="UsuarioDevolucion" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
 								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					
 			
 		  			
 					
-							<many-to-one name="Pedido" class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH" >
-								<column name="FK_idPedido_idPedido"/> 
+							<many-to-one name="PedidoDevolucion" class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH" >
+								<column name="FK_idPedido_idPedidoDevolucion"/> 
         					</many-to-one>
 					 
 						

@@ -5402,11 +5402,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj",
+      "projectUniqueName": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj",
       "projectName": "ArthookGen.Infraestructure",
-      "projectPath": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj",
+      "projectPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj",
       "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-      "outputPath": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.Infraestructure\\obj\\",
+      "outputPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5423,8 +5423,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
-              "projectPath": "C:\\OOH4RIA\\DDP2023\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj"
+            "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
+              "projectPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj"
             }
           }
         }

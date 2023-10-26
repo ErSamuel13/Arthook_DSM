@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo puntuacion
  */
-private float puntuacion;
+private string puntuacion;
 
 
 
@@ -27,16 +27,16 @@ private string comentario;
 
 
 /**
- *	Atributo publicacion
+ *	Atributo usuarioValoracion
  */
-private ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion;
 
 
 
 /**
- *	Atributo usuario
+ *	Atributo publicacionValoracion
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario;
+private ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion;
 
 
 
@@ -49,7 +49,7 @@ public virtual int Id {
 
 
 
-public virtual float Puntuacion {
+public virtual string Puntuacion {
         get { return puntuacion; } set { puntuacion = value;  }
 }
 
@@ -61,14 +61,14 @@ public virtual string Comentario {
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN Publicacion {
-        get { return publicacion; } set { publicacion = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioValoracion {
+        get { return usuarioValoracion; } set { usuarioValoracion = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Usuario {
-        get { return usuario; } set { usuario = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN PublicacionValoracion {
+        get { return publicacionValoracion; } set { publicacionValoracion = value;  }
 }
 
 
@@ -81,20 +81,20 @@ public ValoracionPublicacionEN()
 
 
 
-public ValoracionPublicacionEN(int id, float puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario
+public ValoracionPublicacionEN(int id, string puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion
                                )
 {
-        this.init (Id, puntuacion, comentario, publicacion, usuario);
+        this.init (Id, puntuacion, comentario, usuarioValoracion, publicacionValoracion);
 }
 
 
 public ValoracionPublicacionEN(ValoracionPublicacionEN valoracionPublicacion)
 {
-        this.init (valoracionPublicacion.Id, valoracionPublicacion.Puntuacion, valoracionPublicacion.Comentario, valoracionPublicacion.Publicacion, valoracionPublicacion.Usuario);
+        this.init (valoracionPublicacion.Id, valoracionPublicacion.Puntuacion, valoracionPublicacion.Comentario, valoracionPublicacion.UsuarioValoracion, valoracionPublicacion.PublicacionValoracion);
 }
 
 private void init (int id
-                   , float puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario)
+                   , string puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion)
 {
         this.Id = id;
 
@@ -103,9 +103,9 @@ private void init (int id
 
         this.Comentario = comentario;
 
-        this.Publicacion = publicacion;
+        this.UsuarioValoracion = usuarioValoracion;
 
-        this.Usuario = usuario;
+        this.PublicacionValoracion = publicacionValoracion;
 }
 
 public override bool Equals (object obj)

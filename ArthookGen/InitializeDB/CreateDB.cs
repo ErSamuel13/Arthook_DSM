@@ -82,26 +82,26 @@ public static void InitializeData ()
         try
         {
                 // Initialising  CENs
-                UsuarioRepository usuariorepository = new UsuarioRepository ();
-                UsuarioCEN usuariocen = new UsuarioCEN (usuariorepository);
                 PublicacionRepository publicacionrepository = new PublicacionRepository ();
                 PublicacionCEN publicacioncen = new PublicacionCEN (publicacionrepository);
                 PedidoRepository pedidorepository = new PedidoRepository ();
                 PedidoCEN pedidocen = new PedidoCEN (pedidorepository);
                 LinPedRepository linpedrepository = new LinPedRepository ();
                 LinPedCEN linpedcen = new LinPedCEN (linpedrepository);
-                TarifaRepository tarifarepository = new TarifaRepository ();
-                TarifaCEN tarifacen = new TarifaCEN (tarifarepository);
-                DevolucionRepository devolucionrepository = new DevolucionRepository ();
-                DevolucionCEN devolucioncen = new DevolucionCEN (devolucionrepository);
-                MetodoPagoRepository metodopagorepository = new MetodoPagoRepository ();
-                MetodoPagoCEN metodopagocen = new MetodoPagoCEN (metodopagorepository);
                 MensajeRepository mensajerepository = new MensajeRepository ();
                 MensajeCEN mensajecen = new MensajeCEN (mensajerepository);
-                ValoracionPublicacionRepository valoracionpublicacionrepository = new ValoracionPublicacionRepository ();
-                ValoracionPublicacionCEN valoracionpublicacioncen = new ValoracionPublicacionCEN (valoracionpublicacionrepository);
                 ValoracionUsuarioRepository valoracionusuariorepository = new ValoracionUsuarioRepository ();
                 ValoracionUsuarioCEN valoracionusuariocen = new ValoracionUsuarioCEN (valoracionusuariorepository);
+                ValoracionPublicacionRepository valoracionpublicacionrepository = new ValoracionPublicacionRepository ();
+                ValoracionPublicacionCEN valoracionpublicacioncen = new ValoracionPublicacionCEN (valoracionpublicacionrepository);
+                DevolucionRepository devolucionrepository = new DevolucionRepository ();
+                DevolucionCEN devolucioncen = new DevolucionCEN (devolucionrepository);
+                TarifaRepository tarifarepository = new TarifaRepository ();
+                TarifaCEN tarifacen = new TarifaCEN (tarifarepository);
+                UsuarioRepository usuariorepository = new UsuarioRepository ();
+                UsuarioCEN usuariocen = new UsuarioCEN (usuariorepository);
+                MetodoPagoRepository metodopagorepository = new MetodoPagoRepository ();
+                MetodoPagoCEN metodopagocen = new MetodoPagoCEN (metodopagorepository);
 
 
 

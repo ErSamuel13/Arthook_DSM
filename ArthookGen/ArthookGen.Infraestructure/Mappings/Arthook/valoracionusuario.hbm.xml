@@ -12,7 +12,7 @@
 						</id>
 			
 					
-					<property name="Puntuacion" type="float"> 
+					<property name="Puntuacion" type="string"> 
 						<column name="puntuacion"  not-null="true"/>
 					</property>
 			
@@ -20,14 +20,14 @@
 			
 			
 		  			
-						<many-to-one name="UsuarioValorador" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
-								<column name="FK_idUsuario_idUsuarioValorador"/> 
+						<many-to-one name="Valorador" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					
 			
 		  			
-						<many-to-one name="UsuarioValorado" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
-								<column name="FK_idUsuario_idUsuarioValorado"/> 
+						<many-to-one name="Valorado" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					
 					

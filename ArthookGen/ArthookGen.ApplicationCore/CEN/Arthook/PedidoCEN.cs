@@ -30,7 +30,7 @@ public IPedidoRepository get_IPedidoRepository ()
         return this._IPedidoRepository;
 }
 
-public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, string p_attribute, int p_usuario, int p_metodoPago)
+public int New_ (string p_fecha, string p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, int p_usuarioPedido)
 {
         PedidoEN pedidoEN = null;
         int oid;
@@ -43,22 +43,12 @@ public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.App
 
         pedidoEN.Estado = p_estado;
 
-        pedidoEN.Attribute = p_attribute;
 
-
-        if (p_usuario != -1) {
-                // El argumento p_usuario -> Property usuario es oid = false
+        if (p_usuarioPedido != -1) {
+                // El argumento p_usuarioPedido -> Property usuarioPedido es oid = false
                 // Lista de oids id
-                pedidoEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
-                pedidoEN.Usuario.Id = p_usuario;
-        }
-
-
-        if (p_metodoPago != -1) {
-                // El argumento p_metodoPago -> Property metodoPago es oid = false
-                // Lista de oids id
-                pedidoEN.MetodoPago = new ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN ();
-                pedidoEN.MetodoPago.Id = p_metodoPago;
+                pedidoEN.UsuarioPedido = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                pedidoEN.UsuarioPedido.Id = p_usuarioPedido;
         }
 
 
@@ -67,7 +57,7 @@ public int New_ (Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.App
         return oid;
 }
 
-public void Modify (int p_Pedido_OID, Nullable<DateTime> p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, string p_attribute)
+public void Modify (int p_Pedido_OID, string p_fecha, string p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado)
 {
         PedidoEN pedidoEN = null;
 
@@ -77,7 +67,6 @@ public void Modify (int p_Pedido_OID, Nullable<DateTime> p_fecha, float p_precio
         pedidoEN.Fecha = p_fecha;
         pedidoEN.PrecioTotal = p_precioTotal;
         pedidoEN.Estado = p_estado;
-        pedidoEN.Attribute = p_attribute;
         //Call to PedidoRepository
 
         _IPedidoRepository.Modify (pedidoEN);

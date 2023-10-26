@@ -27,7 +27,7 @@ static void Main (string[] args)
                 CreateDB.Create ("ArthookGenNHibernate", "nhibernateUser", "nhibernatePass");
                 var cfg = new Configuration ();
                 cfg.Configure ();
-                cfg.AddAssembly (typeof(UsuarioNH).Assembly);
+                cfg.AddAssembly (typeof(PublicacionNH).Assembly);
                 new SchemaExport (cfg).Execute (true, true, false);
                 System.Console.WriteLine ("-------------------------------------");
                 System.Console.WriteLine ("Database schema created successfully");

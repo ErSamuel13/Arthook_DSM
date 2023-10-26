@@ -15,14 +15,14 @@ private int id;
 /**
  *	Atributo fecha
  */
-private Nullable<DateTime> fecha;
+private string fecha;
 
 
 
 /**
  *	Atributo precioTotal
  */
-private float precioTotal;
+private string precioTotal;
 
 
 
@@ -34,37 +34,23 @@ private ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado;
 
 
 /**
- *	Atributo attribute
+ *	Atributo linPedPed
  */
-private string attribute;
+private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed;
 
 
 
 /**
- *	Atributo linPed
+ *	Atributo usuarioPedido
  */
-private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPed;
+private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido;
 
 
 
 /**
- *	Atributo usuario
+ *	Atributo devolucionPedido
  */
-private ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario;
-
-
-
-/**
- *	Atributo devolucion
- */
-private ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucion;
-
-
-
-/**
- *	Atributo metodoPago
- */
-private ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN metodoPago;
+private ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido;
 
 
 
@@ -77,13 +63,13 @@ public virtual int Id {
 
 
 
-public virtual Nullable<DateTime> Fecha {
+public virtual string Fecha {
         get { return fecha; } set { fecha = value;  }
 }
 
 
 
-public virtual float PrecioTotal {
+public virtual string PrecioTotal {
         get { return precioTotal; } set { precioTotal = value;  }
 }
 
@@ -95,32 +81,20 @@ public virtual ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum Estado {
 
 
 
-public virtual string Attribute {
-        get { return attribute; } set { attribute = value;  }
+public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> LinPedPed {
+        get { return linPedPed; } set { linPedPed = value;  }
 }
 
 
 
-public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> LinPed {
-        get { return linPed; } set { linPed = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN UsuarioPedido {
+        get { return usuarioPedido; } set { usuarioPedido = value;  }
 }
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN Usuario {
-        get { return usuario; } set { usuario = value;  }
-}
-
-
-
-public virtual ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN Devolucion {
-        get { return devolucion; } set { devolucion = value;  }
-}
-
-
-
-public virtual ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN MetodoPago {
-        get { return metodoPago; } set { metodoPago = value;  }
+public virtual ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN DevolucionPedido {
+        get { return devolucionPedido; } set { devolucionPedido = value;  }
 }
 
 
@@ -129,25 +103,25 @@ public virtual ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN MetodoPago {
 
 public PedidoEN()
 {
-        linPed = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN>();
+        linPedPed = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN>();
 }
 
 
 
-public PedidoEN(int id, Nullable<DateTime> fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, string attribute, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucion, ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN metodoPago
+public PedidoEN(int id, string fecha, string precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido
                 )
 {
-        this.init (Id, fecha, precioTotal, estado, attribute, linPed, usuario, devolucion, metodoPago);
+        this.init (Id, fecha, precioTotal, estado, linPedPed, usuarioPedido, devolucionPedido);
 }
 
 
 public PedidoEN(PedidoEN pedido)
 {
-        this.init (pedido.Id, pedido.Fecha, pedido.PrecioTotal, pedido.Estado, pedido.Attribute, pedido.LinPed, pedido.Usuario, pedido.Devolucion, pedido.MetodoPago);
+        this.init (pedido.Id, pedido.Fecha, pedido.PrecioTotal, pedido.Estado, pedido.LinPedPed, pedido.UsuarioPedido, pedido.DevolucionPedido);
 }
 
 private void init (int id
-                   , Nullable<DateTime> fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, string attribute, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuario, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucion, ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN metodoPago)
+                   , string fecha, string precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido)
 {
         this.Id = id;
 
@@ -158,15 +132,11 @@ private void init (int id
 
         this.Estado = estado;
 
-        this.Attribute = attribute;
+        this.LinPedPed = linPedPed;
 
-        this.LinPed = linPed;
+        this.UsuarioPedido = usuarioPedido;
 
-        this.Usuario = usuario;
-
-        this.Devolucion = devolucion;
-
-        this.MetodoPago = metodoPago;
+        this.DevolucionPedido = devolucionPedido;
 }
 
 public override bool Equals (object obj)

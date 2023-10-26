@@ -127,20 +127,20 @@ public int New_ (ValoracionUsuarioEN valoracionUsuario)
         try
         {
                 SessionInitializeTransaction ();
-                if (valoracionUsuario.UsuarioValorador != null) {
+                if (valoracionUsuario.Valorador != null) {
                         // Argumento OID y no colección.
                         valoracionUsuarioNH
-                        .UsuarioValorador = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.UsuarioValorador.Id);
+                        .Valorador = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.Valorador.Id);
 
-                        valoracionUsuarioNH.UsuarioValorador.ValoracionEmitidas
+                        valoracionUsuarioNH.Valorador.ValoracionEmitida
                         .Add (valoracionUsuarioNH);
                 }
-                if (valoracionUsuario.UsuarioValorado != null) {
+                if (valoracionUsuario.Valorado != null) {
                         // Argumento OID y no colección.
                         valoracionUsuarioNH
-                        .UsuarioValorado = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.UsuarioValorado.Id);
+                        .Valorado = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.Valorado.Id);
 
-                        valoracionUsuarioNH.UsuarioValorado.ValoracionRecibidas
+                        valoracionUsuarioNH.Valorado.ValoracionRecibida
                         .Add (valoracionUsuarioNH);
                 }
 
@@ -213,6 +213,62 @@ public void Destroy (int id
         {
                 SessionClose ();
         }
+}
+
+//Sin e: ReadOID
+//Con e: ValoracionUsuarioEN
+public ValoracionUsuarioEN ReadOID (int id
+                                    )
+{
+        ValoracionUsuarioEN valoracionUsuarioEN = null;
+
+        try
+        {
+                SessionInitializeTransaction ();
+                valoracionUsuarioEN = (ValoracionUsuarioEN)session.Get (typeof(ValoracionUsuarioNH), id);
+                SessionCommit ();
+        }
+
+        catch (Exception) {
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return valoracionUsuarioEN;
+}
+
+public System.Collections.Generic.IList<ValoracionUsuarioEN> ReadAll (int first, int size)
+{
+        System.Collections.Generic.IList<ValoracionUsuarioEN> result = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                if (size > 0)
+                        result = session.CreateCriteria (typeof(ValoracionUsuarioNH)).
+                                 SetFirstResult (first).SetMaxResults (size).List<ValoracionUsuarioEN>();
+                else
+                        result = session.CreateCriteria (typeof(ValoracionUsuarioNH)).List<ValoracionUsuarioEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in ValoracionUsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
 }
 }
 }

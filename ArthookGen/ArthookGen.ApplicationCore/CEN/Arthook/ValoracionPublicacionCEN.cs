@@ -30,31 +30,31 @@ public IValoracionPublicacionRepository get_IValoracionPublicacionRepository ()
         return this._IValoracionPublicacionRepository;
 }
 
-public int New_ (float p_Puntuacion, string p_Comentario, int p_publicacion, int p_usuario)
+public int New_ (string p_puntuacion, string p_comentario, int p_usuarioValoracion, int p_publicacionValoracion)
 {
         ValoracionPublicacionEN valoracionPublicacionEN = null;
         int oid;
 
         //Initialized ValoracionPublicacionEN
         valoracionPublicacionEN = new ValoracionPublicacionEN ();
-        valoracionPublicacionEN.Puntuacion = p_Puntuacion;
+        valoracionPublicacionEN.Puntuacion = p_puntuacion;
 
-        valoracionPublicacionEN.Comentario = p_Comentario;
+        valoracionPublicacionEN.Comentario = p_comentario;
 
 
-        if (p_publicacion != -1) {
-                // El argumento p_publicacion -> Property publicacion es oid = false
+        if (p_usuarioValoracion != -1) {
+                // El argumento p_usuarioValoracion -> Property usuarioValoracion es oid = false
                 // Lista de oids id
-                valoracionPublicacionEN.Publicacion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
-                valoracionPublicacionEN.Publicacion.Id = p_publicacion;
+                valoracionPublicacionEN.UsuarioValoracion = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                valoracionPublicacionEN.UsuarioValoracion.Id = p_usuarioValoracion;
         }
 
 
-        if (p_usuario != -1) {
-                // El argumento p_usuario -> Property usuario es oid = false
+        if (p_publicacionValoracion != -1) {
+                // El argumento p_publicacionValoracion -> Property publicacionValoracion es oid = false
                 // Lista de oids id
-                valoracionPublicacionEN.Usuario = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
-                valoracionPublicacionEN.Usuario.Id = p_usuario;
+                valoracionPublicacionEN.PublicacionValoracion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
+                valoracionPublicacionEN.PublicacionValoracion.Id = p_publicacionValoracion;
         }
 
 
@@ -63,15 +63,15 @@ public int New_ (float p_Puntuacion, string p_Comentario, int p_publicacion, int
         return oid;
 }
 
-public void Modify (int p_ValoracionPublicacion_OID, float p_Puntuacion, string p_Comentario)
+public void Modify (int p_ValoracionPublicacion_OID, string p_puntuacion, string p_comentario)
 {
         ValoracionPublicacionEN valoracionPublicacionEN = null;
 
         //Initialized ValoracionPublicacionEN
         valoracionPublicacionEN = new ValoracionPublicacionEN ();
         valoracionPublicacionEN.Id = p_ValoracionPublicacion_OID;
-        valoracionPublicacionEN.Puntuacion = p_Puntuacion;
-        valoracionPublicacionEN.Comentario = p_Comentario;
+        valoracionPublicacionEN.Puntuacion = p_puntuacion;
+        valoracionPublicacionEN.Comentario = p_comentario;
         //Call to ValoracionPublicacionRepository
 
         _IValoracionPublicacionRepository.Modify (valoracionPublicacionEN);

@@ -106,10 +106,6 @@ public void ModifyDefault (PedidoEN pedido)
                 pedidoNH.Estado = pedido.Estado;
 
 
-                pedidoNH.Attribute = pedido.Attribute;
-
-
-
 
 
                 session.Update (pedidoNH);
@@ -138,20 +134,12 @@ public int New_ (PedidoEN pedido)
         try
         {
                 SessionInitializeTransaction ();
-                if (pedido.Usuario != null) {
+                if (pedido.UsuarioPedido != null) {
                         // Argumento OID y no colección.
                         pedidoNH
-                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), pedido.Usuario.Id);
+                        .UsuarioPedido = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), pedido.UsuarioPedido.Id);
 
-                        pedidoNH.Usuario.Pedido
-                        .Add (pedidoNH);
-                }
-                if (pedido.MetodoPago != null) {
-                        // Argumento OID y no colección.
-                        pedidoNH
-                        .MetodoPago = (ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN), pedido.MetodoPago.Id);
-
-                        pedidoNH.MetodoPago.Pedido
+                        pedidoNH.UsuarioPedido.PedidoUsuario
                         .Add (pedidoNH);
                 }
 
@@ -189,9 +177,6 @@ public void Modify (PedidoEN pedido)
 
 
                 pedidoNH.Estado = pedido.Estado;
-
-
-                pedidoNH.Attribute = pedido.Attribute;
 
                 session.Update (pedidoNH);
                 SessionCommit ();

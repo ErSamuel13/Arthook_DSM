@@ -30,31 +30,23 @@ public ILinPedRepository get_ILinPedRepository ()
         return this._ILinPedRepository;
 }
 
-public int New_ (int p_Cantidad, float p_precio, int p_pedido, int p_publicacion)
+public int New_ (string p_cantidad, string p_precio, int p_pedidoLinPed)
 {
         LinPedEN linPedEN = null;
         int oid;
 
         //Initialized LinPedEN
         linPedEN = new LinPedEN ();
-        linPedEN.Cantidad = p_Cantidad;
+        linPedEN.Cantidad = p_cantidad;
 
         linPedEN.Precio = p_precio;
 
 
-        if (p_pedido != -1) {
-                // El argumento p_pedido -> Property pedido es oid = false
+        if (p_pedidoLinPed != -1) {
+                // El argumento p_pedidoLinPed -> Property pedidoLinPed es oid = false
                 // Lista de oids id
-                linPedEN.Pedido = new ArthookGen.ApplicationCore.EN.Arthook.PedidoEN ();
-                linPedEN.Pedido.Id = p_pedido;
-        }
-
-
-        if (p_publicacion != -1) {
-                // El argumento p_publicacion -> Property publicacion es oid = false
-                // Lista de oids id
-                linPedEN.Publicacion = new ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN ();
-                linPedEN.Publicacion.Id = p_publicacion;
+                linPedEN.PedidoLinPed = new ArthookGen.ApplicationCore.EN.Arthook.PedidoEN ();
+                linPedEN.PedidoLinPed.Id = p_pedidoLinPed;
         }
 
 
@@ -63,14 +55,14 @@ public int New_ (int p_Cantidad, float p_precio, int p_pedido, int p_publicacion
         return oid;
 }
 
-public void Modify (int p_LinPed_OID, int p_Cantidad, float p_precio)
+public void Modify (int p_LinPed_OID, string p_cantidad, string p_precio)
 {
         LinPedEN linPedEN = null;
 
         //Initialized LinPedEN
         linPedEN = new LinPedEN ();
         linPedEN.Id = p_LinPed_OID;
-        linPedEN.Cantidad = p_Cantidad;
+        linPedEN.Cantidad = p_cantidad;
         linPedEN.Precio = p_precio;
         //Call to LinPedRepository
 

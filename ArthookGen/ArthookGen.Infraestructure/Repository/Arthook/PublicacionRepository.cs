@@ -106,13 +106,10 @@ public void ModifyDefault (PublicacionEN publicacion)
                 publicacionNH.Descripcion = publicacion.Descripcion;
 
 
-                publicacionNH.ValoracionMedia = publicacion.ValoracionMedia;
-
-
                 publicacionNH.Titulo = publicacion.Titulo;
 
 
-                publicacionNH.TipoPubli = publicacion.TipoPubli;
+                publicacionNH.TipoPublicacion = publicacion.TipoPublicacion;
 
 
 
@@ -143,12 +140,12 @@ public int New_ (PublicacionEN publicacion)
         try
         {
                 SessionInitializeTransaction ();
-                if (publicacion.Usuario != null) {
+                if (publicacion.UsuarioPublicacion != null) {
                         // Argumento OID y no colección.
                         publicacionNH
-                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), publicacion.Usuario.Id);
+                        .UsuarioPublicacion = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), publicacion.UsuarioPublicacion.Id);
 
-                        publicacionNH.Usuario.Publicacion
+                        publicacionNH.UsuarioPublicacion.PublicacionUsuario
                         .Add (publicacionNH);
                 }
 
@@ -185,10 +182,10 @@ public void Modify (PublicacionEN publicacion)
                 publicacionNH.Descripcion = publicacion.Descripcion;
 
 
-                publicacionNH.ValoracionMedia = publicacion.ValoracionMedia;
-
-
                 publicacionNH.Titulo = publicacion.Titulo;
+
+
+                publicacionNH.TipoPublicacion = publicacion.TipoPublicacion;
 
                 session.Update (publicacionNH);
                 SessionCommit ();

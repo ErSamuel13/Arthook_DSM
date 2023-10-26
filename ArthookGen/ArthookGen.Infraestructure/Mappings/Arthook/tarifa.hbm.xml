@@ -12,7 +12,7 @@
 						</id>
 			
 					
-					<property name="Precio" type="float"> 
+					<property name="Precio" type="string"> 
 						<column name="precio"  not-null="true"/>
 					</property>
 					<property name="Descripcion" type="string"> 
@@ -28,7 +28,7 @@
 			
 			
 		  			
-						<many-to-one name="Usuario" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+						<many-to-one name="UsuarioTarifa" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
 								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					

@@ -7,21 +7,18 @@ namespace ArthookGen.ApplicationCore.IRepository.Arthook
 {
 public abstract class GenericUnitOfWorkRepository
 {
-protected IUsuarioRepository usuariorepository;
 protected IPublicacionRepository publicacionrepository;
 protected IPedidoRepository pedidorepository;
 protected ILinPedRepository linpedrepository;
-protected ITarifaRepository tarifarepository;
-protected IDevolucionRepository devolucionrepository;
-protected IMetodoPagoRepository metodopagorepository;
 protected IMensajeRepository mensajerepository;
-protected IValoracionPublicacionRepository valoracionpublicacionrepository;
 protected IValoracionUsuarioRepository valoracionusuariorepository;
+protected IValoracionPublicacionRepository valoracionpublicacionrepository;
+protected IDevolucionRepository devolucionrepository;
+protected ITarifaRepository tarifarepository;
+protected IUsuarioRepository usuariorepository;
+protected IMetodoPagoRepository metodopagorepository;
 
 
-public abstract IUsuarioRepository UsuarioRepository {
-        get;
-}
 public abstract IPublicacionRepository PublicacionRepository {
         get;
 }
@@ -31,22 +28,25 @@ public abstract IPedidoRepository PedidoRepository {
 public abstract ILinPedRepository LinPedRepository {
         get;
 }
-public abstract ITarifaRepository TarifaRepository {
-        get;
-}
-public abstract IDevolucionRepository DevolucionRepository {
-        get;
-}
-public abstract IMetodoPagoRepository MetodoPagoRepository {
-        get;
-}
 public abstract IMensajeRepository MensajeRepository {
+        get;
+}
+public abstract IValoracionUsuarioRepository ValoracionUsuarioRepository {
         get;
 }
 public abstract IValoracionPublicacionRepository ValoracionPublicacionRepository {
         get;
 }
-public abstract IValoracionUsuarioRepository ValoracionUsuarioRepository {
+public abstract IDevolucionRepository DevolucionRepository {
+        get;
+}
+public abstract ITarifaRepository TarifaRepository {
+        get;
+}
+public abstract IUsuarioRepository UsuarioRepository {
+        get;
+}
+public abstract IMetodoPagoRepository MetodoPagoRepository {
         get;
 }
 }

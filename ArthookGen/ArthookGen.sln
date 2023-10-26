@@ -1,13 +1,36 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitializeDB", "InitializeDB\InitializeDB.csproj", "{707DAD7F-5632-4AD7-860E-73A181C52EE2}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InitializeDB", "InitializeDB\InitializeDB.csproj", "{707DAD7F-5632-4AD7-860E-73A181C52EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArthookGen.Infraestructure", "ArthookGen.Infraestructure\ArthookGen.Infraestructure.csproj", "{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArthookGen.Infraestructure", "ArthookGen.Infraestructure\ArthookGen.Infraestructure.csproj", "{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArthookGen.ApplicationCore", "ArthookGen.ApplicationCore\ArthookGen.ApplicationCore.csproj", "{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArthookGen.ApplicationCore", "ArthookGen.ApplicationCore\ArthookGen.ApplicationCore.csproj", "{B4FAE236-63F9-42BB-B7D3-4AACB822A3B1}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{707DAD7F-5632-4AD7-860E-73A181C52EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707DAD7F-5632-4AD7-860E-73A181C52EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707DAD7F-5632-4AD7-860E-73A181C52EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707DAD7F-5632-4AD7-860E-73A181C52EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FAE236-63F9-42BB-B7D3-4AACB822A3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FAE236-63F9-42BB-B7D3-4AACB822A3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FAE236-63F9-42BB-B7D3-4AACB822A3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FAE236-63F9-42BB-B7D3-4AACB822A3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A0333DF-73C9-4489-9166-EC07867B9278}
 	EndGlobalSection
 EndGlobal

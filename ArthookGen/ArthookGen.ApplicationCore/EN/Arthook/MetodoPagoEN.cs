@@ -13,16 +13,9 @@ private int id;
 
 
 /**
- *	Atributo pedido
+ *	Atributo usuarioMetodoPago
  */
-private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedido;
-
-
-
-/**
- *	Atributo usuario
- */
-private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuario;
+private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuarioMetodoPago;
 
 
 
@@ -35,14 +28,8 @@ public virtual int Id {
 
 
 
-public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> Pedido {
-        get { return pedido; } set { pedido = value;  }
-}
-
-
-
-public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> Usuario {
-        get { return usuario; } set { usuario = value;  }
+public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> UsuarioMetodoPago {
+        get { return usuarioMetodoPago; } set { usuarioMetodoPago = value;  }
 }
 
 
@@ -51,33 +38,30 @@ public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Ar
 
 public MetodoPagoEN()
 {
-        pedido = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN>();
-        usuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN>();
+        usuarioMetodoPago = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN>();
 }
 
 
 
-public MetodoPagoEN(int id, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedido, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuario
+public MetodoPagoEN(int id, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuarioMetodoPago
                     )
 {
-        this.init (Id, pedido, usuario);
+        this.init (Id, usuarioMetodoPago);
 }
 
 
 public MetodoPagoEN(MetodoPagoEN metodoPago)
 {
-        this.init (metodoPago.Id, metodoPago.Pedido, metodoPago.Usuario);
+        this.init (metodoPago.Id, metodoPago.UsuarioMetodoPago);
 }
 
 private void init (int id
-                   , System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedido, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuario)
+                   , System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> usuarioMetodoPago)
 {
         this.Id = id;
 
 
-        this.Pedido = pedido;
-
-        this.Usuario = usuario;
+        this.UsuarioMetodoPago = usuarioMetodoPago;
 }
 
 public override bool Equals (object obj)

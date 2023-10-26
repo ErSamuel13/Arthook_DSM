@@ -132,12 +132,12 @@ public int New_ (TarifaEN tarifa)
         try
         {
                 SessionInitializeTransaction ();
-                if (tarifa.Usuario != null) {
+                if (tarifa.UsuarioTarifa != null) {
                         // Argumento OID y no colección.
                         tarifaNH
-                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), tarifa.Usuario.Id);
+                        .UsuarioTarifa = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), tarifa.UsuarioTarifa.Id);
 
-                        tarifaNH.Usuario.Tarifa
+                        tarifaNH.UsuarioTarifa.Tarifa
                         .Add (tarifaNH);
                 }
 

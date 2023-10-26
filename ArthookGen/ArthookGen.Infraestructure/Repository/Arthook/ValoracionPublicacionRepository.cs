@@ -130,20 +130,20 @@ public int New_ (ValoracionPublicacionEN valoracionPublicacion)
         try
         {
                 SessionInitializeTransaction ();
-                if (valoracionPublicacion.Publicacion != null) {
+                if (valoracionPublicacion.UsuarioValoracion != null) {
                         // Argumento OID y no colección.
                         valoracionPublicacionNH
-                        .Publicacion = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), valoracionPublicacion.Publicacion.Id);
+                        .UsuarioValoracion = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionPublicacion.UsuarioValoracion.Id);
 
-                        valoracionPublicacionNH.Publicacion.Valoracion
+                        valoracionPublicacionNH.UsuarioValoracion.ValoracionPublicacionUsuaro
                         .Add (valoracionPublicacionNH);
                 }
-                if (valoracionPublicacion.Usuario != null) {
+                if (valoracionPublicacion.PublicacionValoracion != null) {
                         // Argumento OID y no colección.
                         valoracionPublicacionNH
-                        .Usuario = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionPublicacion.Usuario.Id);
+                        .PublicacionValoracion = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), valoracionPublicacion.PublicacionValoracion.Id);
 
-                        valoracionPublicacionNH.Usuario.Valoracion
+                        valoracionPublicacionNH.PublicacionValoracion.ValoracionPublicacion
                         .Add (valoracionPublicacionNH);
                 }
 

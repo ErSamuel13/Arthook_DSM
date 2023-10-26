@@ -19,15 +19,6 @@ public UnitOfWorkRepository(SessionCPNHibernate session)
         this.session = session;
 }
 
-public override IUsuarioRepository UsuarioRepository {
-        get
-        {
-                this.usuariorepository = new UsuarioRepository ();
-                this.usuariorepository.setSessionCP (session);
-                return this.usuariorepository;
-        }
-}
-
 public override IPublicacionRepository PublicacionRepository {
         get
         {
@@ -55,39 +46,21 @@ public override ILinPedRepository LinPedRepository {
         }
 }
 
-public override ITarifaRepository TarifaRepository {
-        get
-        {
-                this.tarifarepository = new TarifaRepository ();
-                this.tarifarepository.setSessionCP (session);
-                return this.tarifarepository;
-        }
-}
-
-public override IDevolucionRepository DevolucionRepository {
-        get
-        {
-                this.devolucionrepository = new DevolucionRepository ();
-                this.devolucionrepository.setSessionCP (session);
-                return this.devolucionrepository;
-        }
-}
-
-public override IMetodoPagoRepository MetodoPagoRepository {
-        get
-        {
-                this.metodopagorepository = new MetodoPagoRepository ();
-                this.metodopagorepository.setSessionCP (session);
-                return this.metodopagorepository;
-        }
-}
-
 public override IMensajeRepository MensajeRepository {
         get
         {
                 this.mensajerepository = new MensajeRepository ();
                 this.mensajerepository.setSessionCP (session);
                 return this.mensajerepository;
+        }
+}
+
+public override IValoracionUsuarioRepository ValoracionUsuarioRepository {
+        get
+        {
+                this.valoracionusuariorepository = new ValoracionUsuarioRepository ();
+                this.valoracionusuariorepository.setSessionCP (session);
+                return this.valoracionusuariorepository;
         }
 }
 
@@ -100,12 +73,39 @@ public override IValoracionPublicacionRepository ValoracionPublicacionRepository
         }
 }
 
-public override IValoracionUsuarioRepository ValoracionUsuarioRepository {
+public override IDevolucionRepository DevolucionRepository {
         get
         {
-                this.valoracionusuariorepository = new ValoracionUsuarioRepository ();
-                this.valoracionusuariorepository.setSessionCP (session);
-                return this.valoracionusuariorepository;
+                this.devolucionrepository = new DevolucionRepository ();
+                this.devolucionrepository.setSessionCP (session);
+                return this.devolucionrepository;
+        }
+}
+
+public override ITarifaRepository TarifaRepository {
+        get
+        {
+                this.tarifarepository = new TarifaRepository ();
+                this.tarifarepository.setSessionCP (session);
+                return this.tarifarepository;
+        }
+}
+
+public override IUsuarioRepository UsuarioRepository {
+        get
+        {
+                this.usuariorepository = new UsuarioRepository ();
+                this.usuariorepository.setSessionCP (session);
+                return this.usuariorepository;
+        }
+}
+
+public override IMetodoPagoRepository MetodoPagoRepository {
+        get
+        {
+                this.metodopagorepository = new MetodoPagoRepository ();
+                this.metodopagorepository.setSessionCP (session);
+                return this.metodopagorepository;
         }
 }
 }

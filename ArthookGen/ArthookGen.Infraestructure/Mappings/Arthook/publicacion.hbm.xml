@@ -12,7 +12,7 @@
 						</id>
 			
 					
-					<property name="Pvp" type="float"> 
+					<property name="Pvp" type="string"> 
 						<column name="pvp" />
 					</property>
 					<property name="Tipo" > 
@@ -21,16 +21,12 @@
 					<property name="Descripcion" type="string"> 
 						<column name="descripcion"  not-null="true"/>
 					</property>
-					<property name="ValoracionMedia" type="float"> 
-						<column name="valoracionMedia"  not-null="true"/>
-					</property>
 					<property name="Titulo" type="string"> 
 						<column name="titulo"  not-null="true"/>
 					</property>
-					<property name="TipoPubli" > 
-						<column name="tipoPubli" />
+					<property name="TipoPublicacion" > 
+						<column name="tipoPublicacion"  not-null="true"/>
 					</property>
-			
 			
 			
 			
@@ -40,28 +36,27 @@
 			
 			
 		  			
-						<many-to-one name="Usuario" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+						<many-to-one name="UsuarioPublicacion" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
 								<column name="FK_idUsuario_idUsuario"/> 
 						</many-to-one>
 											 					
 			
 		  			
-						<bag name="Valoracion" >
+						<bag name="ValoracionPublicacion" >
 							<key>
 							
 								
-								<column name="FK_idPublicacion_idPublicacion"/>
+								<column name="FK_idPublicacion_idPublicacionValoracion"/>
 					      	</key>
 							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionPublicacionNH"/>
 					    </bag>
 					
 			
 		  			
-					
-							   <one-to-one name="LinPed" class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH" property-ref="Publicacion" />							
-					 
-						
-					
+						<many-to-one name="LinPedPublicacion" class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH" >	
+								<column name="FK_idLinPed_idLinPed"/> 
+						</many-to-one>
+											 					
 					
 					
 					
