@@ -108,9 +108,10 @@ public static void InitializeData ()
                 /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
 
                  int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-               
-
-                Console.WriteLine ("se ha creado");
+                 int usu2 = usuariocen.New_(p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
+                 int usu3 = usuariocen.New_(p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll(0,3);
+                Console.WriteLine ("se han creado todos los usuarios");
                 /*PROTECTED REGION END*/
         }
         catch (Exception ex)
