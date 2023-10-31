@@ -20,14 +20,14 @@
 			
 			
 		  			
-						<many-to-one name="Valorador" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
-								<column name="FK_idUsuario_idUsuario"/> 
+						<many-to-one name="EmVal" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuarioA"/> 
 						</many-to-one>
 											 					
 			
 		  			
-						<many-to-one name="Valorado" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
-								<column name="FK_idUsuario_idUsuario"/> 
+						<many-to-one name="ReVal" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuarioB"/> 
 						</many-to-one>
 											 					
 					

@@ -127,22 +127,6 @@ public int New_ (ValoracionUsuarioEN valoracionUsuario)
         try
         {
                 SessionInitializeTransaction ();
-                if (valoracionUsuario.Valorador != null) {
-                        // Argumento OID y no colección.
-                        valoracionUsuarioNH
-                        .Valorador = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.Valorador.Id);
-
-                        valoracionUsuarioNH.Valorador.ValoracionEmitida
-                        .Add (valoracionUsuarioNH);
-                }
-                if (valoracionUsuario.Valorado != null) {
-                        // Argumento OID y no colección.
-                        valoracionUsuarioNH
-                        .Valorado = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.Valorado.Id);
-
-                        valoracionUsuarioNH.Valorado.ValoracionRecibida
-                        .Add (valoracionUsuarioNH);
-                }
 
                 session.Save (valoracionUsuarioNH);
                 SessionCommit ();

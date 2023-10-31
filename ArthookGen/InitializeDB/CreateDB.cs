@@ -107,9 +107,10 @@ public static void InitializeData ()
 
                 /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
 
-                // You must write the initialisation of the entities inside the PROTECTED comments.
-                // IMPORTANT:please do not delete them.
+                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+               
 
+                Console.WriteLine ("se ha creado");
                 /*PROTECTED REGION END*/
         }
         catch (Exception ex)
