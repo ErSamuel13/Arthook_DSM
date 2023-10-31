@@ -1,7 +1,9 @@
 Arthook/.project
+
 .metadata/
+
 Arthook/generator.log
-ArthookGen/ArthookGenNHibernate/bin/Debug
-ArthookGen/InitializeDB/obj/
+ArthookGen/ArthookGenNHibernate/bin/Debug/
+ArthookGen/ArthookGen.ApplicationCore/obj/
 ArthookGen/.vs/
 ArthookGen/ArthookGen.ApplicationCore/obj/
