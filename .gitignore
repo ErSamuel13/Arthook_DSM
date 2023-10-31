@@ -3,6 +3,13 @@ Arthook/.project
 Arthook/generator.log
 ArthookGen/ArthookGenNHibernate/bin/Debug/
 ArthookGen/ArthookGen.ApplicationCore/obj/
+ArthookGen/InitializeDB/obj
 ArthookGen/InitializeDB/obj/
+ArthookGen/InitializeDB/obj/*
+ArthookGen/InitializeDB/bin
+ArthookGen/InitializeDB/bin/
+ArthookGen/InitializeDB/bin/*
+ArthookGen/.vs
 ArthookGen/.vs/
+ArthookGen/.vs/*
 

@@ -1,0 +1,16 @@
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\hibernate.cfg.xml
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.deps.json
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.dll
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.pdb
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.ApplicationCore.dll
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.ApplicationCore.pdb
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.AssemblyReference.cache
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.AssemblyInfoInputs.cache
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.AssemblyInfo.cs
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.CopyComplete
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.dll
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
+C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.pdb
