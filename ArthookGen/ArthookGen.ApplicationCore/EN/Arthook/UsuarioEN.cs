@@ -76,13 +76,6 @@ private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.V
 
 
 /**
- *	Atributo valoracionRecibida
- */
-private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida;
-
-
-
-/**
  *	Atributo tarifa
  */
 private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> tarifa;
@@ -121,6 +114,13 @@ private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.D
  *	Atributo metodoPagoUsuario
  */
 private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN> metodoPagoUsuario;
+
+
+
+/**
+ *	Atributo valoracionRecibida
+ */
+private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida;
 
 
 
@@ -187,12 +187,6 @@ public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Ar
 
 
 
-public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> ValoracionRecibida {
-        get { return valoracionRecibida; } set { valoracionRecibida = value;  }
-}
-
-
-
 public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> Tarifa {
         get { return tarifa; } set { tarifa = value;  }
 }
@@ -229,6 +223,12 @@ public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Ar
 
 
 
+public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> ValoracionRecibida {
+        get { return valoracionRecibida; } set { valoracionRecibida = value;  }
+}
+
+
+
 
 
 public UsuarioEN()
@@ -236,31 +236,31 @@ public UsuarioEN()
         mensajeE = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
         mensajeR = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN>();
         valoracionEmitida = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN>();
-        valoracionRecibida = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN>();
         tarifa = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN>();
         publicacionUsuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN>();
         valoracionPublicacionUsuaro = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN>();
         pedidoUsuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN>();
         devolucionUsuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN>();
         metodoPagoUsuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN>();
+        valoracionRecibida = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN>();
 }
 
 
 
-public UsuarioEN(int id, String pass, string nombre, string email, string nickname, string valoracionMedia, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum tipoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeE, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeR, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionEmitida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> tarifa, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacionUsuaro, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedidoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN> devolucionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN> metodoPagoUsuario
+public UsuarioEN(int id, String pass, string nombre, string email, string nickname, string valoracionMedia, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum tipoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeE, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeR, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionEmitida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> tarifa, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacionUsuaro, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedidoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN> devolucionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN> metodoPagoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida
                  )
 {
-        this.init (Id, pass, nombre, email, nickname, valoracionMedia, tipoUsuario, mensajeE, mensajeR, valoracionEmitida, valoracionRecibida, tarifa, publicacionUsuario, valoracionPublicacionUsuaro, pedidoUsuario, devolucionUsuario, metodoPagoUsuario);
+        this.init (Id, pass, nombre, email, nickname, valoracionMedia, tipoUsuario, mensajeE, mensajeR, valoracionEmitida, tarifa, publicacionUsuario, valoracionPublicacionUsuaro, pedidoUsuario, devolucionUsuario, metodoPagoUsuario, valoracionRecibida);
 }
 
 
 public UsuarioEN(UsuarioEN usuario)
 {
-        this.init (usuario.Id, usuario.Pass, usuario.Nombre, usuario.Email, usuario.Nickname, usuario.ValoracionMedia, usuario.TipoUsuario, usuario.MensajeE, usuario.MensajeR, usuario.ValoracionEmitida, usuario.ValoracionRecibida, usuario.Tarifa, usuario.PublicacionUsuario, usuario.ValoracionPublicacionUsuaro, usuario.PedidoUsuario, usuario.DevolucionUsuario, usuario.MetodoPagoUsuario);
+        this.init (usuario.Id, usuario.Pass, usuario.Nombre, usuario.Email, usuario.Nickname, usuario.ValoracionMedia, usuario.TipoUsuario, usuario.MensajeE, usuario.MensajeR, usuario.ValoracionEmitida, usuario.Tarifa, usuario.PublicacionUsuario, usuario.ValoracionPublicacionUsuaro, usuario.PedidoUsuario, usuario.DevolucionUsuario, usuario.MetodoPagoUsuario, usuario.ValoracionRecibida);
 }
 
 private void init (int id
-                   , String pass, string nombre, string email, string nickname, string valoracionMedia, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum tipoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeE, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeR, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionEmitida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> tarifa, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacionUsuaro, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedidoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN> devolucionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN> metodoPagoUsuario)
+                   , String pass, string nombre, string email, string nickname, string valoracionMedia, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum tipoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeE, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MensajeEN> mensajeR, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionEmitida, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.TarifaEN> tarifa, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacionUsuaro, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> pedidoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN> devolucionUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.MetodoPagoEN> metodoPagoUsuario, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> valoracionRecibida)
 {
         this.Id = id;
 
@@ -283,8 +283,6 @@ private void init (int id
 
         this.ValoracionEmitida = valoracionEmitida;
 
-        this.ValoracionRecibida = valoracionRecibida;
-
         this.Tarifa = tarifa;
 
         this.PublicacionUsuario = publicacionUsuario;
@@ -296,6 +294,8 @@ private void init (int id
         this.DevolucionUsuario = devolucionUsuario;
 
         this.MetodoPagoUsuario = metodoPagoUsuario;
+
+        this.ValoracionRecibida = valoracionRecibida;
 }
 
 public override bool Equals (object obj)

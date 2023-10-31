@@ -66,18 +66,7 @@
 							<key>
 							
 								
-								<column name="FK_idUsuario_idUsuario"/>
-					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
-					    </bag>
-					
-			
-		  			
-						<bag name="ValoracionRecibida" >
-							<key>
-							
-								
-								<column name="FK_idUsuario_idUsuario"/>
+								<column name="FK_idUsuario_idUsuarioA"/>
 					      	</key>
 							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
 					    </bag>
@@ -148,6 +137,17 @@
 									<column name="FK_idMetodoPago_idMetodoPago"/> 
       						</many-to-many>
     					</bag>
+			
+		  			
+						<bag name="ValoracionRecibida" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuarioB"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
+					    </bag>
+					
 					
 					
 					
