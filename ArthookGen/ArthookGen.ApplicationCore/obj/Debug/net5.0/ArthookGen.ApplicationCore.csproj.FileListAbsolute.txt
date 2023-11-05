@@ -21,4 +21,3 @@ C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ref\ArthookGen.ApplicationCore.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.pdb
-C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.csproj.AssemblyReference.cache

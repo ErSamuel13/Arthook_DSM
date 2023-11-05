@@ -12,9 +12,6 @@
 						</id>
 			
 					
-					<property name="Pass" type="string"> 
-						<column name="pass"  not-null="true"/>
-					</property>
 					<property name="Nombre" type="string"> 
 						<column name="nombre"  not-null="true"/>
 					</property>
@@ -30,7 +27,9 @@
 					<property name="TipoUsuario" > 
 						<column name="tipoUsuario"  not-null="true"/>
 					</property>
-			
+					<property name="Pass" type="string"> 
+						<column name="pass"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -148,6 +147,7 @@
 							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.ValoracionUsuarioNH"/>
 					    </bag>
 					
+			
 					
 					
 					

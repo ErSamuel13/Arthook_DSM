@@ -108,46 +108,48 @@ public static void InitializeData ()
                 /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
 
                 /*creacion usuarios*/
-                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                 int usu2 = usuariocen.New_(p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
-                 int usu3 = usuariocen.New_(p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll(0,3);
-                for(int i=0; i < 3; i++)
-                {
-                    Console.WriteLine(listaUsuarios[i].Nombre);
+                int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
+                int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 3);
+                for (int i = 0; i < 3; i++) {
+                        Console.WriteLine (listaUsuarios [i].Nombre);
                 }
                 /*fin creacion usuarios*/
 
                 /*modificacion usuarios*/
-
-                usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                IList<UsuarioEN> listaUsuariosm = usuariocen.ReadAll(0, 3);
-                for (int i = 0; i < 3; i++)
-                {
-                    Console.WriteLine(listaUsuariosm[i].Nombre);
+                usuariocen.Modify (p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                IList<UsuarioEN> listaUsuariosm = usuariocen.ReadAll (0, 3);
+                for (int i = 0; i < 3; i++) {
+                        Console.WriteLine (listaUsuariosm [i].Nombre);
                 }
                 /* fin modificacion usuarios*/
 
                 /*destruccion usuarios*/
-                usuariocen.Destroy(usu1);
-                IList<UsuarioEN> listaUsuariosd= usuariocen.ReadAll(0, 2);
-                for (int i = 0; i < 2; i++)
-                {
-                    Console.WriteLine(listaUsuariosd[i].Nombre);
+                usuariocen.Destroy (usu1);
+                IList<UsuarioEN> listaUsuariosd = usuariocen.ReadAll (0, 2);
+                for (int i = 0; i < 2; i++) {
+                        Console.WriteLine (listaUsuariosd [i].Nombre);
                 }
                 /* fin destruccion usuarios*/
 
                 /*lectura un usuario*/
-                UsuarioEN listaUsuariosr =usuariocen.ReadOID(usu2);
+                UsuarioEN listaUsuariosr = usuariocen.ReadOID (usu2);
 
-                Console.WriteLine(listaUsuariosr.Nombre);
-                Console.WriteLine(listaUsuariosr.Pass);
-                Console.WriteLine(listaUsuariosr.Email);
+                Console.WriteLine (listaUsuariosr.Nombre);
+                Console.WriteLine (listaUsuariosr.Pass);
+                Console.WriteLine (listaUsuariosr.Email);
                 /*fin lectura un usuario*/
 
+                /*Login*/
+                if (usuariocen.Login (usu2, "mry") != null) {
+                        Console.WriteLine ("Login Correcto");
+                }
+                /*fin de Login*/
+
                 /*PROTECTED REGION END*/
-            }
-            catch (Exception ex)
+        }
+        catch (Exception ex)
         {
                 System.Console.WriteLine (ex.InnerException);
                 throw;
