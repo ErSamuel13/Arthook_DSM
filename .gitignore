@@ -1,0 +1,16 @@
+Arthook/.project
+.metadata/
+Arthook/generator.log
+ArthookGen/ArthookGenNHibernate/bin/Debug/
+ArthookGen/ArthookGen.ApplicationCore/obj/
+ArthookGen/InitializeDB/obj
+ArthookGen/InitializeDB/obj/
+ArthookGen/InitializeDB/obj/*
+ArthookGen/InitializeDB/bin
+ArthookGen/InitializeDB/bin/
+ArthookGen/InitializeDB/bin/*
+ArthookGen/.vs
+ArthookGen/.vs/
+ArthookGen/.vs/*
+ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.AssemblyReference.cache
+*.cache
