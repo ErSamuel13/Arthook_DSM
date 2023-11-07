@@ -12,4 +12,4 @@ ArthookGen/InitializeDB/bin/*
 ArthookGen/.vs
 ArthookGen/.vs/
 ArthookGen/.vs/*
-
+ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.AssemblyReference.cache
