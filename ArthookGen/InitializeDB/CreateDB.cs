@@ -303,6 +303,16 @@ public static void InitializeData ()
                 }
                 Console.WriteLine("");
 
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// VAMOS A CREAR LAS MENSAJES Y VALORACIONUSUARIO //");
+                Console.WriteLine("// DADO QUE FUNCIONAN IGUAL Y SIMPLEMENTE CAMBIAN LOS ATRIBUTOS, SOLO HAREMOS LA COMPOROBACION DE VALORACIONUSUARIO//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+
+                valoracionusuariocen.New_(p_puntuacion: "5");
+
+
+
+
 
 
 
