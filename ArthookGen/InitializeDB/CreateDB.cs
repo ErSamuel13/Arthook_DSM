@@ -106,16 +106,28 @@ public static void InitializeData ()
 
 
                 /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
-
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// VAMOS A CREAR LOS USUARIO //");
+                Console.WriteLine("// --------------------------//");
                 /*creacion usuarios*/
                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
                 int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("");
+
                 IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 3);
                 for (int i = 0; i < 3; i++) {
-                        Console.WriteLine (listaUsuarios [i].Nombre);
+                        Console.WriteLine (listaUsuarios[i].Id.ToString() + " " +listaUsuarios [i].Nombre);
                 }
                 /*fin creacion usuarios*/
+                Console.WriteLine("");
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("");
 
                 /*modificacion usuarios*/
                 usuariocen.Modify (p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
@@ -124,7 +136,11 @@ public static void InitializeData ()
                         Console.WriteLine (listaUsuariosm [i].Nombre);
                 }
                 /* fin modificacion usuarios*/
-
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
                 /*destruccion usuarios*/
                 usuariocen.Destroy (usu1);
                 IList<UsuarioEN> listaUsuariosd = usuariocen.ReadAll (0, 2);
@@ -132,7 +148,11 @@ public static void InitializeData ()
                         Console.WriteLine (listaUsuariosd [i].Nombre);
                 }
                 /* fin destruccion usuarios*/
-
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
                 /*lectura un usuario*/
                 UsuarioEN listaUsuariosr = usuariocen.ReadOID (usu2);
 
@@ -140,15 +160,43 @@ public static void InitializeData ()
                 Console.WriteLine (listaUsuariosr.Pass);
                 Console.WriteLine (listaUsuariosr.Email);
                 /*fin lectura un usuario*/
-
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
                 /*Login*/
                 if (usuariocen.Login (usu2, "mry") != null) {
                         Console.WriteLine ("Login Correcto");
                 }
                 /*fin de Login*/
 
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// VAMOS A CREAR LOS PUBLIACIONES //");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+
+
+                int publicacionId1 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto no a la venta", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu2);  ;
+                int publicacionId2 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto a la venta", p_titulo: "Foto2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Producto, p_usuarioPublicacion: usu2);
+
+                int publicacionId3 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una audio", p_titulo: "Audio1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId4 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una video", p_titulo: "Video1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+
+                int publicacionId5 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una audio", p_titulo: "Audio2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<PublicacionEN> listaPublicacion = publicacioncen.ReadAll(0, 6);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS PUBLICACIONES");
+                foreach(PublicacionEN p in listaPublicacion)
+                {
+                    Console.WriteLine( p.Titulo +" " + p.Descripcion + " " + p.Tipo + " " + p.TipoPublicacion);
+                }
+
                 /*PROTECTED REGION END*/
-        }
+            }
         catch (Exception ex)
         {
                 System.Console.WriteLine (ex.InnerException);

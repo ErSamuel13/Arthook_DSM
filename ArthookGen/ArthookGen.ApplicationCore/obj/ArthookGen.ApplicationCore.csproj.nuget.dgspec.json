@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {}
+    "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {}
   },
   "projects": {
-    "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
+    "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
         "projectName": "ArthookGen.ApplicationCore",
-        "projectPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\mgeg2\\.nuget\\packages\\",
-        "outputPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
+        "projectPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mgeg2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

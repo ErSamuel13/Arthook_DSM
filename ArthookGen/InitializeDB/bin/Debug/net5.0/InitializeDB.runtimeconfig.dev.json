@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\mgeg2\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mgeg2\\.nuget\\packages"
+      "C:\\Users\\Samuel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Samuel\\.nuget\\packages"
     ]
   }
 }
