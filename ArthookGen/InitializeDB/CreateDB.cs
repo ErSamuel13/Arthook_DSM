@@ -257,6 +257,51 @@ public static void InitializeData ()
                     Console.WriteLine(p.Puntuacion + " " + p.Comentario);
                 }
                 Console.WriteLine("");
+                Console.WriteLine(""); 
+                Console.WriteLine(""); 
+                Console.WriteLine("");
+
+
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// VAMOS A CREAR LAS TARIFAS //");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+
+                int tarifa1 = tarifacen.New_(p_precio: "50", p_descripcion: "esto es una descripcion de una tarifa1", p_nombre: "tarifa 1", usu2);
+                int tarifa2 = tarifacen.New_(p_precio: "40", p_descripcion: "esto es una descripcion de una tarifa2", p_nombre: "tarifa 2", usu2);
+                int tarifa3 = tarifacen.New_(p_precio: "100", p_descripcion: "esto es una descripcion de una tarifa3", p_nombre: "tarifa 3", usu2);
+                int tarifa4 = tarifacen.New_(p_precio: "20", p_descripcion: "esto es una descripcion de una tarifa4", p_nombre: "tarifa 4", usu2);
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<TarifaEN> listaTarifas = tarifacen.ReadAll(0, 4);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS TARIFAS");
+                foreach (TarifaEN p in listaTarifas)
+                {
+                    Console.WriteLine(p.Precio + " " + p.Descripcion + " " + p.Nombre);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                tarifacen.Modify(tarifa1,p_precio: "50", p_descripcion: "esta descripcion deberia cambiar", p_nombre: "tarifa 1");
+                TarifaEN tarifaen = tarifacen.ReadOID(tarifa1);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                Console.WriteLine(tarifaen.Precio + " " + tarifaen.Descripcion + " " + tarifaen.Nombre);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                tarifacen.Destroy(tarifa1);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                listaTarifas = tarifacen.ReadAll(0, 4);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS TARIFAS");
+                foreach (TarifaEN p in listaTarifas)
+                {
+                    Console.WriteLine(p.Precio + " " + p.Descripcion + " " + p.Nombre);
+                }
+                Console.WriteLine("");
 
 
 
