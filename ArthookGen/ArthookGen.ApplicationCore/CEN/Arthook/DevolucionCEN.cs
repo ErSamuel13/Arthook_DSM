@@ -30,7 +30,7 @@ public IDevolucionRepository get_IDevolucionRepository ()
         return this._IDevolucionRepository;
 }
 
-public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, string p_fecha, int p_usuarioDevolucion, int p_pedidoDevolucion)
+public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, Nullable<DateTime> p_fecha, int p_usuarioDevolucion, int p_pedidoDevolucion)
 {
         DevolucionEN devolucionEN = null;
         int oid;
@@ -65,7 +65,7 @@ public int New_ (string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Art
         return oid;
 }
 
-public void Modify (int p_Devolucion_OID, string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, string p_fecha)
+public void Modify (int p_Devolucion_OID, string p_descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum p_motivo, Nullable<DateTime> p_fecha)
 {
         DevolucionEN devolucionEN = null;
 

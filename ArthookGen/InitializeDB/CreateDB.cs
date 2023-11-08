@@ -301,44 +301,117 @@ public static void InitializeData ()
                 Console.WriteLine ("// VAMOS A CREAR PEDIDOS //");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
 
-                int pedido1 = pedidocen.New_(p_fecha: DateTime.Now, p_precioTotal: 10, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enCarrito, p_usuarioPedido: usu2);
-                int pedido2 = pedidocen.New_(p_fecha: DateTime.Now, p_precioTotal: 20, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado, p_usuarioPedido: usu2);
-                int pedido3 = pedidocen.New_(p_fecha: DateTime.Now, p_precioTotal: 30, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.pendiente, p_usuarioPedido: usu2);
-                int pedido4 = pedidocen.New_(p_fecha: DateTime.Now, p_precioTotal: 40, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.devuelto, p_usuarioPedido: usu2);
-                int pedido5 = pedidocen.New_(p_fecha: DateTime.Now, p_precioTotal: 50, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.cancelado, p_usuarioPedido: usu2);
+                int pedido1 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 10, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enCarrito, p_usuarioPedido: usu2);
+                int pedido2 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 20, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado, p_usuarioPedido: usu2);
+                int pedido3 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 30, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.pendiente, p_usuarioPedido: usu2);
+                int pedido4 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 40, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.devuelto, p_usuarioPedido: usu2);
+                int pedido5 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 50, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.cancelado, p_usuarioPedido: usu2);
+
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<PedidoEN> listaPedidos = pedidocen.ReadAll (0, 5);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LPOS PEDIDOS");
+                foreach (PedidoEN p in listaPedidos) {
+                        Console.WriteLine (p.Fecha + " " + p.PrecioTotal + " " + p.Estado);
+                }
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                pedidocen.Modify (pedido1, p_fecha: pedidocen.ReadOID (pedido1).Fecha, p_precioTotal: 100, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                PedidoEN pedidoen = pedidocen.ReadOID (pedido1);
+                Console.WriteLine (""); Console.WriteLine ("");
+                Console.WriteLine (pedidoen.Fecha + " " + pedidoen.PrecioTotal + " " + pedidoen.Estado);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                pedidocen.Destroy (pedido1);
+                listaPedidos = pedidocen.ReadAll (0, 4);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LOS PEDIDOS");
+                foreach (PedidoEN p in listaPedidos) {
+                        Console.WriteLine (p.Fecha + " " + p.PrecioTotal + " " + p.Estado);
+                }
+
+
+
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("// VAMOS A CREAR LINEAS DE PEDIDO //");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+
+                int linped1 = linpedcen.New_ (p_cantidad: 1, p_precio: 10, p_pedidoLinPed: pedido2);
+                int linped2 = linpedcen.New_ (p_cantidad: 2, p_precio: 20, p_pedidoLinPed: pedido2);
+                int linped3 = linpedcen.New_ (p_cantidad: 3, p_precio: 30, p_pedidoLinPed: pedido2);
+                int linped4 = linpedcen.New_ (p_cantidad: 4, p_precio: 40, p_pedidoLinPed: pedido2);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<LinPedEN> listalineas = linpedcen.ReadAll (0, 4);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
+                foreach (LinPedEN p in listalineas) {
+                        Console.WriteLine (p.Cantidad + " " + p.Precio);
+                }
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                linpedcen.Modify (linped1, p_cantidad: 5, p_precio: 100);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                LinPedEN lineaen = linpedcen.ReadOID (linped1);
+                Console.WriteLine (""); Console.WriteLine ("");
+                Console.WriteLine (lineaen.Cantidad + " " + lineaen.Precio);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                linpedcen.Destroy (linped1);
+                listalineas = linpedcen.ReadAll (0, 3);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LAS LINEAS DE PEDIDOS");
+                foreach (LinPedEN p in listalineas) {
+                        Console.WriteLine (p.Cantidad + " " + p.Precio);
+                }
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("// VAMOS A CREAR DEVOLUCION //");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+
+                int dev1 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion1", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido2);
+                int dev2 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion2", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido3);
+                int dev3 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion3", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido4);
+                int dev4 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion4", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.otros, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido5);
 
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                IList<PedidoEN> listaPedidos = pedidocen.ReadAll(0, 5);
+                IList<DevolucionEN> listadev = devolucioncen.ReadAll(0, 4);
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LAS TARIFAS");
-                foreach (PedidoEN p in listaPedidos)
+                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                foreach (DevolucionEN p in listadev)
                 {
-                    Console.WriteLine(p.Fecha + " " + p.PrecioTotal + " " + p.Estado);
+                    Console.WriteLine(p.Descripcion + " " + p.Fecha + " " + p.Motivo);
                 }
                 Console.WriteLine("");
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("");
-                pedidocen.Modify(pedido1, p_fecha: pedidocen.ReadOID(pedido1).Fecha, p_precioTotal: 100, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado);
+                devolucioncen.Modify(dev1, p_descripcion: "Esta descripcion cambia", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now);
                 Console.WriteLine("");
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("");
-                PedidoEN pedidoen = pedidocen.ReadOID(pedido1);
+                DevolucionEN deven = devolucioncen.ReadOID(dev1);
                 Console.WriteLine(""); Console.WriteLine("");
-                Console.WriteLine(pedidoen.Fecha + " " + pedidoen.PrecioTotal + " " + pedidoen.Estado);
+                Console.WriteLine(deven.Descripcion + " " + deven.Fecha + " " + deven.Motivo);
                 Console.WriteLine("");
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("");
-                pedidocen.Destroy(pedido1);
-                listaPedidos = pedidocen.ReadAll(0, 4);
+                devolucioncen.Destroy(dev1);
+                listadev = devolucioncen.ReadAll(0, 4);
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LAS TARIFAS");
-                foreach (PedidoEN p in listaPedidos)
+                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
+                foreach (DevolucionEN p in listadev)
                 {
-                    Console.WriteLine(p.Fecha + " " + p.PrecioTotal + " " + p.Estado);
+                    Console.WriteLine(p.Descripcion + " " + p.Fecha + " " + p.Motivo);
                 }
-
-
-
 
 
 

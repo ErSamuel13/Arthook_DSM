@@ -18,7 +18,7 @@
 					<property name="Motivo" > 
 						<column name="motivo"  not-null="true"/>
 					</property>
-					<property name="Fecha" type="string"> 
+					<property name="Fecha" type="date"> 
 						<column name="fecha"  not-null="true"/>
 					</property>
 			

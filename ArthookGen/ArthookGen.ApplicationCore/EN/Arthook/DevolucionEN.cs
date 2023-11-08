@@ -29,7 +29,7 @@ private ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo;
 /**
  *	Atributo fecha
  */
-private string fecha;
+private Nullable<DateTime> fecha;
 
 
 
@@ -68,7 +68,7 @@ public virtual ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum Motivo {
 
 
 
-public virtual string Fecha {
+public virtual Nullable<DateTime> Fecha {
         get { return fecha; } set { fecha = value;  }
 }
 
@@ -94,7 +94,7 @@ public DevolucionEN()
 
 
 
-public DevolucionEN(int id, string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, string fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion
+public DevolucionEN(int id, string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, Nullable<DateTime> fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion
                     )
 {
         this.init (Id, descripcion, motivo, fecha, usuarioDevolucion, pedidoDevolucion);
@@ -107,7 +107,7 @@ public DevolucionEN(DevolucionEN devolucion)
 }
 
 private void init (int id
-                   , string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, string fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion)
+                   , string descripcion, ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum motivo, Nullable<DateTime> fecha, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioDevolucion, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoDevolucion)
 {
         this.Id = id;
 
