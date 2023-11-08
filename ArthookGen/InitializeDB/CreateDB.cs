@@ -228,7 +228,7 @@ public static void InitializeData ()
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 IList<ValoracionPublicacionEN> listaValoracionPublicacion = valoracionpublicacioncen.ReadAll (0, 4);
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine ("MOSTRAMOS LAS VALORACIOENS");
+                Console.WriteLine ("MOSTRAMOS LAS VALORACIONES");
                 foreach (ValoracionPublicacionEN p in listaValoracionPublicacion) {
                         Console.WriteLine (p.Puntuacion + " " + p.Comentario);
                 }
@@ -248,7 +248,7 @@ public static void InitializeData ()
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
                 listaValoracionPublicacion = valoracionpublicacioncen.ReadAll (0, 3);
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine ("MOSTRAMOS LAS PUBLICACIONES");
+                Console.WriteLine ("MOSTRAMOS LAS VALORACIONES");
                 foreach (ValoracionPublicacionEN p in listaValoracionPublicacion) {
                         Console.WriteLine (p.Puntuacion + " " + p.Comentario);
                 }
@@ -413,7 +413,46 @@ public static void InitializeData ()
                     Console.WriteLine(p.Descripcion + " " + p.Fecha + " " + p.Motivo);
                 }
 
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// VAMOS A CREAR MENSAJES Y VALORACIONES USUARIO //");
+                Console.WriteLine("// DADO QUE TIENEN EL MISMO TIPO DE RELACION, SOLO COMPROBARE UNO DE LOS DOS //");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
 
+                int valusu1 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
+                int valusu2 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
+                int valusu3 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
+               
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<ValoracionUsuarioEN> listavalusu = valoracionusuariocen.ReadAll(0, 3);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                foreach (ValoracionUsuarioEN p in listavalusu)
+                {
+                    Console.WriteLine(p.Puntuacion);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                valoracionusuariocen.Modify(valusu1, p_puntuacion: 1);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                ValoracionUsuarioEN valusuen = valoracionusuariocen.ReadOID(valusu1);
+                Console.WriteLine(""); Console.WriteLine("");
+                Console.WriteLine(valusuen.Puntuacion);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                valoracionusuariocen.Destroy(valusu1);
+                listavalusu = valoracionusuariocen.ReadAll(0, 3);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                foreach (ValoracionUsuarioEN p in listavalusu)
+                {
+                    Console.WriteLine(p.Puntuacion);
+                }
 
 
 

@@ -30,7 +30,7 @@ public IValoracionUsuarioRepository get_IValoracionUsuarioRepository ()
         return this._IValoracionUsuarioRepository;
 }
 
-public int New_ (float p_puntuacion)
+public int New_ (float p_puntuacion, int p_emVal, int p_reVal)
 {
         ValoracionUsuarioEN valoracionUsuarioEN = null;
         int oid;
@@ -38,6 +38,22 @@ public int New_ (float p_puntuacion)
         //Initialized ValoracionUsuarioEN
         valoracionUsuarioEN = new ValoracionUsuarioEN ();
         valoracionUsuarioEN.Puntuacion = p_puntuacion;
+
+
+        if (p_emVal != -1) {
+                // El argumento p_emVal -> Property emVal es oid = false
+                // Lista de oids id
+                valoracionUsuarioEN.EmVal = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                valoracionUsuarioEN.EmVal.Id = p_emVal;
+        }
+
+
+        if (p_reVal != -1) {
+                // El argumento p_reVal -> Property reVal es oid = false
+                // Lista de oids id
+                valoracionUsuarioEN.ReVal = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                valoracionUsuarioEN.ReVal.Id = p_reVal;
+        }
 
 
 
