@@ -5104,3 +5104,326 @@ ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestruc
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:03.506
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:03.521
+!MESSAGE An internal error occurred during: "Updating Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:472)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$10(IndexDiffCacheEntry.java:466)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:412)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:03.549
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:03.678
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 4 2023-11-08 15:23:14.068
+!MESSAGE Plug-in 'es.ua.dlsi.ooh.persistence.nHibernate.generator' contributed an invalid Menu Extension (Path: 'es.ua.dlsi.ooh.generator.menu' is invalid): es.ua.dlsi.ooh.persistence.nHibernate.generator.copyLibrariesAction
+
+!ENTRY org.eclipse.ui 4 4 2023-11-08 15:23:14.068
+!MESSAGE Plug-in 'es.ua.dlsi.ooh.persistence.nHibernate.generator' contributed an invalid Menu Extension (Path: 'es.ua.dlsi.ooh.generator.menu' is invalid): es.ua.dlsi.ooh.persistence.nHibernate.generator.copyAction
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:19.041
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:19.045
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:19.049
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:19.493
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-08 15:23:24.351
+!MESSAGE An internal error occurred during: "Computing Git status for repository Arthook_DSM".
+!STACK 0
+java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 39
+ArthookGen\ArthookGen\.Infraestructure\obj\Debug\net5\.0\ArthookGen\.Infraestructure\.csproj\.AssemblyReference\.cache
+                                       ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.atom(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:352)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:66)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:145)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:127)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:112)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:114)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1215)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1236)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:648)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:616)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:599)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:586)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:157)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:572)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

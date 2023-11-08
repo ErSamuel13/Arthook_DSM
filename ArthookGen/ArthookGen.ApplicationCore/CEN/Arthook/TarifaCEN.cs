@@ -30,7 +30,7 @@ public ITarifaRepository get_ITarifaRepository ()
         return this._ITarifaRepository;
 }
 
-public int New_ (string p_precio, string p_descripcion, string p_nombre, int p_usuarioTarifa)
+public int New_ (float p_precio, string p_descripcion, string p_nombre, int p_usuarioTarifa)
 {
         TarifaEN tarifaEN = null;
         int oid;
@@ -57,7 +57,7 @@ public int New_ (string p_precio, string p_descripcion, string p_nombre, int p_u
         return oid;
 }
 
-public void Modify (int p_Tarifa_OID, string p_precio, string p_descripcion, string p_nombre)
+public void Modify (int p_Tarifa_OID, float p_precio, string p_descripcion, string p_nombre)
 {
         TarifaEN tarifaEN = null;
 

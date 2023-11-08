@@ -30,7 +30,7 @@ public IValoracionUsuarioRepository get_IValoracionUsuarioRepository ()
         return this._IValoracionUsuarioRepository;
 }
 
-public int New_ (string p_puntuacion)
+public int New_ (float p_puntuacion)
 {
         ValoracionUsuarioEN valoracionUsuarioEN = null;
         int oid;
@@ -45,7 +45,7 @@ public int New_ (string p_puntuacion)
         return oid;
 }
 
-public void Modify (int p_ValoracionUsuario_OID, string p_puntuacion)
+public void Modify (int p_ValoracionUsuario_OID, float p_puntuacion)
 {
         ValoracionUsuarioEN valoracionUsuarioEN = null;
 

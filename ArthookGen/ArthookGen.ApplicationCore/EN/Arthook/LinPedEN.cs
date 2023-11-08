@@ -15,14 +15,14 @@ private int id;
 /**
  *	Atributo cantidad
  */
-private string cantidad;
+private int cantidad;
 
 
 
 /**
  *	Atributo precio
  */
-private string precio;
+private float precio;
 
 
 
@@ -49,13 +49,13 @@ public virtual int Id {
 
 
 
-public virtual string Cantidad {
+public virtual int Cantidad {
         get { return cantidad; } set { cantidad = value;  }
 }
 
 
 
-public virtual string Precio {
+public virtual float Precio {
         get { return precio; } set { precio = value;  }
 }
 
@@ -82,7 +82,7 @@ public LinPedEN()
 
 
 
-public LinPedEN(int id, string cantidad, string precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed
+public LinPedEN(int id, int cantidad, float precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed
                 )
 {
         this.init (Id, cantidad, precio, pedidoLinPed, publicacionLinPed);
@@ -95,7 +95,7 @@ public LinPedEN(LinPedEN linPed)
 }
 
 private void init (int id
-                   , string cantidad, string precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed)
+                   , int cantidad, float precio, ArthookGen.ApplicationCore.EN.Arthook.PedidoEN pedidoLinPed, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> publicacionLinPed)
 {
         this.Id = id;
 
