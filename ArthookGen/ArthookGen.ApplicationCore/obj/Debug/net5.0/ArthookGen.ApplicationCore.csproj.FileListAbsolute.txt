@@ -20,3 +20,15 @@ C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ref\ArthookGen.ApplicationCore.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.pdb
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\bin\Debug\net5.0\ArthookGen.ApplicationCore.deps.json
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\bin\Debug\net5.0\ArthookGen.ApplicationCore.dll
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\bin\Debug\net5.0\ref\ArthookGen.ApplicationCore.dll
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\bin\Debug\net5.0\ArthookGen.ApplicationCore.pdb
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.csproj.AssemblyReference.cache
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.AssemblyInfoInputs.cache
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.AssemblyInfo.cs
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.dll
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ref\ArthookGen.ApplicationCore.dll
+C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.ApplicationCore\obj\Debug\net5.0\ArthookGen.ApplicationCore.pdb

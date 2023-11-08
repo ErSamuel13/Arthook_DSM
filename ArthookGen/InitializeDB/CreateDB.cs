@@ -106,16 +106,17 @@ public static void InitializeData ()
 
 
                 /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
-                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("// VAMOS A CREAR LOS USUARIO //");
-                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 /*creacion usuarios*/
                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
                 int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                Console.WriteLine("// --------------------------//");
-                Console.WriteLine("// --------------------------//");
-                Console.WriteLine("// --------------------------//");
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("");
 
                 IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 3);
@@ -124,9 +125,9 @@ public static void InitializeData ()
                 }
                 /*fin creacion usuarios*/
                 Console.WriteLine("");
-                Console.WriteLine("// --------------------------//");
-                Console.WriteLine("// --------------------------//");
-                Console.WriteLine("// --------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine("");
 
                 /*modificacion usuarios*/
@@ -180,11 +181,11 @@ public static void InitializeData ()
                 int publicacionId1 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto no a la venta", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu2);  ;
                 int publicacionId2 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto a la venta", p_titulo: "Foto2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Producto, p_usuarioPublicacion: usu2);
 
-                int publicacionId3 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una audio", p_titulo: "Audio1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                int publicacionId4 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una video", p_titulo: "Video1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId3 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId4 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
 
-                int publicacionId5 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una audio", p_titulo: "Audio2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId5 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
 
                 Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 IList<PublicacionEN> listaPublicacion = publicacioncen.ReadAll(0, 6);
@@ -194,10 +195,88 @@ public static void InitializeData ()
                 {
                     Console.WriteLine( p.Titulo +" " + p.Descripcion + " " + p.Tipo + " " + p.TipoPublicacion);
                 }
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                publicacioncen.Modify(publicacionId1, p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "Esta descripccion a cambiado", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion);
+                PublicacionEN publicacionen = publicacioncen.ReadOID(publicacionId1);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                Console.WriteLine(publicacionen.Descripcion);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                publicacioncen.Destroy(publicacionId1);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                listaPublicacion = publicacioncen.ReadAll(0, 6);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS PUBLICACIONES");
+                foreach (PublicacionEN p in listaPublicacion)
+                {
+                    Console.WriteLine(p.Titulo + " " + p.Descripcion + " " + p.Tipo + " " + p.TipoPublicacion);
+                }
+                Console.WriteLine("");
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// VAMOS A CREAR LOS VALORACIONES A PUBLICACIONES //");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+
+                int valpub1 = valoracionpublicacioncen.New_(p_puntuacion: "5", p_comentario: "esto es un comentario1", p_usuarioValoracion: usu2, p_publicacionValoracion: publicacionId2);
+                int valpub2 = valoracionpublicacioncen.New_(p_puntuacion: "4", p_comentario: "esto es un comentario2", p_usuarioValoracion: usu2, p_publicacionValoracion: publicacionId2);
+                int valpub3 = valoracionpublicacioncen.New_(p_puntuacion: "3", p_comentario: "esto es un comentario3", p_usuarioValoracion: usu2, p_publicacionValoracion: publicacionId2);
+                int valpub4 = valoracionpublicacioncen.New_(p_puntuacion: "2", p_comentario: "esto es un comentario4", p_usuarioValoracion: usu2, p_publicacionValoracion: publicacionId2);
+
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<ValoracionPublicacionEN> listaValoracionPublicacion = valoracionpublicacioncen.ReadAll(0, 4);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS VALORACIOENS");
+                foreach (ValoracionPublicacionEN p in listaValoracionPublicacion)
+                {
+                    Console.WriteLine(p.Puntuacion + " " + p.Comentario);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                valoracionpublicacioncen.Modify(valpub1, p_puntuacion: "2", p_comentario: "este comentario cambia");
+                ValoracionPublicacionEN valoracionpublicacionen = valoracionpublicacioncen.ReadOID(valpub1);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                Console.WriteLine(valoracionpublicacionen.Puntuacion + " "+valoracionpublicacionen.Comentario);
+                Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                valoracionpublicacioncen.Destroy(valpub1);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                listaValoracionPublicacion = valoracionpublicacioncen.ReadAll(0, 3);
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine("MOSTRAMOS LAS PUBLICACIONES");
+                foreach (ValoracionPublicacionEN p in listaValoracionPublicacion)
+                {
+                    Console.WriteLine(p.Puntuacion + " " + p.Comentario);
+                }
+                Console.WriteLine("");
+
+
+
+
+
+                //              int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                //              usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                //              usuariocen.Destroy(usu1);
+
+                /*
+                 Console.WriteLine("");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine("");
+                */
 
                 /*PROTECTED REGION END*/
             }
-        catch (Exception ex)
+            catch (Exception ex)
         {
                 System.Console.WriteLine (ex.InnerException);
                 throw;
