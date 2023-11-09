@@ -32,5 +32,8 @@ ValoracionPublicacionEN ReadOID (int id
 
 
 System.Collections.Generic.IList<ValoracionPublicacionEN> ReadAll (int first, int size);
+
+
+System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> FiltrarXvaloracion (int ? idPub);
 }
 }

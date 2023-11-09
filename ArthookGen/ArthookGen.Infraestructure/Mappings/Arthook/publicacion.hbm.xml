@@ -53,10 +53,10 @@
 					
 			
 		  			
-						<many-to-one name="LinPedPublicacion" class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH" >	
-								<column name="FK_idLinPed_idLinPed"/> 
-						</many-to-one>
-											 					
+					
+							   <one-to-one name="LinPedPublicacion" class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH" property-ref="PublicacionLinPed" />							
+					 
+						
 					
 					
 					
@@ -70,5 +70,6 @@
 		 </class>	
 		  
 		  <query name="PublicacionNHReadAllHQL">from PublicacionNH</query>
+		  <query name="PublicacionNHFiltrarXUsuarioHQL"><![CDATA[Select pub FROM PublicacionNH as pub where pub.UsuarioPublicacion=:id]]></query>
 		</hibernate-mapping>
 	

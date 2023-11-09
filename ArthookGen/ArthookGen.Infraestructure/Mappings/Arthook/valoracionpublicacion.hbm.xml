@@ -43,5 +43,6 @@
 		 </class>	
 		  
 		  <query name="ValoracionPublicacionNHReadAllHQL">from ValoracionPublicacionNH</query>
+		  <query name="ValoracionPublicacionNHFiltrarXvaloracionHQL"><![CDATA[select val FROM ValoracionPublicacionNH as val where val.PublicacionValoracion=:idPub and puntuacion= 5]]></query>
 		</hibernate-mapping>
 	

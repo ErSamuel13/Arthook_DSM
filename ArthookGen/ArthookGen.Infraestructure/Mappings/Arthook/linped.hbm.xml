@@ -15,8 +15,13 @@
 					<property name="Cantidad" type="integer"> 
 						<column name="cantidad"  not-null="true"/>
 					</property>
+<<<<<<< HEAD
 					<property name="Precio" type="float"> 
 						<column name="precio"  not-null="true"/>
+=======
+					<property name="PrecioT" type="float"> 
+						<column name="precioT"  not-null="true"/>
+>>>>>>> ramaMaria
 					</property>
 			
 			
@@ -30,15 +35,12 @@
 											 					
 			
 		  			
-						<bag name="PublicacionLinPed" >
-							<key>
-							
-								
-								<column name="FK_idLinPed_idLinPed"/>
-					      	</key>
-							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH"/>
-					    </bag>
 					
+							<many-to-one name="PublicacionLinPed" class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH" >
+								<column name="FK_idPublicacion_idPublicacionLinPed"/> 
+        					</many-to-one>
+					 
+						
 					
 					
 					

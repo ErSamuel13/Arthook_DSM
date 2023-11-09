@@ -32,5 +32,8 @@ PublicacionEN ReadOID (int id
 
 
 System.Collections.Generic.IList<PublicacionEN> ReadAll (int first, int size);
+
+
+System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> FiltrarXUsuario (int ? id);
 }
 }

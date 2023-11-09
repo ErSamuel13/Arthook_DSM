@@ -32,5 +32,8 @@ ValoracionUsuarioEN ReadOID (int id
 
 
 System.Collections.Generic.IList<ValoracionUsuarioEN> ReadAll (int first, int size);
+
+
+System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> FiltrarXValoracion (int ? idUsu);
 }
 }

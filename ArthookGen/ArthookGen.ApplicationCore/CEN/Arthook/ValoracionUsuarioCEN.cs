@@ -96,5 +96,9 @@ public System.Collections.Generic.IList<ValoracionUsuarioEN> ReadAll (int first,
         list = _IValoracionUsuarioRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> FiltrarXValoracion (int ? idUsu)
+{
+        return _IValoracionUsuarioRepository.FiltrarXValoracion (idUsu);
+}
 }
 }

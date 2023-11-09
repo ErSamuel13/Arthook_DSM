@@ -99,5 +99,9 @@ public System.Collections.Generic.IList<ValoracionPublicacionEN> ReadAll (int fi
         list = _IValoracionPublicacionRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> FiltrarXvaloracion (int ? idPub)
+{
+        return _IValoracionPublicacionRepository.FiltrarXvaloracion (idPub);
+}
 }
 }

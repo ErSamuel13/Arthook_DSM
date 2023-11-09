@@ -1,18 +1,14 @@
 
 /*PROTECTED REGION ID(CreateDB_imports) ENABLED START*/
+using ArthookGen.ApplicationCore.CEN.Arthook;
+using ArthookGen.ApplicationCore.CP.Arthook;
+using ArthookGen.ApplicationCore.EN.Arthook;
+using ArthookGen.Infraestructure.CP;
+using ArthookGen.Infraestructure.Repository.Arthook;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Data.SqlClient;
 using System.Data;
-using ArthookGen.ApplicationCore.EN.Arthook;
-using ArthookGen.ApplicationCore.CEN.Arthook;
-using ArthookGen.Infraestructure.Repository.Arthook;
-using ArthookGen.Infraestructure.CP;
-using ArthookGen.ApplicationCore.Exceptions;
-
-using ArthookGen.ApplicationCore.CP.Arthook;
-using ArthookGen.Infraestructure.Repository;
+using System.Data.SqlClient;
 
 /*PROTECTED REGION END*/
 namespace InitializeDB
@@ -113,6 +109,7 @@ public static void InitializeData ()
                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
                 int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+<<<<<<< HEAD
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
@@ -122,6 +119,13 @@ public static void InitializeData ()
                 IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 3);
                 for (int i = 0; i < 3; i++) {
                         Console.WriteLine (listaUsuarios [i].Id.ToString () + " " + listaUsuarios [i].Nombre);
+=======
+                int usu4 = usuariocen.New_ (p_pass: "tera", p_nombre: "tereso", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                int usu5 = usuariocen.New_ (p_pass: "terre", p_nombre: "terremoto", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 5);
+                for (int i = 0; i < 5; i++) {
+                        Console.WriteLine (listaUsuarios [i].Nombre);
+>>>>>>> ramaMaria
                 }
                 /*fin creacion usuarios*/
                 Console.WriteLine ("");
@@ -171,7 +175,10 @@ public static void InitializeData ()
                         Console.WriteLine ("Login Correcto");
                 }
                 /*fin de Login*/
+                /*buscar por nombre*/
+                IList<UsuarioEN> listaUNombre = usuariocen.BUsuarioporNick ("teresita");
 
+<<<<<<< HEAD
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// VAMOS A CREAR LOS PUBLIACIONES //");
@@ -469,6 +476,43 @@ public static void InitializeData ()
                  * Console.WriteLine("");
                  */
 
+=======
+                foreach (UsuarioEN user in listaUNombre) {
+                        Console.WriteLine ("Nombre de usuario: " + user.Nombre);
+                }
+                /*fin buscar por nombre*/
+                /* Crear mensaje*/
+                int pub1 = publicacioncen.New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, "imagen sobre paisajes indios", "taj mahal", ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, usu3);
+                /*fin crear mensaje*/
+                /*filtrar por publicacion*/
+                IList<PublicacionEN> listaPub = publicacioncen.FiltrarXUsuario (usu3);
+                foreach (PublicacionEN user in listaPub) {
+                        Console.WriteLine ("Nombre de usuario: " + user.Titulo);
+                }
+                /* fin filtrar por publicacion*/
+                //UsuarioCP usuarioCP = new UsuarioCP (new SessionCPNHibernate ());
+
+                /*filtrar por Valoracion en publicacion */
+
+
+                int val1 = valoracionpublicacioncen.New_ ((float)5.00, "me gusta mucho", usu2, pub1);
+                int val2 = valoracionpublicacioncen.New_ (4, "me gusta la india", usu2, pub1);
+                int val3 = valoracionpublicacioncen.New_ (5, "me gusta mucho la india", usu2, pub1);
+                IList<ValoracionPublicacionEN> listaval = valoracionpublicacioncen.FiltrarXvaloracion (pub1);
+                foreach (ValoracionPublicacionEN user in listaval) {
+                        Console.WriteLine ("Nombre de usuario: " + user.Comentario);
+                }
+                /* fin filtrar por Valoracion en publicacion*/
+                /*filtrar por Valoracion en usuario */
+                int val4 = valoracionusuariocen.New_ (5, usu3, usu2);
+                  int val5 = valoracionusuariocen.New_ (4, usu4, usu2);
+                  int val6 = valoracionusuariocen.New_ (5, usu5, usu2);
+                  IList<ValoracionUsuarioEN> listavalU = valoracionusuariocen.FiltrarXValoracion (usu2);
+                 foreach (ValoracionUsuarioEN valUser  in listavalU) {
+                    Console.WriteLine ("con puntuacion : " + valUser.Puntuacion );
+                 } 
+                /* fin filtrar por Valoracion en usuario */
+>>>>>>> ramaMaria
                 /*PROTECTED REGION END*/
             }
         catch (Exception ex)
