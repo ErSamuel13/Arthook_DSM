@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?>
 		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
 		                   assembly="ArthookGen.Infraestructure"
@@ -61,4 +62,69 @@
 		  
 		  <query name="PedidoNHReadAllHQL">from PedidoNH</query>
 		</hibernate-mapping>
+=======
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="ArthookGen.Infraestructure"
+		                   namespace="ArthookGen.Infraestructure.EN.Arthook">
+		    
+		    
+			
+				<class name="PedidoNH" table="Pedido"> 
+				  	
+						<id name="Id" column="idPedido" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Fecha" type="date"> 
+						<column name="fecha"  not-null="true"/>
+					</property>
+					<property name="PrecioTotal" type="float"> 
+						<column name="precioTotal"  not-null="true"/>
+					</property>
+					<property name="Estado" > 
+						<column name="estado"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="LinPedPed" cascade="delete">
+							<key>
+							
+								
+								<column name="FK_idPedido_idPedido"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH"/>
+					    </bag>
+					
+			
+		  			
+						<many-to-one name="UsuarioPedido" class="ArthookGen.Infraestructure.EN.Arthook.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
+						</many-to-one>
+											 					
+			
+		  			
+					
+							   <one-to-one name="DevolucionPedido" class="ArthookGen.Infraestructure.EN.Arthook.DevolucionNH" property-ref="PedidoDevolucion" />							
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="PedidoNHReadAllHQL">from PedidoNH</query>
+		</hibernate-mapping>
+>>>>>>> Developer
 	

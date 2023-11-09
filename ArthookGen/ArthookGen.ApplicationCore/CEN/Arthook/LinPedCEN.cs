@@ -30,7 +30,7 @@ public ILinPedRepository get_ILinPedRepository ()
         return this._ILinPedRepository;
 }
 
-public int New_ (string p_cantidad, string p_precio, int p_pedidoLinPed)
+public int New_ (int p_cantidad, float p_precio, int p_pedidoLinPed)
 {
         LinPedEN linPedEN = null;
         int oid;
@@ -55,7 +55,7 @@ public int New_ (string p_cantidad, string p_precio, int p_pedidoLinPed)
         return oid;
 }
 
-public void Modify (int p_LinPed_OID, string p_cantidad, string p_precio)
+public void Modify (int p_LinPed_OID, int p_cantidad, float p_precio)
 {
         LinPedEN linPedEN = null;
 

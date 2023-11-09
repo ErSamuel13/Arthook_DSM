@@ -97,9 +97,6 @@ public void ModifyDefault (UsuarioEN usuario)
                 SessionInitializeTransaction ();
                 UsuarioNH usuarioNH = (UsuarioNH)session.Load (typeof(UsuarioNH), usuario.Id);
 
-                usuarioNH.Pass = usuario.Pass;
-
-
                 usuarioNH.Nombre = usuario.Nombre;
 
 
@@ -121,6 +118,11 @@ public void ModifyDefault (UsuarioEN usuario)
 
 
 
+
+
+
+
+                usuarioNH.Pass = usuario.Pass;
 
 
 
@@ -178,9 +180,6 @@ public void Modify (UsuarioEN usuario)
                 SessionInitializeTransaction ();
                 UsuarioNH usuarioNH = (UsuarioNH)session.Load (typeof(UsuarioNH), usuario.Id);
 
-                usuarioNH.Pass = usuario.Pass;
-
-
                 usuarioNH.Nombre = usuario.Nombre;
 
 
@@ -191,6 +190,9 @@ public void Modify (UsuarioEN usuario)
 
 
                 usuarioNH.TipoUsuario = usuario.TipoUsuario;
+
+
+                usuarioNH.Pass = usuario.Pass;
 
                 session.Update (usuarioNH);
                 SessionCommit ();

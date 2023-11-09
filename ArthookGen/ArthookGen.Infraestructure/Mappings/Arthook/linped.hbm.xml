@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?>
 		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
 		                   assembly="ArthookGen.Infraestructure"
@@ -49,4 +50,57 @@
 		  
 		  <query name="LinPedNHReadAllHQL">from LinPedNH</query>
 		</hibernate-mapping>
+=======
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="ArthookGen.Infraestructure"
+		                   namespace="ArthookGen.Infraestructure.EN.Arthook">
+		    
+		    
+			
+				<class name="LinPedNH" table="LinPed"> 
+				  	
+						<id name="Id" column="idLinPed" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Cantidad" type="integer"> 
+						<column name="cantidad"  not-null="true"/>
+					</property>
+					<property name="Precio" type="float"> 
+						<column name="precio"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="PedidoLinPed" class="ArthookGen.Infraestructure.EN.Arthook.PedidoNH" >	
+								<column name="FK_idPedido_idPedido"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="PublicacionLinPed" >
+							<key>
+							
+								
+								<column name="FK_idLinPed_idLinPed"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.PublicacionNH"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="LinPedNHReadAllHQL">from LinPedNH</query>
+		</hibernate-mapping>
+>>>>>>> Developer
 	

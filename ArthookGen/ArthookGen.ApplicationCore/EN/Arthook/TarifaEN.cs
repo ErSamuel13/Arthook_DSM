@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo precio
  */
-private string precio;
+private float precio;
 
 
 
@@ -49,7 +49,7 @@ public virtual int Id {
 
 
 
-public virtual string Precio {
+public virtual float Precio {
         get { return precio; } set { precio = value;  }
 }
 
@@ -81,7 +81,7 @@ public TarifaEN()
 
 
 
-public TarifaEN(int id, string precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa
+public TarifaEN(int id, float precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa
                 )
 {
         this.init (Id, precio, descripcion, nombre, usuarioTarifa);
@@ -94,7 +94,7 @@ public TarifaEN(TarifaEN tarifa)
 }
 
 private void init (int id
-                   , string precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa)
+                   , float precio, string descripcion, string nombre, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioTarifa)
 {
         this.Id = id;
 
