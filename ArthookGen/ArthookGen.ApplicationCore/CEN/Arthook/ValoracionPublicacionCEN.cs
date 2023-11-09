@@ -30,7 +30,7 @@ public IValoracionPublicacionRepository get_IValoracionPublicacionRepository ()
         return this._IValoracionPublicacionRepository;
 }
 
-public int New_ (string p_puntuacion, string p_comentario, int p_usuarioValoracion, int p_publicacionValoracion)
+public int New_ (float p_puntuacion, string p_comentario, int p_usuarioValoracion, int p_publicacionValoracion)
 {
         ValoracionPublicacionEN valoracionPublicacionEN = null;
         int oid;
@@ -63,7 +63,7 @@ public int New_ (string p_puntuacion, string p_comentario, int p_usuarioValoraci
         return oid;
 }
 
-public void Modify (int p_ValoracionPublicacion_OID, string p_puntuacion, string p_comentario)
+public void Modify (int p_ValoracionPublicacion_OID, float p_puntuacion, string p_comentario)
 {
         ValoracionPublicacionEN valoracionPublicacionEN = null;
 
@@ -98,6 +98,10 @@ public System.Collections.Generic.IList<ValoracionPublicacionEN> ReadAll (int fi
 
         list = _IValoracionPublicacionRepository.ReadAll (first, size);
         return list;
+}
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> FiltrarXvaloracion (int ? idPub)
+{
+        return _IValoracionPublicacionRepository.FiltrarXvaloracion (idPub);
 }
 }
 }

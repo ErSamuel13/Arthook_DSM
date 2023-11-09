@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo pvp
  */
-private string pvp;
+private float pvp;
 
 
 
@@ -77,7 +77,7 @@ public virtual int Id {
 
 
 
-public virtual string Pvp {
+public virtual float Pvp {
         get { return pvp; } set { pvp = value;  }
 }
 
@@ -134,7 +134,7 @@ public PublicacionEN()
 
 
 
-public PublicacionEN(int id, string pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion
+public PublicacionEN(int id, float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion
                      )
 {
         this.init (Id, pvp, tipo, descripcion, titulo, tipoPublicacion, usuarioPublicacion, valoracionPublicacion, linPedPublicacion);
@@ -147,7 +147,7 @@ public PublicacionEN(PublicacionEN publicacion)
 }
 
 private void init (int id
-                   , string pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion)
+                   , float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion)
 {
         this.Id = id;
 

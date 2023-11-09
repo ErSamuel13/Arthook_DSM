@@ -276,5 +276,36 @@ public System.Collections.Generic.IList<ValoracionPublicacionEN> ReadAll (int fi
 
         return result;
 }
+
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> FiltrarXvaloracion (int ? idPub)
+{
+        System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM ValoracionPublicacionNH self where select val FROM ValoracionPublicacionNH as val where val.PublicacionValoracion=:idPub and puntuacion= 5";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("ValoracionPublicacionNHFiltrarXvaloracionHQL");
+                query.SetParameter ("idPub", idPub);
+
+                result = query.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in ValoracionPublicacionRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

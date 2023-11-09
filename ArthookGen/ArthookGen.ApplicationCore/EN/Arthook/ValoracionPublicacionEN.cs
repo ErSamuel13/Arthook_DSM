@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo puntuacion
  */
-private string puntuacion;
+private float puntuacion;
 
 
 
@@ -49,7 +49,7 @@ public virtual int Id {
 
 
 
-public virtual string Puntuacion {
+public virtual float Puntuacion {
         get { return puntuacion; } set { puntuacion = value;  }
 }
 
@@ -81,7 +81,7 @@ public ValoracionPublicacionEN()
 
 
 
-public ValoracionPublicacionEN(int id, string puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion
+public ValoracionPublicacionEN(int id, float puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion
                                )
 {
         this.init (Id, puntuacion, comentario, usuarioValoracion, publicacionValoracion);
@@ -94,7 +94,7 @@ public ValoracionPublicacionEN(ValoracionPublicacionEN valoracionPublicacion)
 }
 
 private void init (int id
-                   , string puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion)
+                   , float puntuacion, string comentario, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioValoracion, ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN publicacionValoracion)
 {
         this.Id = id;
 

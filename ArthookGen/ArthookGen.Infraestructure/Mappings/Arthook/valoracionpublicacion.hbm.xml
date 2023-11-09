@@ -12,7 +12,7 @@
 						</id>
 			
 					
-					<property name="Puntuacion" type="string"> 
+					<property name="Puntuacion" type="float"> 
 						<column name="puntuacion"  not-null="true"/>
 					</property>
 					<property name="Comentario" type="string"> 
@@ -43,5 +43,6 @@
 		 </class>	
 		  
 		  <query name="ValoracionPublicacionNHReadAllHQL">from ValoracionPublicacionNH</query>
+		  <query name="ValoracionPublicacionNHFiltrarXvaloracionHQL"><![CDATA[select val FROM ValoracionPublicacionNH as val where val.PublicacionValoracion=:idPub and puntuacion= 5]]></query>
 		</hibernate-mapping>
 	

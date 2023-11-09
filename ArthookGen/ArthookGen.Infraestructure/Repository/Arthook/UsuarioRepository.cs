@@ -291,5 +291,74 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
 
         return result;
 }
+
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> BUsuarioporNick (string nick)
+{
+        System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM UsuarioNH self where Select u FROM UsuarioNH as u where u.Nombre=:nick";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("UsuarioNHBUsuarioporNickHQL");
+                query.SetParameter ("nick", nick);
+
+                result = query.List<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in UsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
+public void SeguirArtista (int p_Usuario_OID, System.Collections.Generic.IList<int> p_usuario_OIDs)
+{
+        ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioEN = null;
+        try
+        {
+                SessionInitializeTransaction ();
+                usuarioEN = (UsuarioEN)session.Load (typeof(UsuarioNH), p_Usuario_OID);
+                ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioENAux = null;
+                if (usuarioEN.Usuario == null) {
+                        usuarioEN.Usuario = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN>();
+                }
+
+                foreach (int item in p_usuario_OIDs) {
+                        usuarioENAux = new ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN ();
+                        usuarioENAux = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.Infraestructure.EN.Arthook.UsuarioNH), item);
+                        usuarioENAux.Usuario_0.Add (usuarioEN);
+
+                        usuarioEN.Usuario.Add (usuarioENAux);
+                }
+
+
+                session.Update (usuarioEN);
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in UsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+}
 }
 }

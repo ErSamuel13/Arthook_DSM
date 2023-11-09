@@ -30,7 +30,7 @@ public IPedidoRepository get_IPedidoRepository ()
         return this._IPedidoRepository;
 }
 
-public int New_ (string p_fecha, string p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, int p_usuarioPedido)
+public int New_ (string p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado, int p_usuarioPedido)
 {
         PedidoEN pedidoEN = null;
         int oid;
@@ -57,7 +57,7 @@ public int New_ (string p_fecha, string p_precioTotal, ArthookGen.ApplicationCor
         return oid;
 }
 
-public void Modify (int p_Pedido_OID, string p_fecha, string p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado)
+public void Modify (int p_Pedido_OID, string p_fecha, float p_precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum p_estado)
 {
         PedidoEN pedidoEN = null;
 

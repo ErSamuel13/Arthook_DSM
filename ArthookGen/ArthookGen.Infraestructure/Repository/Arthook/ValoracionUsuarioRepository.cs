@@ -127,6 +127,22 @@ public int New_ (ValoracionUsuarioEN valoracionUsuario)
         try
         {
                 SessionInitializeTransaction ();
+                if (valoracionUsuario.EmVal != null) {
+                        // Argumento OID y no colección.
+                        valoracionUsuarioNH
+                        .EmVal = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.EmVal.Id);
+
+                        valoracionUsuarioNH.EmVal.ValoracionEmitida
+                        .Add (valoracionUsuarioNH);
+                }
+                if (valoracionUsuario.ReVal != null) {
+                        // Argumento OID y no colección.
+                        valoracionUsuarioNH
+                        .ReVal = (ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN), valoracionUsuario.ReVal.Id);
+
+                        valoracionUsuarioNH.ReVal.ValoracionRecibida
+                        .Add (valoracionUsuarioNH);
+                }
 
                 session.Save (valoracionUsuarioNH);
                 SessionCommit ();
@@ -236,6 +252,37 @@ public System.Collections.Generic.IList<ValoracionUsuarioEN> ReadAll (int first,
                                  SetFirstResult (first).SetMaxResults (size).List<ValoracionUsuarioEN>();
                 else
                         result = session.CreateCriteria (typeof(ValoracionUsuarioNH)).List<ValoracionUsuarioEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in ValoracionUsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
+
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> FiltrarXValoracion (int ? idUsu)
+{
+        System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM ValoracionUsuarioNH self where select valU FROM ValoracionUsuarioNH  as valU inner join valU.ReVal as val where val.Id=:idUsu and puntuacion= 5";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("ValoracionUsuarioNHFiltrarXValoracionHQL");
+                query.SetParameter ("idUsu", idUsu);
+
+                result = query.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionUsuarioEN>();
                 SessionCommit ();
         }
 

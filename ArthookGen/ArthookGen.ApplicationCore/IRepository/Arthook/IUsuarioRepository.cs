@@ -32,5 +32,12 @@ UsuarioEN ReadOID (int id
 
 
 System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size);
+
+
+
+System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> BUsuarioporNick (string nick);
+
+
+void SeguirArtista (int p_Usuario_OID, System.Collections.Generic.IList<int> p_usuario_OIDs);
 }
 }
