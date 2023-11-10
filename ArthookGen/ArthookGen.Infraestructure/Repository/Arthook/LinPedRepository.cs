@@ -100,7 +100,7 @@ public void ModifyDefault (LinPedEN linPed)
                 linPedNH.Cantidad = linPed.Cantidad;
 
 
-                linPedNH.Precio = linPed.Precio;
+                linPedNH.PrecioT = linPed.PrecioT;
 
 
 
@@ -138,6 +138,14 @@ public int New_ (LinPedEN linPed)
                         linPedNH.PedidoLinPed.LinPedPed
                         .Add (linPedNH);
                 }
+                if (linPed.PublicacionLinPed != null) {
+                        // Argumento OID y no colección.
+                        linPedNH
+                        .PublicacionLinPed = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), linPed.PublicacionLinPed.Id);
+
+                        linPedNH.PublicacionLinPed.LinPedPublicacion
+                        .Add (linPedNH);
+                }
 
                 session.Save (linPedNH);
                 SessionCommit ();
@@ -167,9 +175,6 @@ public void Modify (LinPedEN linPed)
                 LinPedNH linPedNH = (LinPedNH)session.Load (typeof(LinPedNH), linPed.Id);
 
                 linPedNH.Cantidad = linPed.Cantidad;
-
-
-                linPedNH.Precio = linPed.Precio;
 
                 session.Update (linPedNH);
                 SessionCommit ();

@@ -104,6 +104,16 @@ public string Login (int p_Usuario_OID, string p_pass)
         return result;
 }
 
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN> BUsuarioporNick (string nick)
+{
+        return _IUsuarioRepository.BUsuarioporNick (nick);
+}
+public void SeguirArtista (int p_Usuario_OID, System.Collections.Generic.IList<int> p_usuario_OIDs)
+{
+        //Call to UsuarioRepository
+
+        _IUsuarioRepository.SeguirArtista (p_Usuario_OID, p_usuario_OIDs);
+}
 
 
 

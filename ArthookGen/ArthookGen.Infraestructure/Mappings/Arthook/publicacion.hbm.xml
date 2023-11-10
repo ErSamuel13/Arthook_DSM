@@ -128,10 +128,15 @@
 					
 			
 		  			
-						<many-to-one name="LinPedPublicacion" class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH" >	
-								<column name="FK_idLinPed_idLinPed"/> 
-						</many-to-one>
-											 					
+						<bag name="LinPedPublicacion" >
+							<key>
+							
+								
+								<column name="FK_idPublicacion_idPublicacionLinPed"/>
+					      	</key>
+							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH"/>
+					    </bag>
+					
 					
 					
 					
@@ -145,6 +150,7 @@
 		 </class>	
 		  
 		  <query name="PublicacionNHReadAllHQL">from PublicacionNH</query>
+		  <query name="PublicacionNHFiltrarXUsuarioHQL"><![CDATA[Select pub FROM PublicacionNH as pub where pub.UsuarioPublicacion=:id]]></query>
 		</hibernate-mapping>
 >>>>>>> Developer
 	

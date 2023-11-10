@@ -81,7 +81,7 @@
 						<column name="fecha"  not-null="true"/>
 					</property>
 					<property name="PrecioTotal" type="float"> 
-						<column name="precioTotal"  not-null="true"/>
+						<column name="precioTotal" />
 					</property>
 					<property name="Estado" > 
 						<column name="estado"  not-null="true"/>

@@ -195,7 +195,7 @@
 					<property name="Nickname" type="string"> 
 						<column name="nickname"  not-null="true"/>
 					</property>
-					<property name="ValoracionMedia" type="string"> 
+					<property name="ValoracionMedia" type="float"> 
 						<column name="valoracionMedia" />
 					</property>
 					<property name="TipoUsuario" > 
@@ -367,6 +367,7 @@
 		 </class>	
 		  
 		  <query name="UsuarioNHReadAllHQL">from UsuarioNH</query>
+		  <query name="UsuarioNHBUsuarioporNickHQL"><![CDATA[Select u FROM UsuarioNH as u where u.Nombre=:nick]]></query>
 		</hibernate-mapping>
 >>>>>>> Developer
 	

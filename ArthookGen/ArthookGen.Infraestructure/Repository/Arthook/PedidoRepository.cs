@@ -173,9 +173,6 @@ public void Modify (PedidoEN pedido)
                 pedidoNH.Fecha = pedido.Fecha;
 
 
-                pedidoNH.PrecioTotal = pedido.PrecioTotal;
-
-
                 pedidoNH.Estado = pedido.Estado;
 
                 session.Update (pedidoNH);

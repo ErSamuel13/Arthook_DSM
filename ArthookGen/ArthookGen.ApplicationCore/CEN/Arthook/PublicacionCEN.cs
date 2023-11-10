@@ -97,5 +97,9 @@ public System.Collections.Generic.IList<PublicacionEN> ReadAll (int first, int s
         list = _IPublicacionRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> FiltrarXUsuario (int ? id)
+{
+        return _IPublicacionRepository.FiltrarXUsuario (id);
+}
 }
 }

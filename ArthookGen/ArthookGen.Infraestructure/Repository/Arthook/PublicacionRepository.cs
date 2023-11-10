@@ -284,5 +284,36 @@ public System.Collections.Generic.IList<PublicacionEN> ReadAll (int first, int s
 
         return result;
 }
+
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> FiltrarXUsuario (int ? id)
+{
+        System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM PublicacionNH self where Select pub FROM PublicacionNH as pub where pub.UsuarioPublicacion=:id";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("PublicacionNHFiltrarXUsuarioHQL");
+                query.SetParameter ("id", id);
+
+                result = query.List<ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in PublicacionRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }
