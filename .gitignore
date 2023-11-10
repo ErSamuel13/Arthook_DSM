@@ -7,4 +7,6 @@ ArthookGen/InitializeDB/obj/**
 ArthookGen/InitializeDB/bin/**
 ArthookGen/.vs/**
 ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.AssemblyReference.cache
-*.cache
+**.cache
+**.dll
+ArthookGen\InitializeDB\obj\Debug\**
