@@ -3,5 +3,5 @@ using System;
 
 namespace ArthookGen.ApplicationCore.Enumerated.Arthook
 {
-public enum EstadoEnum { pendiente=1, enviado=2, cancelado=3 };
+public enum EstadoEnum { enCarrito=1, pendiente=2, enviado=3, cancelado=4, devuelto=5 };
 }

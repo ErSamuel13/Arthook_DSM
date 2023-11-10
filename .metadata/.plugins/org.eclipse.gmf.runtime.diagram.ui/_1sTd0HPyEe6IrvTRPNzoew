@@ -1,18 +1,19 @@
-#Mon Oct 30 13:45:51 CET 2023
-rulergrid.gridlinestyle=6
-print.margin.bottom=0.5
-print.margin.top=0.5
-print.page.height=11.6929134
-print.usePortrait=true
-viewport.y=-78
-print.margin.left=0.5
-rulergrid.gridlinecolor=12632256
-rulergrid.gridspacing=0.125
+#Thu Nov 09 22:34:36 CET 2023
+viewport.x=430
+zoom=1.0
 print.margin.right=0.5
 rulergrid.rulerunit=1
 rulergrid.snaptogrid=true
 print.page.size=A4
-rulergrid.gridlevel=true
-print.useMillim=true
-zoom=1.0
+print.margin.left=0.5
 print.page.width=8.26771654
+rulergrid.gridspacing=0.125
+print.page.height=11.6929134
+rulergrid.gridlinecolor=12632256
+print.margin.bottom=0.5
+rulergrid.gridlinestyle=6
+rulergrid.gridlevel=true
+print.margin.top=0.5
+print.useMillim=true
+print.usePortrait=true
+viewport.y=-78

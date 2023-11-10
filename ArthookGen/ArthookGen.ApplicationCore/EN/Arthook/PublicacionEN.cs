@@ -64,7 +64,7 @@ private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.V
 /**
  *	Atributo linPedPublicacion
  */
-private ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion;
+private System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPublicacion;
 
 
 
@@ -119,7 +119,7 @@ public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Ar
 
 
 
-public virtual ArthookGen.ApplicationCore.EN.Arthook.LinPedEN LinPedPublicacion {
+public virtual System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> LinPedPublicacion {
         get { return linPedPublicacion; } set { linPedPublicacion = value;  }
 }
 
@@ -130,11 +130,12 @@ public virtual ArthookGen.ApplicationCore.EN.Arthook.LinPedEN LinPedPublicacion 
 public PublicacionEN()
 {
         valoracionPublicacion = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN>();
+        linPedPublicacion = new System.Collections.Generic.List<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN>();
 }
 
 
 
-public PublicacionEN(int id, float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion
+public PublicacionEN(int id, float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPublicacion
                      )
 {
         this.init (Id, pvp, tipo, descripcion, titulo, tipoPublicacion, usuarioPublicacion, valoracionPublicacion, linPedPublicacion);
@@ -147,7 +148,7 @@ public PublicacionEN(PublicacionEN publicacion)
 }
 
 private void init (int id
-                   , float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, ArthookGen.ApplicationCore.EN.Arthook.LinPedEN linPedPublicacion)
+                   , float pvp, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum tipo, string descripcion, string titulo, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum tipoPublicacion, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.ValoracionPublicacionEN> valoracionPublicacion, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPublicacion)
 {
         this.Id = id;
 

@@ -30,7 +30,7 @@ public ILinPedRepository get_ILinPedRepository ()
         return this._ILinPedRepository;
 }
 
-public void Modify (int p_LinPed_OID, int p_cantidad, float p_precioT)
+public void Modify (int p_LinPed_OID, int p_cantidad)
 {
         LinPedEN linPedEN = null;
 
@@ -38,7 +38,6 @@ public void Modify (int p_LinPed_OID, int p_cantidad, float p_precioT)
         linPedEN = new LinPedEN ();
         linPedEN.Id = p_LinPed_OID;
         linPedEN.Cantidad = p_cantidad;
-        linPedEN.PrecioT = p_precioT;
         //Call to LinPedRepository
 
         _ILinPedRepository.Modify (linPedEN);

@@ -15,7 +15,7 @@ private int id;
 /**
  *	Atributo fecha
  */
-private string fecha;
+private Nullable<DateTime> fecha;
 
 
 
@@ -63,7 +63,7 @@ public virtual int Id {
 
 
 
-public virtual string Fecha {
+public virtual Nullable<DateTime> Fecha {
         get { return fecha; } set { fecha = value;  }
 }
 
@@ -108,7 +108,7 @@ public PedidoEN()
 
 
 
-public PedidoEN(int id, string fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido
+public PedidoEN(int id, Nullable<DateTime> fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido
                 )
 {
         this.init (Id, fecha, precioTotal, estado, linPedPed, usuarioPedido, devolucionPedido);
@@ -121,7 +121,7 @@ public PedidoEN(PedidoEN pedido)
 }
 
 private void init (int id
-                   , string fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido)
+                   , Nullable<DateTime> fecha, float precioTotal, ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum estado, System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> linPedPed, ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN usuarioPedido, ArthookGen.ApplicationCore.EN.Arthook.DevolucionEN devolucionPedido)
 {
         this.Id = id;
 

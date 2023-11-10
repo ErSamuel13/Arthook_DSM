@@ -18,7 +18,7 @@ namespace ArthookGen.ApplicationCore.CP.Arthook
 {
 public partial class LinPedCP : GenericBasicCP
 {
-public ArthookGen.ApplicationCore.EN.Arthook.LinPedEN New_ (int p_cantidad, float p_precioT, int p_pedidoLinPed, int p_publicacionLinPed)
+public ArthookGen.ApplicationCore.EN.Arthook.LinPedEN New_ (int p_cantidad, int p_pedidoLinPed, int p_publicacionLinPed)
 {
         /*PROTECTED REGION ID(ArthookGen.ApplicationCore.CP.Arthook_LinPed_new_) ENABLED START*/
 
@@ -31,10 +31,10 @@ public ArthookGen.ApplicationCore.EN.Arthook.LinPedEN New_ (int p_cantidad, floa
         {
                 CPSession.SessionInitializeTransaction ();
                 linPedCEN = new  LinPedCEN (CPSession.UnitRepo.LinPedRepository);
-                PublicacionCEN publicacionCEN = new PublicacionCEN(CPSession.UnitRepo.PublicacionRepository);
-                PublicacionEN publicacionEN = publicacionCEN.ReadOID(p_publicacionLinPed);
-                PedidoCEN pedidoCEN = new PedidoCEN(CPSession.UnitRepo.PedidoRepository);
-                PedidoEN pedidoEN = pedidoCEN.ReadOID(p_pedidoLinPed);
+                PublicacionCEN publicacionCEN = new PublicacionCEN (CPSession.UnitRepo.PublicacionRepository);
+                PublicacionEN publicacionEN = publicacionCEN.ReadOID (p_publicacionLinPed);
+                PedidoCEN pedidoCEN = new PedidoCEN (CPSession.UnitRepo.PedidoRepository);
+                PedidoEN pedidoEN = pedidoCEN.ReadOID (p_pedidoLinPed);
 
                 int oid;
                 //Initialized LinPedEN
@@ -42,7 +42,7 @@ public ArthookGen.ApplicationCore.EN.Arthook.LinPedEN New_ (int p_cantidad, floa
                 linPedEN = new LinPedEN ();
                 linPedEN.Cantidad = p_cantidad;
 
-                linPedEN.PrecioT = publicacionEN.Pvp*p_cantidad;
+                linPedEN.PrecioT = publicacionEN.Pvp * p_cantidad;
 
 
                 if (p_pedidoLinPed != -1) {
@@ -51,7 +51,7 @@ public ArthookGen.ApplicationCore.EN.Arthook.LinPedEN New_ (int p_cantidad, floa
                 }
 
                 pedidoEN.PrecioTotal += linPedEN.PrecioT;
-                pedidoCEN.get_IPedidoRepository().ModifyDefault(pedidoEN);
+                pedidoCEN.get_IPedidoRepository ().ModifyDefault (pedidoEN);
 
                 oid = linPedCEN.get_ILinPedRepository ().New_ (linPedEN);
 

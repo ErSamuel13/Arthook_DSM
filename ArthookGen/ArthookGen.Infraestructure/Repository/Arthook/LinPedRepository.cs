@@ -144,7 +144,7 @@ public int New_ (LinPedEN linPed)
                         .PublicacionLinPed = (ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN)session.Load (typeof(ArthookGen.ApplicationCore.EN.Arthook.PublicacionEN), linPed.PublicacionLinPed.Id);
 
                         linPedNH.PublicacionLinPed.LinPedPublicacion
-                                = linPedNH;
+                        .Add (linPedNH);
                 }
 
                 session.Save (linPedNH);
@@ -175,9 +175,6 @@ public void Modify (LinPedEN linPed)
                 LinPedNH linPedNH = (LinPedNH)session.Load (typeof(LinPedNH), linPed.Id);
 
                 linPedNH.Cantidad = linPed.Cantidad;
-
-
-                linPedNH.PrecioT = linPed.PrecioT;
 
                 session.Update (linPedNH);
                 SessionCommit ();

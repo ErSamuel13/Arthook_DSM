@@ -277,7 +277,7 @@ public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.Va
         try
         {
                 SessionInitializeTransaction ();
-                //String sql = @"FROM ValoracionUsuarioNH self where select valU FROM ValoracionUsuarioNH  as valU inner join valU.ReVal as val where val.Id=:idUsu and puntuacion= 5";
+                //String sql = @"FROM ValoracionUsuarioNH self where select valU FROM ValoracionUsuarioNH  as valU inner join valU.ReVal as val where val.Id=:idUsu";
                 //IQuery query = session.CreateQuery(sql);
                 IQuery query = (IQuery)session.GetNamedQuery ("ValoracionUsuarioNHFiltrarXValoracionHQL");
                 query.SetParameter ("idUsu", idUsu);

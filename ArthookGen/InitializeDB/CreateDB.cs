@@ -109,23 +109,17 @@ public static void InitializeData ()
                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
                 int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-<<<<<<< HEAD
+                int usu4 = usuariocen.New_ (p_pass: "tera", p_nombre: "tereso", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                int usu5 = usuariocen.New_ (p_pass: "terre", p_nombre: "terremoto", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
-
-                IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 3);
-                for (int i = 0; i < 3; i++) {
-                        Console.WriteLine (listaUsuarios [i].Id.ToString () + " " + listaUsuarios [i].Nombre);
-=======
-                int usu4 = usuariocen.New_ (p_pass: "tera", p_nombre: "tereso", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                int usu5 = usuariocen.New_ (p_pass: "terre", p_nombre: "terremoto", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 IList<UsuarioEN> listaUsuarios = usuariocen.ReadAll (0, 5);
                 for (int i = 0; i < 5; i++) {
                         Console.WriteLine (listaUsuarios [i].Nombre);
->>>>>>> ramaMaria
                 }
                 /*fin creacion usuarios*/
                 Console.WriteLine ("");
@@ -178,7 +172,6 @@ public static void InitializeData ()
                 /*buscar por nombre*/
                 IList<UsuarioEN> listaUNombre = usuariocen.BUsuarioporNick ("teresita");
 
-<<<<<<< HEAD
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// VAMOS A CREAR LOS PUBLIACIONES //");
@@ -271,9 +264,9 @@ public static void InitializeData ()
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
 
                 int tarifa1 = tarifacen.New_ (p_precio: 50, p_descripcion: "esto es una descripcion de una tarifa1", p_nombre: "tarifa 1", usu2);
-                int tarifa2 = tarifacen.New_ (p_precio: 40, p_descripcion: "esto es una descripcion de una tarifa2", p_nombre: "tarifa 2", usu2);
-                int tarifa3 = tarifacen.New_ (p_precio: 100, p_descripcion: "esto es una descripcion de una tarifa3", p_nombre: "tarifa 3", usu2);
-                int tarifa4 = tarifacen.New_ (p_precio: 20, p_descripcion: "esto es una descripcion de una tarifa4", p_nombre: "tarifa 4", usu2);
+                int tarifa2 = tarifacen.New_ (p_precio: 50, p_descripcion: "esto es una descripcion de una tarifa2", p_nombre: "tarifa 2", usu2);
+                int tarifa3 = tarifacen.New_ (p_precio: 50, p_descripcion: "esto es una descripcion de una tarifa3", p_nombre: "tarifa 3", usu2);
+                int tarifa4 = tarifacen.New_ (p_precio: 50, p_descripcion: "esto es una descripcion de una tarifa4", p_nombre: "tarifa 4", usu2);
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 IList<TarifaEN> listaTarifas = tarifacen.ReadAll (0, 4);
@@ -308,11 +301,11 @@ public static void InitializeData ()
                 Console.WriteLine ("// VAMOS A CREAR PEDIDOS //");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
 
-                int pedido1 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 10, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enCarrito, p_usuarioPedido: usu2);
-                int pedido2 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 20, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado, p_usuarioPedido: usu2);
-                int pedido3 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 30, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.pendiente, p_usuarioPedido: usu2);
-                int pedido4 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 40, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.devuelto, p_usuarioPedido: usu2);
-                int pedido5 = pedidocen.New_ (p_fecha: DateTime.Now, p_precioTotal: 50, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.cancelado, p_usuarioPedido: usu2);
+                int pedido1 = pedidocen.New_ (p_fecha: DateTime.Now, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enCarrito, p_usuarioPedido: usu2);
+                int pedido2 = pedidocen.New_ (p_fecha: DateTime.Now, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado, p_usuarioPedido: usu2);
+                int pedido3 = pedidocen.New_ (p_fecha: DateTime.Now, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.pendiente, p_usuarioPedido: usu2);
+                int pedido4 = pedidocen.New_ (p_fecha: DateTime.Now, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.devuelto, p_usuarioPedido: usu2);
+                int pedido5 = pedidocen.New_ (p_fecha: DateTime.Now, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.cancelado, p_usuarioPedido: usu2);
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 IList<PedidoEN> listaPedidos = pedidocen.ReadAll (0, 5);
@@ -324,7 +317,7 @@ public static void InitializeData ()
                 Console.WriteLine ("");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
-                pedidocen.Modify (pedido1, p_fecha: pedidocen.ReadOID (pedido1).Fecha, p_precioTotal: 100, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado);
+                pedidocen.Modify (pedido1, p_fecha: pedidocen.ReadOID (pedido1).Fecha, p_estado: ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado);
                 Console.WriteLine ("");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
@@ -348,127 +341,123 @@ public static void InitializeData ()
                 Console.WriteLine ("// VAMOS A CREAR LINEAS DE PEDIDO //");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
 
-                int linped1 = linpedcen.New_ (p_cantidad: 1, p_precio: 10, p_pedidoLinPed: pedido2);
-                int linped2 = linpedcen.New_ (p_cantidad: 2, p_precio: 20, p_pedidoLinPed: pedido2);
-                int linped3 = linpedcen.New_ (p_cantidad: 3, p_precio: 30, p_pedidoLinPed: pedido2);
-                int linped4 = linpedcen.New_ (p_cantidad: 4, p_precio: 40, p_pedidoLinPed: pedido2);
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                IList<LinPedEN> listalineas = linpedcen.ReadAll (0, 4);
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
-                foreach (LinPedEN p in listalineas) {
-                        Console.WriteLine (p.Cantidad + " " + p.Precio);
-                }
-                Console.WriteLine ("");
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine ("");
-                linpedcen.Modify (linped1, p_cantidad: 5, p_precio: 100);
-                Console.WriteLine ("");
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine ("");
-                LinPedEN lineaen = linpedcen.ReadOID (linped1);
-                Console.WriteLine (""); Console.WriteLine ("");
-                Console.WriteLine (lineaen.Cantidad + " " + lineaen.Precio);
-                Console.WriteLine ("");
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine ("");
-                linpedcen.Destroy (linped1);
-                listalineas = linpedcen.ReadAll (0, 3);
-                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine ("MOSTRAMOS LAS LINEAS DE PEDIDOS");
-                foreach (LinPedEN p in listalineas) {
-                        Console.WriteLine (p.Cantidad + " " + p.Precio);
-                }
+                /*int linped1 = linpedcen.New_
+                 * int linped2 = linpedcen.New_ (p_cantidad: 2, p_precio: 20, p_pedidoLinPed: pedido2);
+                 * int linped3 = linpedcen.New_ (p_cantidad: 3, p_precio: 30, p_pedidoLinPed: pedido2);
+                 * int linped4 = linpedcen.New_ (p_cantidad: 4, p_precio: 40, p_pedidoLinPed: pedido2);
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * IList<LinPedEN> listalineas = linpedcen.ReadAll (0, 4);
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                 * Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
+                 * foreach (LinPedEN p in listalineas) {
+                 *      Console.WriteLine (p.Cantidad + " " + p.Precio);
+                 * }
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * linpedcen.Modify (linped1, p_cantidad: 5, p_precio: 100);
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * LinPedEN lineaen = linpedcen.ReadOID (linped1);
+                 * Console.WriteLine (""); Console.WriteLine ("");
+                 * Console.WriteLine (lineaen.Cantidad + " " + lineaen.Precio);
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * linpedcen.Destroy (linped1);
+                 * listalineas = linpedcen.ReadAll (0, 3);
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                 * Console.WriteLine ("MOSTRAMOS LAS LINEAS DE PEDIDOS");
+                 * foreach (LinPedEN p in listalineas) {
+                 *      Console.WriteLine (p.Cantidad + " " + p.Precio);
+                 * }*/
                 Console.WriteLine ("");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("// VAMOS A CREAR DEVOLUCION //");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
 
-                int dev1 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion1", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido2);
-                int dev2 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion2", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido3);
-                int dev3 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion3", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido4);
-                int dev4 = devolucioncen.New_(p_descripcion: "esto me va fatal, quiero una devolucion4", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.otros, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido5);
+                int dev1 = devolucioncen.New_ (p_descripcion: "esto me va fatal, quiero una devolucion1", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido2);
+                int dev2 = devolucioncen.New_ (p_descripcion: "esto me va fatal, quiero una devolucion2", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.malasCondciones, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido3);
+                int dev3 = devolucioncen.New_ (p_descripcion: "esto me va fatal, quiero una devolucion3", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido4);
+                int dev4 = devolucioncen.New_ (p_descripcion: "esto me va fatal, quiero una devolucion4", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.otros, p_fecha: DateTime.Now, p_usuarioDevolucion: usu2, p_pedidoDevolucion: pedido5);
 
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                IList<DevolucionEN> listadev = devolucioncen.ReadAll(0, 4);
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
-                foreach (DevolucionEN p in listadev)
-                {
-                    Console.WriteLine(p.Descripcion + " " + p.Fecha + " " + p.Motivo);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                IList<DevolucionEN> listadev = devolucioncen.ReadAll (0, 4);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                foreach (DevolucionEN p in listadev) {
+                        Console.WriteLine (p.Descripcion + " " + p.Fecha + " " + p.Motivo);
                 }
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                devolucioncen.Modify(dev1, p_descripcion: "Esta descripcion cambia", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now);
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                DevolucionEN deven = devolucioncen.ReadOID(dev1);
-                Console.WriteLine(""); Console.WriteLine("");
-                Console.WriteLine(deven.Descripcion + " " + deven.Fecha + " " + deven.Motivo);
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                devolucioncen.Destroy(dev1);
-                listadev = devolucioncen.ReadAll(0, 4);
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
-                foreach (DevolucionEN p in listadev)
-                {
-                    Console.WriteLine(p.Descripcion + " " + p.Fecha + " " + p.Motivo);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                devolucioncen.Modify (dev1, p_descripcion: "Esta descripcion cambia", p_motivo: ArthookGen.ApplicationCore.Enumerated.Arthook.MotivoEnum.noRecibido, p_fecha: DateTime.Now);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                DevolucionEN deven = devolucioncen.ReadOID (dev1);
+                Console.WriteLine (""); Console.WriteLine ("");
+                Console.WriteLine (deven.Descripcion + " " + deven.Fecha + " " + deven.Motivo);
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                devolucioncen.Destroy (dev1);
+                listadev = devolucioncen.ReadAll (0, 4);
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE PEDIDOS");
+                foreach (DevolucionEN p in listadev) {
+                        Console.WriteLine (p.Descripcion + " " + p.Fecha + " " + p.Motivo);
                 }
 
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("// VAMOS A CREAR MENSAJES Y VALORACIONES USUARIO //");
-                Console.WriteLine("// DADO QUE TIENEN EL MISMO TIPO DE RELACION, SOLO COMPROBARE UNO DE LOS DOS //");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("// VAMOS A CREAR MENSAJES Y VALORACIONES USUARIO //");
+                Console.WriteLine ("// DADO QUE TIENEN EL MISMO TIPO DE RELACION, SOLO COMPROBARE UNO DE LOS DOS //");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
 
-                int valusu1 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
-                int valusu2 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
-                int valusu3 = valoracionusuariocen.New_(p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
-               
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                IList<ValoracionUsuarioEN> listavalusu = valoracionusuariocen.ReadAll(0, 3);
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
-                foreach (ValoracionUsuarioEN p in listavalusu)
-                {
-                    Console.WriteLine(p.Puntuacion);
-                }
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                valoracionusuariocen.Modify(valusu1, p_puntuacion: 1);
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                ValoracionUsuarioEN valusuen = valoracionusuariocen.ReadOID(valusu1);
-                Console.WriteLine(""); Console.WriteLine("");
-                Console.WriteLine(valusuen.Puntuacion);
-                Console.WriteLine("");
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                Console.WriteLine("");
-                valoracionusuariocen.Destroy(valusu1);
-                listavalusu = valoracionusuariocen.ReadAll(0, 3);
-                Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                Console.WriteLine("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
-                foreach (ValoracionUsuarioEN p in listavalusu)
-                {
-                    Console.WriteLine(p.Puntuacion);
-                }
-
-
-
-
-                //              int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                //              usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                //              usuariocen.Destroy(usu1);
-
-                /*
+                /*int valusu1 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
+                 * int valusu2 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
+                 * int valusu3 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
+                 *
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * IList<ValoracionUsuarioEN> listavalusu = valoracionusuariocen.ReadAll (0, 3);
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                 * Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                 * foreach (ValoracionUsuarioEN p in listavalusu) {
+                 *      Console.WriteLine (p.Puntuacion);
+                 * }
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * valoracionusuariocen.Modify (valusu1, p_puntuacion: 1);
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * ValoracionUsuarioEN valusuen = valoracionusuariocen.ReadOID (valusu1);
+                 * Console.WriteLine (""); Console.WriteLine ("");
+                 * Console.WriteLine (valusuen.Puntuacion);
+                 * Console.WriteLine ("");
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                 * Console.WriteLine ("");
+                 * valoracionusuariocen.Destroy (valusu1);
+                 * listavalusu = valoracionusuariocen.ReadAll (0, 3);
+                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+                 * Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+                 * foreach (ValoracionUsuarioEN p in listavalusu) {
+                 *      Console.WriteLine (p.Puntuacion);
+                 * }
+                 *
+                 *
+                 *
+                 *
+                 * //              int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                 * //              usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                 * //              usuariocen.Destroy(usu1);
+                 *
+                 * /*
                  * Console.WriteLine("");
                  * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                  * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
@@ -476,7 +465,7 @@ public static void InitializeData ()
                  * Console.WriteLine("");
                  */
 
-=======
+
                 foreach (UsuarioEN user in listaUNombre) {
                         Console.WriteLine ("Nombre de usuario: " + user.Nombre);
                 }
@@ -504,17 +493,35 @@ public static void InitializeData ()
                 }
                 /* fin filtrar por Valoracion en publicacion*/
                 /*filtrar por Valoracion en usuario */
-                int val4 = valoracionusuariocen.New_ (5, usu3, usu2);
-                  int val5 = valoracionusuariocen.New_ (4, usu4, usu2);
-                  int val6 = valoracionusuariocen.New_ (5, usu5, usu2);
-                  IList<ValoracionUsuarioEN> listavalU = valoracionusuariocen.FiltrarXValoracion (usu2);
-                 foreach (ValoracionUsuarioEN valUser  in listavalU) {
-                    Console.WriteLine ("con puntuacion : " + valUser.Puntuacion );
-                 } 
+
+                ValoracionUsuarioCP valusuCP = new ValoracionUsuarioCP (new SessionCPNHibernate ());
+                valusuCP.New_ (5, usu2, usu5);
+                valusuCP.New_ (4, usu3, usu5);
+                valusuCP.New_ (3, usu4, usu5);
+                valusuCP.New_ (4, usu3, usu2);
+                valusuCP.New_ (1, usu4, usu2);
+                IList<ValoracionUsuarioEN> listavalU = valoracionusuariocen.FiltrarXValoracion (usu2);
+                foreach (ValoracionUsuarioEN valUser  in listavalU) {
+                        Console.WriteLine ("con puntuacion : " + valUser.Puntuacion);
+                }
+
+
+                UsuarioEN usuarioEN1 = usuariocen.ReadOID (usu5);
+                UsuarioEN usuarioEN2 = usuariocen.ReadOID (usu2);
+
+                Console.WriteLine ("");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+                Console.WriteLine ("");
+                Console.WriteLine ("");
+                Console.WriteLine ("");
+                Console.WriteLine ("el usuario 5 tiene una media de: " + usuarioEN1.ValoracionMedia);
+                Console.WriteLine ("el usuario 2 tiene una media de: " + usuarioEN2.ValoracionMedia);
                 /* fin filtrar por Valoracion en usuario */
->>>>>>> ramaMaria
+
                 /*PROTECTED REGION END*/
-            }
+        }
         catch (Exception ex)
         {
                 System.Console.WriteLine (ex.InnerException);

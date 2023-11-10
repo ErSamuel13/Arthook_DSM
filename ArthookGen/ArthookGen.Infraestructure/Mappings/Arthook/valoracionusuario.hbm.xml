@@ -38,6 +38,6 @@
 		 </class>	
 		  
 		  <query name="ValoracionUsuarioNHReadAllHQL">from ValoracionUsuarioNH</query>
-		  <query name="ValoracionUsuarioNHFiltrarXValoracionHQL"><![CDATA[select valU FROM ValoracionUsuarioNH  as valU inner join valU.ReVal as val where val.Id=:idUsu and puntuacion= 5]]></query>
+		  <query name="ValoracionUsuarioNHFiltrarXValoracionHQL"><![CDATA[select valU FROM ValoracionUsuarioNH  as valU inner join valU.ReVal as val where val.Id=:idUsu]]></query>
 		</hibernate-mapping>
 	
