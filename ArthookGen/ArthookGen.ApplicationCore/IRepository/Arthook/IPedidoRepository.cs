@@ -32,5 +32,9 @@ PedidoEN ReadOID (int id
 
 
 System.Collections.Generic.IList<PedidoEN> ReadAll (int first, int size);
+
+
+
+System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> FiltarPorEstado (ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum ? p_estado);
 }
 }

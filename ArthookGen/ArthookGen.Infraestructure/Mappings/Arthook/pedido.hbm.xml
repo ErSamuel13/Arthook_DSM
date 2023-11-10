@@ -60,5 +60,6 @@
 		 </class>	
 		  
 		  <query name="PedidoNHReadAllHQL">from PedidoNH</query>
+		  <query name="PedidoNHfiltarPorEstadoHQL"><![CDATA[Select ped FROM PedidoNH as ped where ped.Estado = :p_estado]]></query>
 		</hibernate-mapping>
 	

@@ -91,5 +91,9 @@ public System.Collections.Generic.IList<PedidoEN> ReadAll (int first, int size)
         list = _IPedidoRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> FiltarPorEstado (ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum ? p_estado)
+{
+        return _IPedidoRepository.FiltarPorEstado (p_estado);
+}
 }
 }

@@ -272,5 +272,36 @@ public System.Collections.Generic.IList<PedidoEN> ReadAll (int first, int size)
 
         return result;
 }
+
+public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> FiltarPorEstado (ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum ? p_estado)
+{
+        System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM PedidoNH self where Select ped FROM PedidoNH as ped where ped.Estado = :p_estado";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("PedidoNHfiltarPorEstadoHQL");
+                query.SetParameter ("p_estado", p_estado);
+
+                result = query.List<ArthookGen.ApplicationCore.EN.Arthook.PedidoEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is ArthookGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new ArthookGen.ApplicationCore.Exceptions.DataLayerException ("Error in PedidoRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

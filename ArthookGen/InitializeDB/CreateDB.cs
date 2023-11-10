@@ -520,6 +520,18 @@ public static void InitializeData ()
                 Console.WriteLine ("el usuario 2 tiene una media de: " + usuarioEN2.ValoracionMedia);
                 /* fin filtrar por Valoracion en usuario */
 
+                /*Pruebas filtrar por estado del pedido*/
+
+
+                IList<PedidoEN> pedidosPorEstado = pedidocen.FiltarPorEstado (ArthookGen.ApplicationCore.Enumerated.Arthook.EstadoEnum.enviado);
+
+                Console.WriteLine ("------------------\nPEDIDOS EN ESTADO enCarrito:\n");
+                foreach (PedidoEN ped in pedidosPorEstado) {
+                        Console.WriteLine (ped.Id + " - " + ped.Estado);
+                }
+
+                /*Fin pruebas filtrar por estado del pedido*/
+
                 /*PROTECTED REGION END*/
         }
         catch (Exception ex)
