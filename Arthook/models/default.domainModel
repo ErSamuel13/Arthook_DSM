@@ -224,7 +224,7 @@
       <attributes xmi:type="es.ua.dlsi.ooh:Attribute" xmi:id="_xmsWgXP2Ee6IrvTRPNzoew" alias="idUsuario" associationTarget="_xmrvcHP2Ee6IrvTRPNzoew" name="usuarioTarifa" type="Object"/>
     </elements>
     <elements xmi:type="es.ua.dlsi.ooh:Class" xmi:id="_TGcAkHPzEe6IrvTRPNzoew" name="Usuario" alias="Usuario" stereotyped="User" asociationTarget="_781OcHP3Ee6IrvTRPNzoew _rwmgAHffEe6uJJ9Is9S5Uw _-wnqgH1UEe6vXrYMdXA4Jw" associationOrigin="_RLvHEHP2Ee6IrvTRPNzoew _Ve5lYHP2Ee6IrvTRPNzoew _hWdpQHP2Ee6IrvTRPNzoew _xmrvcHP2Ee6IrvTRPNzoew _4Rk6IHP2Ee6IrvTRPNzoew __xYTkHP2Ee6IrvTRPNzoew _VnPMkHP3Ee6IrvTRPNzoew _dk2jYHP3Ee6IrvTRPNzoew _-wnqgH1UEe6vXrYMdXA4Jw">
-      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_fZr64HPzEe6IrvTRPNzoew" name="new" operationType="New" type="Object" typeObject="_TGcAkHPzEe6IrvTRPNzoew">
+      <operations xmi:type="es.ua.dlsi.ooh:Operation" xmi:id="_fZr64HPzEe6IrvTRPNzoew" name="new" operationType="New" type="Object" typeObject="_TGcAkHPzEe6IrvTRPNzoew" customized="true">
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_Er9ngX4ZEe6EoO-0WYDNMw" name="p_nombre"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_Er9ngn4ZEe6EoO-0WYDNMw" name="p_email"/>
         <arguments xmi:type="es.ua.dlsi.ooh:Argument" xmi:id="_Er9ng34ZEe6EoO-0WYDNMw" name="p_nickname"/>

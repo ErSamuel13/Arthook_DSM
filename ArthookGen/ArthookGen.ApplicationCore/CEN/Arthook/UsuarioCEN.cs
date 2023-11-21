@@ -31,29 +31,6 @@ public IUsuarioRepository get_IUsuarioRepository ()
         return this._IUsuarioRepository;
 }
 
-public int New_ (string p_nombre, string p_email, string p_nickname, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum p_tipoUsuario, String p_pass)
-{
-        UsuarioEN usuarioEN = null;
-        int oid;
-
-        //Initialized UsuarioEN
-        usuarioEN = new UsuarioEN ();
-        usuarioEN.Nombre = p_nombre;
-
-        usuarioEN.Email = p_email;
-
-        usuarioEN.Nickname = p_nickname;
-
-        usuarioEN.TipoUsuario = p_tipoUsuario;
-
-        usuarioEN.Pass = Utils.Util.GetEncondeMD5 (p_pass);
-
-
-
-        oid = _IUsuarioRepository.New_ (usuarioEN);
-        return oid;
-}
-
 public void Modify (int p_Usuario_OID, string p_nombre, string p_email, string p_nickname, ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum p_tipoUsuario, String p_pass)
 {
         UsuarioEN usuarioEN = null;
