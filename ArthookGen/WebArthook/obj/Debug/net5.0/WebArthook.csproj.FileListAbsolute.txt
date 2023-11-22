@@ -430,3 +430,5 @@ C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\NHibernate.By
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\nunit.core.dll
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\nunit.framework.dll
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Create.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Details.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Edit.cshtml.g.cs
