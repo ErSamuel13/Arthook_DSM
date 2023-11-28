@@ -8,6 +8,7 @@ using ArthookGen.ApplicationCore.Exceptions;
 
 using ArthookGen.ApplicationCore.EN.Arthook;
 using ArthookGen.ApplicationCore.IRepository.Arthook;
+using Newtonsoft.Json;
 
 
 namespace ArthookGen.ApplicationCore.CEN.Arthook

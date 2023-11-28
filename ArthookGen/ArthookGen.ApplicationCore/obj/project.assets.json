@@ -5238,19 +5238,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mgeg2\\.nuget\\packages\\": {}
+    "C:\\Users\\serra\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+      "projectUniqueName": "C:\\DSM\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
       "projectName": "ArthookGen.ApplicationCore",
-      "projectPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
-      "packagesPath": "C:\\Users\\mgeg2\\.nuget\\packages\\",
-      "outputPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
+      "projectPath": "C:\\DSM\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj",
+      "packagesPath": "C:\\Users\\serra\\.nuget\\packages\\",
+      "outputPath": "C:\\DSM\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mgeg2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\serra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5258,6 +5263,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5296,7 +5302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }

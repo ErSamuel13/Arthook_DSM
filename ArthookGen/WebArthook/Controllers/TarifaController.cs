@@ -11,44 +11,45 @@ using WebArthhook.Controllers;
 using WebArthook.Assemblers;
 using WebArthook.Models;
 
+
 namespace WebArthook.Controllers
 {
-    public class UsuarioController : BasicController
+    public class TarifaController : BasicController
     {
-        // GET: UsuarioController
+        // GET: TarifaController
         public ActionResult Index()
         {
             SessionInitialize();
-            UsuarioRepository usurepo = new UsuarioRepository();
-            UsuarioCEN usucen = new UsuarioCEN(usurepo);
-            IList<UsuarioEN> listEn = usucen.ReadAll(0, -1);
-            IEnumerable<UsuarioViewModel> listView = new UsuarioAssembler().ConvertirListEnToViewModel(listEn).ToList();
+            TarifaRepository tarifarepo = new TarifaRepository();
+            TarifaCEN tarifacen = new TarifaCEN(tarifarepo);
+            IList<TarifaEN> listEn = tarifacen.ReadAll(0, -1);
+            IEnumerable<TarifaViewModel> listView = new TarifaAssembler().ConvertirListEnToViewModel(listEn).ToList();
             SessionClose();
             return View(listView);
         }
 
-        // GET: UsuarioController/Details/5
+        // GET: TarifaController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: UsuarioController/Create
+        // GET: TarifaController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: UsuarioController/Create
+        // POST: TarifaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(UsuarioViewModel usuv)
+        public ActionResult Create(TarifaViewModel tar)
         {
             try
             {
-                UsuarioRepository usurepo = new UsuarioRepository();
-                UsuarioCEN usucen = new UsuarioCEN(usurepo);
-                usucen.New_(usuv.nombre, usuv.email, usuv.nickname, usuv.TipoUsuario, usuv.password);
+                TarifaRepository tarrepo = new TarifaRepository();
+                TarifaCEN tarcen = new TarifaCEN(tarrepo);
+                tarcen.New_(tar.precio, tar.descripcion, tar.nombre, tar.usuario);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -57,13 +58,13 @@ namespace WebArthook.Controllers
             }
         }
 
-        // GET: UsuarioController/Edit/5
+        // GET: TarifaController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: UsuarioController/Edit/5
+        // POST: TarifaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -78,13 +79,13 @@ namespace WebArthook.Controllers
             }
         }
 
-        // GET: UsuarioController/Delete/5
+        // GET: TarifaController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: UsuarioController/Delete/5
+        // POST: TarifaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

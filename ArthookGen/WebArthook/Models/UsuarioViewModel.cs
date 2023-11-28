@@ -32,7 +32,7 @@ namespace WebArthook.Models
         [Required(ErrorMessage = "debe ser o usuario o artista")]
         public TipoUsuarioEnum TipoUsuario { get; set; }
 
-        [Display(Prompt = " escribe el nickname del usuario", Description = "nickname del usuario", Name = "Pasword")]
+        [Display(Prompt = " escribe el nickname del usuario", Description = "nickname del usuario", Name = "nickname ")]
         [Required(ErrorMessage = "debe tener password")]
         [DataType(DataType.Password,ErrorMessage ="el password debe ser correcto")]
         [StringLength(maximumLength: 50, ErrorMessage = "el nickname tiene que tener como mucho 50 caracteres")]
