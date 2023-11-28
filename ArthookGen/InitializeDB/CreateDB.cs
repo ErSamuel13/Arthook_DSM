@@ -418,52 +418,52 @@ public static void InitializeData ()
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
 
-                /*int valusu1 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
-                 * int valusu2 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
-                 * int valusu3 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
-                 *
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * IList<ValoracionUsuarioEN> listavalusu = valoracionusuariocen.ReadAll (0, 3);
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                 * Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
-                 * foreach (ValoracionUsuarioEN p in listavalusu) {
-                 *      Console.WriteLine (p.Puntuacion);
-                 * }
-                 * Console.WriteLine ("");
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine ("");
-                 * valoracionusuariocen.Modify (valusu1, p_puntuacion: 1);
-                 * Console.WriteLine ("");
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine ("");
-                 * ValoracionUsuarioEN valusuen = valoracionusuariocen.ReadOID (valusu1);
-                 * Console.WriteLine (""); Console.WriteLine ("");
-                 * Console.WriteLine (valusuen.Puntuacion);
-                 * Console.WriteLine ("");
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine ("");
-                 * valoracionusuariocen.Destroy (valusu1);
-                 * listavalusu = valoracionusuariocen.ReadAll (0, 3);
-                 * Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
-                 * Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
-                 * foreach (ValoracionUsuarioEN p in listavalusu) {
-                 *      Console.WriteLine (p.Puntuacion);
-                 * }
-                 *
-                 *
-                 *
-                 *
-                 * //              int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                 * //              usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                 * //              usuariocen.Destroy(usu1);
-                 *
-                 * /*
-                 * Console.WriteLine("");
-                 * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
-                 * Console.WriteLine("");
-                 */
+               //int valusu1 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
+               // int valusu2 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
+               //   int valusu3 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
+                 
+               //  Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   IList<ValoracionUsuarioEN> listavalusu = valoracionusuariocen.ReadAll (0, 3);
+               //   Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+               //   Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+               //   foreach (ValoracionUsuarioEN p in listavalusu) {
+               //        Console.WriteLine (p.Puntuacion);
+               //   }
+               //   Console.WriteLine ("");
+               //   Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine ("");
+               //   valoracionusuariocen.Modify (valusu1, p_puntuacion: 1);
+               //   Console.WriteLine ("");
+               //   Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine ("");
+               //   ValoracionUsuarioEN valusuen = valoracionusuariocen.ReadOID (valusu1);
+               //   Console.WriteLine (""); Console.WriteLine ("");
+               //   Console.WriteLine (valusuen.Puntuacion);
+               //   Console.WriteLine ("");
+               //  Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine ("");
+               //   valoracionusuariocen.Destroy (valusu1);
+               //   listavalusu = valoracionusuariocen.ReadAll (0, 3);
+               //   Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//\n");
+               //   Console.WriteLine ("MOSTRAMOS LPOS LINEAS DE DEVOLUCIONES");
+               //   foreach (ValoracionUsuarioEN p in listavalusu) {
+               //       Console.WriteLine (p.Puntuacion);
+               //   }
+                 
+                 
+                 
+                 
+               //   //              int publicacionId6 = publicacioncen.New_(p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+               //   //              usuariocen.Modify(p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+               //   //              usuariocen.Destroy(usu1);
+                 
+                  
+               //   Console.WriteLine("");
+               //   Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
+               //   Console.WriteLine("");
+                 
 
 
                 foreach (UsuarioEN user in listaUNombre) {

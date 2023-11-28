@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WebArthook.Models.ValoracionUsuarioViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.puntuacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emisor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.receptor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.n_emisor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.n_receptor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.puntuacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.receptor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.n_emisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.n_receptor)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

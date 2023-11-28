@@ -432,3 +432,4 @@ C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\nunit.framewo
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Create.cshtml.g.cs
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Details.cshtml.g.cs
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Edit.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Index.cshtml.g.cs

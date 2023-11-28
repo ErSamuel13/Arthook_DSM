@@ -57,7 +57,7 @@ namespace WebArthook.Controllers
             {
                 UsuarioRepository usurepo = new UsuarioRepository();
                 UsuarioCEN usucen = new UsuarioCEN(usurepo);
-                usucen.New_(usuv.nombre, usuv.email, usuv.nickname, usuv.TipoUsuario, usuv.password);
+                int usu1=usucen.New_(usuv.nombre, usuv.email, usuv.nickname, usuv.TipoUsuario, usuv.password);
                 return RedirectToAction(nameof(Index));
             }
             catch
