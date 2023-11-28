@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ArthookGen.ApplicationCore.EN.Arthook.UsuarioEN>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Usuarios Existentes</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nickname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ValoracionMedia)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem=>item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Nickname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.ValoracionMedia)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
