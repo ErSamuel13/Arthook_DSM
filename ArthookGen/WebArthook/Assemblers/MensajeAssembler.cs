@@ -15,8 +15,8 @@ namespace WebArthook.Assemblers
             mensaje.id = mensajeen.Id;
             mensaje.fecha = mensajeen.Fecha;
             mensaje.contenido = mensajeen.Contenido;
-            mensaje.emisor = mensajeen.Emisor;
-            mensaje.receptor = mensajeen.Receptor;
+            //mensaje.emisor = mensajeen.Emisor;
+            //mensaje.receptor = mensajeen.Receptor;
             return mensaje;
         }
 
