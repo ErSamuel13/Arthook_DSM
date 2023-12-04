@@ -19,7 +19,7 @@ namespace WebArthook.Controllers
         public ActionResult Index()
         {
             SessionInitialize();
-            UsuarioRepository usurepo = new UsuarioRepository();
+            UsuarioRepository usurepo = new UsuarioRepository(session);
             UsuarioCEN usucen = new UsuarioCEN(usurepo);
             IList<UsuarioEN> listEn = usucen.ReadAll(0, -1);
             IEnumerable<UsuarioViewModel> listView = new UsuarioAssembler().ConvertirListEnToViewModel(listEn).ToList();
@@ -30,7 +30,15 @@ namespace WebArthook.Controllers
         // GET: UsuarioController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            SessionInitialize();
+            UsuarioRepository usuRepo = new UsuarioRepository(session);
+            UsuarioCEN usuCEN = new UsuarioCEN(usuRepo);
+
+            UsuarioEN usuEN = usuCEN.ReadOID(id);
+            UsuarioViewModel usuView = new UsuarioAssembler().convertirEnToViewModel(usuEN);
+
+            SessionClose();
+            return View(usuView);
         }
 
         // GET: UsuarioController/Create
@@ -48,7 +56,7 @@ namespace WebArthook.Controllers
             {
                 UsuarioRepository usurepo = new UsuarioRepository();
                 UsuarioCEN usucen = new UsuarioCEN(usurepo);
-                usucen.New_(usuv.nombre, usuv.email, usuv.nickname, usuv.TipoUsuario, usuv.password);
+                int usu1=usucen.New_(usuv.nombre, usuv.email, usuv.nickname, usuv.TipoUsuario, usuv.password);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -60,16 +68,26 @@ namespace WebArthook.Controllers
         // GET: UsuarioController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            SessionInitialize();
+            UsuarioRepository usurepo = new UsuarioRepository(session);
+            UsuarioCEN usucen = new UsuarioCEN(usurepo);
+
+            UsuarioEN usuen = usucen.ReadOID(id);
+            UsuarioViewModel usuView = new UsuarioAssembler().convertirEnToViewModel(usuen);
+            SessionClose();
+            return View(usuView);
         }
 
         // POST: UsuarioController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, UsuarioViewModel usu)
         {
             try
             {
+                UsuarioRepository usurepo = new UsuarioRepository();
+                UsuarioCEN usucen = new UsuarioCEN(usurepo);
+                usucen.Modify(id, usu.nombre, usu.email, usu.nickname, usu.TipoUsuario, usu.password);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -81,7 +99,10 @@ namespace WebArthook.Controllers
         // GET: UsuarioController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            UsuarioRepository usurepo = new UsuarioRepository();
+            UsuarioCEN usucen = new UsuarioCEN(usurepo);
+            usucen.Destroy(id);
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: UsuarioController/Delete/5

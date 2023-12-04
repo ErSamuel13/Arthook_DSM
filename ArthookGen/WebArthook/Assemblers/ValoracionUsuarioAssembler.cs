@@ -16,6 +16,7 @@ namespace WebArthook.Assemblers
             val.puntuacion = valen.Puntuacion;
             val.emisor = valen.EmVal.Id;
             val.receptor = valen.ReVal.Id;
+
             val.n_emisor = valen.EmVal.Nombre;
             val.n_receptor = valen.ReVal.Nombre;
 
