@@ -30,7 +30,6 @@ namespace WebArthook.Controllers
         // GET: UsuarioController/Details/5
         public ActionResult Details(int id)
         {
-            Console.WriteLine(id);
             SessionInitialize();
             UsuarioRepository usuRepo = new UsuarioRepository(session);
             UsuarioCEN usuCEN = new UsuarioCEN(usuRepo);

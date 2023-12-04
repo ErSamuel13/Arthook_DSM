@@ -1,8 +1,11 @@
 ﻿using ArthookGen.ApplicationCore.CEN.Arthook;
+using ArthookGen.ApplicationCore.CP.Arthook;
 using ArthookGen.ApplicationCore.EN.Arthook;
+using ArthookGen.Infraestructure.CP;
 using ArthookGen.Infraestructure.Repository.Arthook;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,22 +33,59 @@ namespace WebArthook.Controllers
         // GET: ValoracionUsuarioController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            SessionInitialize();
+            ValoracionUsuarioRepository usuRepo = new ValoracionUsuarioRepository(session);
+            ValoracionUsuarioCEN usuCEN = new ValoracionUsuarioCEN(usuRepo);
+
+            ValoracionUsuarioEN usuEN = usuCEN.ReadOID(id);
+            ValoracionUsuarioViewModel usuView = new ValoracionUsuarioAssembler().convertirEnToViewModel(usuEN);
+
+            SessionClose();
+            return View(usuView);
         }
 
         // GET: ValoracionUsuarioController/Create
         public ActionResult Create()
         {
+           UsuarioRepository usurepoe = new UsuarioRepository();
+           UsuarioCEN usucene = new UsuarioCEN(usurepoe);
+           IList<UsuarioEN> listaEmisores = usucene.ReadAll(0,-1);
+           IList<SelectListItem> emisorItems = new List<SelectListItem>();
+
+           foreach(UsuarioEN usuen in listaEmisores)
+           {
+               emisorItems.Add(new SelectListItem { Text = usuen.Nombre, Value = usuen.Id.ToString() });
+
+           }
+           ViewData["emisorItems"] = emisorItems;
+
+            UsuarioRepository usurepor = new UsuarioRepository();
+            UsuarioCEN usucenr = new UsuarioCEN(usurepor);
+            IList<UsuarioEN> listaReceptores = usucenr.ReadAll(0, -1);
+            IList<SelectListItem> receptorItems = new List<SelectListItem>();
+
+            foreach (UsuarioEN usuen in listaReceptores)
+            {
+                receptorItems.Add(new SelectListItem { Text = usuen.Nombre, Value = usuen.Id.ToString() });
+
+            }
+            ViewData["receptorItems"] = receptorItems;
+
             return View();
         }
 
         // POST: ValoracionUsuarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ValoracionUsuarioViewModel valusuv)
         {
             try
             {
+                ValoracionUsuarioRepository usurepo = new ValoracionUsuarioRepository();
+                ValoracionUsuarioCP valusuCP = new ValoracionUsuarioCP(new SessionCPNHibernate());
+                valusuCP.New_(valusuv.puntuacion, valusuv.emisor, valusuv.receptor);
+
+
                 return RedirectToAction(nameof(Index));
             }
             catch
