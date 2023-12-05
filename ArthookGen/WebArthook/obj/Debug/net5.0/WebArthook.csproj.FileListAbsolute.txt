@@ -430,3 +430,13 @@ C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\NHibernate.By
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\nunit.core.dll
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\bin\Debug\net5.0\nunit.framework.dll
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Create.cshtml.g.cs
+<<<<<<< HEAD
+=======
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Details.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Edit.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Index.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Details.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Create.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Login.cshtml.g.cs
+>>>>>>> RamaMaria

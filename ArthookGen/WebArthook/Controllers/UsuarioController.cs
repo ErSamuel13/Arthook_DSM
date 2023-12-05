@@ -15,6 +15,32 @@ namespace WebArthook.Controllers
 {
     public class UsuarioController : BasicController
     {
+        // GET: UsuarioController/login
+        public ActionResult Login()
+        {
+            
+            return View();
+        }
+
+        // POST: UsuarioController/login
+        [HttpPost]
+        public ActionResult Login( LoginUsuarioViewModel login)
+        {
+            UsuarioRepository usurepo = new UsuarioRepository();
+            UsuarioCEN usuCEN = new UsuarioCEN(usurepo);
+
+             IList <UsuarioEN> usuEn = usuCEN.BUsuarioporNick(login.email);
+            if (usuCEN.Login(usuEn[0].Id, login.password) == null) {
+                ModelState.AddModelError("", "Error al introducir los datos");
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+                
+        }
+
         // GET: UsuarioController
         public ActionResult Index()
         {
