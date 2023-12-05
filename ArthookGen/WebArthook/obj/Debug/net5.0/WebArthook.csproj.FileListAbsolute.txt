@@ -435,3 +435,5 @@ C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\U
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Index.cshtml.g.cs
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Details.cshtml.g.cs
 C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\ValoracionUsuario\Create.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\repositorios\Arthook_DSM\ArthookGen\WebArthook\obj\Debug\net5.0\Razor\Views\Usuario\Login.cshtml.g.cs
