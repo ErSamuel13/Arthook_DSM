@@ -170,7 +170,7 @@ public static void InitializeData ()
                 }
                 /*fin de Login*/
                 /*buscar por nombre*/
-                IList<UsuarioEN> listaUNombre = usuariocen.BUsuarioporNick ("teresita");
+                IList<UsuarioEN> listaUNombre = usuariocen.BUsuarioporNick ("ter42610");
 
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
