@@ -82,7 +82,7 @@ namespace WebArthook.Controllers
 
             SessionClose();
 
-            return View();
+            return View(pedidoViewModel);
         }
 
         // POST: PedidoController/Edit/5

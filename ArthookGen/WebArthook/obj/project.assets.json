@@ -143,10 +143,11 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Analyzers/3.0.0": {
+      "Microsoft.CodeAnalysis.Analyzers/3.3.0": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/Microsoft.CodeAnalysis.Analyzers.props": {},
+          "build/Microsoft.CodeAnalysis.Analyzers.targets": {}
         }
       },
       "Microsoft.CodeAnalysis.Common/3.8.0": {
@@ -2434,10 +2435,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CodeAnalysis.Analyzers/3.0.0": {
-      "sha512": "ojG5pGAhTPmjxRGTNvuszO3H8XPZqksDwr9xLd4Ae/JBjZZdl6GuoLk7uLMf+o7yl5wO0TAqoWcEKkEWqrZE5g==",
+    "Microsoft.CodeAnalysis.Analyzers/3.3.0": {
+      "sha512": "DGStrsethnSDdsjTireE68Vu6kXxyvdbJCQjNJTeT620l9XG9fVVz8UYlR7cXVnG+p0UuXkRyLZRj9tw6tUXlw==",
       "type": "package",
-      "path": "microsoft.codeanalysis.analyzers/3.0.0",
+      "path": "microsoft.codeanalysis.analyzers/3.3.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2476,6 +2477,8 @@
         "analyzers/dotnet/vb/zh-Hant/Microsoft.CodeAnalysis.Analyzers.resources.dll",
         "build/Microsoft.CodeAnalysis.Analyzers.props",
         "build/Microsoft.CodeAnalysis.Analyzers.targets",
+        "build/config/RulesVersion2_9_8/.editorconfig",
+        "build/config/RulesVersion3_0_0/.editorconfig",
         "documentation/Analyzer Configuration.md",
         "documentation/Microsoft.CodeAnalysis.Analyzers.md",
         "documentation/Microsoft.CodeAnalysis.Analyzers.sarif",
@@ -2504,7 +2507,7 @@
         "editorconfig/MicrosoftCodeAnalysisReleaseTrackingRulesEnabled/.editorconfig",
         "editorconfig/PortedFromFxCopRulesDefault/.editorconfig",
         "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
-        "microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
+        "microsoft.codeanalysis.analyzers.3.3.0.nupkg.sha512",
         "microsoft.codeanalysis.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
@@ -7513,24 +7516,25 @@
       "ArthookGen.ApplicationCore >= 1.0.0",
       "ArthookGen.Infraestructure >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.17",
+      "Microsoft.CodeAnalysis.Analyzers >= 3.3.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sergio\\.nuget\\packages\\": {}
+    "C:\\Users\\mgeg2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Arthook\\Arthook_DSM\\ArthookGen\\WebArthook\\WebArthook.csproj",
+      "projectUniqueName": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\WebArthook\\WebArthook.csproj",
       "projectName": "WebArthook",
-      "projectPath": "C:\\Arthook\\Arthook_DSM\\ArthookGen\\WebArthook\\WebArthook.csproj",
-      "packagesPath": "C:\\Users\\Sergio\\.nuget\\packages\\",
-      "outputPath": "C:\\Arthook\\Arthook_DSM\\ArthookGen\\WebArthook\\obj\\",
+      "projectPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\WebArthook\\WebArthook.csproj",
+      "packagesPath": "C:\\Users\\mgeg2\\.nuget\\packages\\",
+      "outputPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\WebArthook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sergio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mgeg2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7544,11 +7548,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Arthook\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
-              "projectPath": "C:\\Arthook\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj"
+            "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj": {
+              "projectPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.ApplicationCore\\ArthookGen.ApplicationCore.csproj"
             },
-            "C:\\Arthook\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj": {
-              "projectPath": "C:\\Arthook\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj"
+            "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj": {
+              "projectPath": "C:\\repositorios\\Arthook_DSM\\ArthookGen\\ArthookGen.Infraestructure\\ArthookGen.Infraestructure.csproj"
             }
           }
         }
@@ -7566,6 +7570,12 @@
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
             "version": "[5.0.17, )"
+          },
+          "Microsoft.CodeAnalysis.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.3.0, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -7594,7 +7604,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
       }
     }
   }
