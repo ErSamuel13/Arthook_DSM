@@ -417,8 +417,6 @@ public static void InitializeData ()
                 Console.WriteLine ("// DADO QUE TIENEN EL MISMO TIPO DE RELACION, SOLO COMPROBARE UNO DE LOS DOS //");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
-
-<<<<<<< HEAD
                 /*int valusu1 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
                  * int valusu2 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
                  * int valusu3 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
@@ -465,7 +463,7 @@ public static void InitializeData ()
                  * Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                  * Console.WriteLine("");
                  */
-=======
+
                 //int valusu1 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu3);
                 // int valusu2 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu3, p_reVal: usu2);
                 //   int valusu3 = valoracionusuariocen.New_ (p_puntuacion: 5, p_emVal: usu2, p_reVal: usu2);
@@ -512,7 +510,7 @@ public static void InitializeData ()
                 //   Console.WriteLine("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 //   Console.WriteLine("");
 
->>>>>>> RamaMaria
+
 
 
                 foreach (UsuarioEN user in listaUNombre) {
