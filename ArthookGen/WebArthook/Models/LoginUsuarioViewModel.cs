@@ -8,10 +8,10 @@ namespace WebArthook.Models
 {
     public class LoginUsuarioViewModel
     {
-        [Display(Prompt = " escribe el email del usuario", Description = "email del usuario", Name = "email ")]
-        [Required(ErrorMessage = "el email es obligatorio")]
+        [Display(Prompt = " escribe el nickname del usuario", Description = "nickname del usuario", Name = "nickname ")]
+        [Required(ErrorMessage = "el nickname es obligatorio")]
 
-        public string email { get; set; }
+        public string nickname { get; set; }
         [Display(Prompt = " escribe el password del usuario", Description = "Password del usuario", Name = "Pasword")]
         [Required(ErrorMessage = "el password es obligatorio")]
         [DataType(DataType.Password)]

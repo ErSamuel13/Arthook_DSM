@@ -14,7 +14,6 @@ C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen
 C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.dll
 C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
 C:\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.pdb
-<<<<<<< HEAD
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\hibernate.cfg.xml
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.deps.json
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.dll
@@ -31,24 +30,6 @@ C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
 C:\repositorios\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.pdb
-=======
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\hibernate.cfg.xml
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.deps.json
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.dll
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.pdb
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.ApplicationCore.dll
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.ApplicationCore.pdb
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.AssemblyReference.cache
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.AssemblyInfoInputs.cache
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.AssemblyInfo.cs
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.CoreCompileInputs.cache
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.csproj.CopyComplete
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.dll
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ref\ArthookGen.Infraestructure.dll
-C:\DSM\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\obj\Debug\net5.0\ArthookGen.Infraestructure.pdb
->>>>>>> RamaMaria
 C:\Arthook\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\hibernate.cfg.xml
 C:\Arthook\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.deps.json
 C:\Arthook\Arthook_DSM\ArthookGen\ArthookGen.Infraestructure\bin\Debug\net5.0\ArthookGen.Infraestructure.dll

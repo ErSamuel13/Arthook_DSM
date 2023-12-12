@@ -29,7 +29,7 @@ namespace WebArthook.Controllers
             UsuarioRepository usurepo = new UsuarioRepository();
             UsuarioCEN usuCEN = new UsuarioCEN(usurepo);
 
-             IList <UsuarioEN> usuEn = usuCEN.BUsuarioporNick(login.email);
+             IList <UsuarioEN> usuEn = usuCEN.BUsuarioporNick(login.nickname);
             if (usuCEN.Login(usuEn[0].Id, login.password) == null) {
                 ModelState.AddModelError("", "Error al introducir los datos");
                 return View();

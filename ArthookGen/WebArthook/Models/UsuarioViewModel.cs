@@ -32,9 +32,8 @@ namespace WebArthook.Models
         [Required(ErrorMessage = "debe ser o usuario o artista")]
         public TipoUsuarioEnum TipoUsuario { get; set; }
 
-
-        
-
+        [Display(Prompt = " escribe el password del usuario", Description = "Password del usuario", Name = "Pasword")]
+        [Required(ErrorMessage = " el usuario  debe tener password")]
         [DataType(DataType.Password,ErrorMessage ="el password debe ser correcto")]
         [StringLength(maximumLength: 16, ErrorMessage = "el Password tiene que tener como mucho 16 caracteres")]
         public string password { get; set; }
