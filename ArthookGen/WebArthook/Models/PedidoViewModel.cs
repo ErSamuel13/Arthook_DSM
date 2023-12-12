@@ -23,7 +23,7 @@ namespace WebArthook.Models
         [Display(Prompt = "Precio total", Description = "Precio Total del pedido", Name = "precioTotal")]
         [Required(ErrorMessage = "El pedido debe incluir un precio total")]
         [DataType(DataType.Currency, ErrorMessage = "El campo debe tener un valor numérico")]
-        [Range(minimum: 0, maximum: 100000, ErrorMessage = "El precio no puede ser negativo")] //Consultar máximo
+ 
         public float pTotal { set; get; }
 
 

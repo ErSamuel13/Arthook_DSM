@@ -298,7 +298,7 @@ public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.Us
         try
         {
                 SessionInitializeTransaction ();
-                //String sql = @"FROM UsuarioNH self where Select u FROM UsuarioNH as u where u.Nombre=:nick";
+                //String sql = @"FROM UsuarioNH self where Select u FROM UsuarioNH as u where u.Nickname=:nick";
                 //IQuery query = session.CreateQuery(sql);
                 IQuery query = (IQuery)session.GetNamedQuery ("UsuarioNHBUsuarioporNickHQL");
                 query.SetParameter ("nick", nick);

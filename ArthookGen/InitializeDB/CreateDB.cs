@@ -108,9 +108,9 @@ public static void InitializeData ()
                 /*creacion usuarios*/
                 int usu1 = usuariocen.New_ (p_pass: "mry", p_nombre: "maria", p_email: "mgeg2@alu.ua.es", p_nickname: "mry2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu2 = usuariocen.New_ (p_pass: "pep", p_nombre: "pepe", p_email: "pepeg2@alu.ua.es", p_nickname: "pepe3101", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.artista);
-                int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                int usu3 = usuariocen.New_ (p_pass: "ter", p_nombre: "teresa", p_email: "tgcg1@alu.ua.es", p_nickname: "ter1610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 int usu4 = usuariocen.New_ (p_pass: "tera", p_nombre: "tereso", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
-                int usu5 = usuariocen.New_ (p_pass: "terre", p_nombre: "terremoto", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                int usu5 = usuariocen.New_ (p_pass: "terre", p_nombre: "terremoto", p_email: "tgcg3@alu.ua.es", p_nickname: "ter3610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
 
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
@@ -129,7 +129,7 @@ public static void InitializeData ()
                 Console.WriteLine ("");
 
                 /*modificacion usuarios*/
-                usuariocen.Modify (p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg2@alu.ua.es", p_nickname: "ter2610", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
+                usuariocen.Modify (p_Usuario_OID: usu3, p_pass: "ter", p_nombre: "teresita", p_email: "tgcg1@alu.ua.es", p_nickname: "ter26106", p_tipoUsuario: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoUsuarioEnum.usuario);
                 IList<UsuarioEN> listaUsuariosm = usuariocen.ReadAll (0, 3);
                 for (int i = 0; i < 3; i++) {
                         Console.WriteLine (listaUsuariosm [i].Nombre);

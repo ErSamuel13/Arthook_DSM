@@ -193,6 +193,6 @@
 		 </class>	
 		  
 		  <query name="UsuarioNHReadAllHQL">from UsuarioNH</query>
-		  <query name="UsuarioNHBUsuarioporNickHQL"><![CDATA[Select u FROM UsuarioNH as u where u.Nombre=:nick]]></query>
+		  <query name="UsuarioNHBUsuarioporNickHQL"><![CDATA[Select u FROM UsuarioNH as u where u.Nickname=:nick]]></query>
 		</hibernate-mapping>
 	
