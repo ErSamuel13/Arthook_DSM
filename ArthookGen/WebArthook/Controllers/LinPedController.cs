@@ -32,7 +32,15 @@ namespace WebArthook.Controllers
         // GET: LinPedController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            SessionInitialize();
+            LinPedRepository linPedRepository = new LinPedRepository(session);
+            LinPedCEN linPedCEN = new LinPedCEN(linPedRepository);
+            LinPedEN linPedEN = linPedCEN.ReadOID(id);
+
+            LinPedViewModel linPedViewModel = new LinPedAsembler().convertirEnViewModel(linPedEN);
+
+            SessionClose();
+            return View(linPedViewModel);
         }
 
         // GET: LinPedController/Create
@@ -63,16 +71,27 @@ namespace WebArthook.Controllers
         // GET: LinPedController/Edit/5
         public ActionResult Edit(int id)
         {
+            SessionInitialize();
+            LinPedRepository linPedRepository = new LinPedRepository(session);
+            LinPedCEN linPedCEN = new LinPedCEN(linPedRepository);
+            LinPedEN linPedEN = linPedCEN.ReadOID(id);
+
+            LinPedViewModel linPedViewModel = new LinPedAsembler().convertirEnViewModel(linPedEN);
+
+            SessionClose();
             return View();
         }
 
         // POST: LinPedController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, IFormCollection collection, LinPedViewModel linPedViewModel)
         {
             try
             {
+                LinPedRepository linPedRepository = new LinPedRepository(session);
+                LinPedCEN linPedCEN = new LinPedCEN(linPedRepository);
+                linPedCEN.Modify(id, linPedViewModel.cantidad);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -84,6 +103,10 @@ namespace WebArthook.Controllers
         // GET: LinPedController/Delete/5
         public ActionResult Delete(int id)
         {
+            LinPedRepository linPedRepository = new LinPedRepository(session);
+            LinPedCEN linPedCEN = new LinPedCEN(linPedRepository);
+
+            linPedCEN.Destroy(id);
             return View();
         }
 

@@ -15,7 +15,7 @@ namespace WebArthook.Models
 
         /*FECHA*/
         [Display(Prompt = "Fecha del pedido", Description = "Fecha del pedido", Name = "fechaPedido")]
-        [Required(ErrorMessage = "El pedido debe incluir una fechal")]
+        [Required(ErrorMessage = "El pedido debe incluir una fecha y una hora")]
         public Nullable<DateTime> fecha { set; get; }
 
 

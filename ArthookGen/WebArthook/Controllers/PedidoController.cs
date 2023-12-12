@@ -32,7 +32,17 @@ namespace WebArthook.Controllers
         // GET: PedidoController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            SessionInitialize();
+            PedidoRepository pedidoRepository = new PedidoRepository(session);
+            PedidoCEN pedidoCEN = new PedidoCEN(pedidoRepository);
+
+            PedidoEN pedidoEN = pedidoCEN.ReadOID(id);
+
+            PedidoViewModel pedidoViewModel = new PedidoAsembler().convertirEnViewModel(pedidoEN);
+
+            SessionClose();
+
+            return View(pedidoViewModel);
         }
 
         // GET: PedidoController/Create
@@ -62,16 +72,29 @@ namespace WebArthook.Controllers
         // GET: PedidoController/Edit/5
         public ActionResult Edit(int id)
         {
+            SessionInitialize();
+            PedidoRepository pedidoRepository = new PedidoRepository(session);
+            PedidoCEN pedidoCEN = new PedidoCEN(pedidoRepository);
+
+            PedidoEN pedidoEN = pedidoCEN.ReadOID(id);
+
+            PedidoViewModel pedidoViewModel = new PedidoAsembler().convertirEnViewModel(pedidoEN);
+
+            SessionClose();
+
             return View();
         }
 
         // POST: PedidoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, IFormCollection collection, PedidoViewModel pedidoViewModel)
         {
             try
             {
+                PedidoRepository pedidoRepository = new PedidoRepository();
+                PedidoCEN pedidoCEN = new PedidoCEN(pedidoRepository);
+                pedidoCEN.Modify(id, pedidoViewModel.fecha, pedidoViewModel.estado);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -83,7 +106,12 @@ namespace WebArthook.Controllers
         // GET: PedidoController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            PedidoRepository pedidoRepository = new PedidoRepository();
+            PedidoCEN pedidoCEN = new PedidoCEN(pedidoRepository);
+
+            pedidoCEN.Destroy(id);
+
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: PedidoController/Delete/5
