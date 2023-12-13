@@ -60,7 +60,8 @@ namespace WebArthook.Controllers
             {
                 PedidoRepository pedidoRepository = new PedidoRepository();
                 PedidoCEN pedidoCEN = new PedidoCEN(pedidoRepository);
-                pedidoCEN.New_(pedidoViewModel.fecha, pedidoViewModel.estado, pedidoViewModel.id);
+                UsuarioViewModel usuario = HttpContext.Session.Get<UsuarioViewModel>("usuario");
+                pedidoCEN.New_(pedidoViewModel.fecha, pedidoViewModel.estado, usuario.id);
                 return RedirectToAction(nameof(Index));
             }
             catch

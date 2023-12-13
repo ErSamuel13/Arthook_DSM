@@ -49,7 +49,8 @@ namespace WebArthook.Controllers
             {
                 TarifaRepository tarrepo = new TarifaRepository();
                 TarifaCEN tarcen = new TarifaCEN(tarrepo);
-                tarcen.New_(tar.precio, tar.descripcion, tar.nombre, tar.usuario);
+                UsuarioViewModel usuario = HttpContext.Session.Get<UsuarioViewModel>("usuario");
+                tarcen.New_(tar.precio, tar.descripcion, tar.nombre,usuario.id);
                 return RedirectToAction(nameof(Index));
             }
             catch

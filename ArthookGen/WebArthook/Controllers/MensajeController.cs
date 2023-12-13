@@ -49,7 +49,8 @@ namespace WebArthook.Controllers
             {
                 MensajeRepository mensajerepo = new MensajeRepository();
                 MensajeCEN mensajecen = new MensajeCEN(mensajerepo);
-                mensajecen.New_(men.fecha, men.contenido, men.emisor, men.receptor);
+                UsuarioViewModel usuario = HttpContext.Session.Get<UsuarioViewModel>("usuario");
+                mensajecen.New_(men.fecha, men.contenido, usuario.id, men.receptor);
                 return RedirectToAction(nameof(Index));
             }
             catch

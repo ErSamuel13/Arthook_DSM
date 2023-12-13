@@ -47,17 +47,7 @@ namespace WebArthook.Controllers
         // GET: ValoracionUsuarioController/Create
         public ActionResult Create()
         {
-           UsuarioRepository usurepoe = new UsuarioRepository();
-           UsuarioCEN usucene = new UsuarioCEN(usurepoe);
-           IList<UsuarioEN> listaEmisores = usucene.ReadAll(0,-1);
-           IList<SelectListItem> emisorItems = new List<SelectListItem>();
-
-           foreach(UsuarioEN usuen in listaEmisores)
-           {
-               emisorItems.Add(new SelectListItem { Text = usuen.Nombre, Value = usuen.Id.ToString() });
-
-           }
-           ViewData["emisorItems"] = emisorItems;
+          
 
             UsuarioRepository usurepor = new UsuarioRepository();
             UsuarioCEN usucenr = new UsuarioCEN(usurepor);
@@ -83,7 +73,8 @@ namespace WebArthook.Controllers
             {
                 ValoracionUsuarioRepository usurepo = new ValoracionUsuarioRepository();
                 ValoracionUsuarioCP valusuCP = new ValoracionUsuarioCP(new SessionCPNHibernate());
-                valusuCP.New_(valusuv.puntuacion, valusuv.emisor, valusuv.receptor);
+                UsuarioViewModel usuario = HttpContext.Session.Get<UsuarioViewModel>("usuario");
+                valusuCP.New_(valusuv.puntuacion, usuario.id, valusuv.receptor);
 
 
                 return RedirectToAction(nameof(Index));
