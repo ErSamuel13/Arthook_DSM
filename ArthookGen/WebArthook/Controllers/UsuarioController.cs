@@ -30,19 +30,29 @@ namespace WebArthook.Controllers
             UsuarioCEN usuCEN = new UsuarioCEN(usurepo);
 
              IList <UsuarioEN> usuEn = usuCEN.BUsuarioporNick(login.nickname);
-            if (usuCEN.Login(usuEn[0].Id, login.password) == null) {
-                ModelState.AddModelError("", "Error al introducir los datos");
+            if(!usuEn.Any())
+            {
+                ModelState.AddModelError("", "el usuario no existe");
                 return View();
             }
             else
             {
-                SessionInitialize();
-                UsuarioEN usuen = usuCEN.ReadOID(usuEn[0].Id);
-                UsuarioViewModel usuVM = new UsuarioAssembler().convertirEnToViewModel(usuEn[0]);
-                HttpContext.Session.Set<UsuarioViewModel>("usuario", usuVM);
-                SessionClose();
-                return RedirectToAction("Index", "Home");
+                if (usuCEN.Login(usuEn[0].Id, login.password) == null)
+                {
+                    ModelState.AddModelError("", "Error al introducir la contraseña");
+                    return View();
+                }
+                else
+                {
+                    SessionInitialize();
+                    UsuarioEN usuen = usuCEN.ReadOID(usuEn[0].Id);
+                    UsuarioViewModel usuVM = new UsuarioAssembler().convertirEnToViewModel(usuEn[0]);
+                    HttpContext.Session.Set<UsuarioViewModel>("usuario", usuVM);
+                    SessionClose();
+                    return RedirectToAction("Index", "Home");
+                }
             }
+            
                 
         }
 
