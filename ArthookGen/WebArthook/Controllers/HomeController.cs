@@ -23,9 +23,9 @@ namespace WebArthook.Controllers
 
         public IActionResult Index()
         {
-            UsuarioRepository usuariorepo = new UsuarioRepository();
-            UsuarioCEN usuarioCEN = new UsuarioCEN(usuariorepo);
-            IList<UsuarioEN> listaUsu = usuarioCEN.ReadAll(0,-1);
+            PublicacionRepository usuariorepo = new PublicacionRepository();
+            PublicacionCEN usuarioCEN = new PublicacionCEN(usuariorepo);
+            IList<PublicacionEN> listaUsu = usuarioCEN.ReadAll(0,-1);
             return View(listaUsu);
         }
 

@@ -21,6 +21,7 @@ namespace WebArthook.Assemblers
             pub.Valoracion = en.ValoracionPublicacion;
             pub.LinPed = en.LinPedPublicacion;
             pub.Usuario = en.UsuarioPublicacion;
+            pub.Imagen = en.Imagen;
 
             return pub;
         }

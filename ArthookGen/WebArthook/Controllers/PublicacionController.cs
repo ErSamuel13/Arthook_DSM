@@ -1,20 +1,31 @@
 ﻿using ArthookGen.ApplicationCore.CEN.Arthook;
 using ArthookGen.ApplicationCore.EN.Arthook;
 using ArthookGen.Infraestructure.Repository.Arthook;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 using System.Linq;
 using System.Threading.Tasks;
 using WebArthhook.Controllers;
 using WebArthook.Assemblers;
 using WebArthook.Models;
 
+
 namespace WebArthook.Controllers
 {
     public class PublicacionController : BasicController
     {
+
+        private readonly IWebHostEnvironment _webhost;
+
+    public PublicacionController (IWebHostEnvironment webhost)
+        {
+            _webhost = webhost;
+        }
         // GET: PublicacionController
         public ActionResult Index(int parametro)
         {
@@ -53,13 +64,31 @@ namespace WebArthook.Controllers
         // POST: PublicacionController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(PublicacionViewModel pubv)
+        public  async Task <ActionResult> Create(PublicacionViewModel pubv)
         {
+            string filename = "", path = "";
+            if(pubv.Fichero!=null && pubv.Fichero.Length > 0)
+            {
+                filename = Path.GetFileName(pubv.Fichero.FileName).Trim();
+
+                string directory = _webhost.WebRootPath + "/Images";
+                path = Path.Combine((directory), filename);
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+                using (var stream = System.IO.File.Create(path))
+                {
+                    await pubv.Fichero.CopyToAsync(stream); 
+                }
+            }
             try
             {
+                filename = "/Images/" + filename;
                 PublicacionRepository pubrepo = new PublicacionRepository();
                 PublicacionCEN pubcen = new PublicacionCEN(pubrepo);
-                pubcen.New_(pubv.TipoProducto, pubv.Descripcion, pubv.Titulo, pubv.TipoPublicacion, pubv.Usuario.Id);
+                UsuarioViewModel usuario = HttpContext.Session.Get<UsuarioViewModel>("usuario");
+                pubcen.New_(pubv.TipoProducto, pubv.Descripcion, pubv.Titulo, pubv.TipoPublicacion, usuario.id,filename);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -90,7 +119,7 @@ namespace WebArthook.Controllers
             {
                 PublicacionRepository pubrepo = new PublicacionRepository();
                 PublicacionCEN pubcen = new PublicacionCEN(pubrepo);
-                pubcen.Modify(id, pub.TipoProducto, pub.Descripcion, pub.Titulo, pub.TipoPublicacion);
+                pubcen.Modify(id, pub.TipoProducto, pub.Descripcion, pub.Titulo, pub.TipoPublicacion,pub.Imagen);
                 return RedirectToAction(nameof(Index));
             }
             catch

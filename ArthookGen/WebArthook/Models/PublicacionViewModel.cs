@@ -1,4 +1,5 @@
 ﻿using ArthookGen.ApplicationCore.Enumerated.Arthook;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -54,5 +55,11 @@ namespace WebArthook.Models
         [Required(ErrorMessage = "Debe indicar la línea de pedido de una publicación")]
         //Falta algo más
         public System.Collections.Generic.IList<ArthookGen.ApplicationCore.EN.Arthook.LinPedEN> LinPed { get; set; }
+    [ScaffoldColumn(false)]
+        public string Imagen { get; set; }
+        [Display(Prompt ="archivo", Description ="archivo de la publicacion",Name ="archivo")]
+        public IFormFile Fichero { get; set; }
+    
     }
+
 }

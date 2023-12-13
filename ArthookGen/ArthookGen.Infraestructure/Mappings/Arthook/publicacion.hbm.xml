@@ -27,6 +27,9 @@
 					<property name="TipoPublicacion" > 
 						<column name="tipoPublicacion"  not-null="true"/>
 					</property>
+					<property name="Imagen" type="string"> 
+						<column name="imagen"  not-null="true"/>
+					</property>
 			
 			
 			
@@ -61,6 +64,8 @@
 					      	</key>
 							<one-to-many class="ArthookGen.Infraestructure.EN.Arthook.LinPedNH"/>
 					    </bag>
+					
+			
 					
 					
 					

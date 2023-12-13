@@ -36,6 +36,11 @@ namespace WebArthook.Controllers
             }
             else
             {
+                SessionInitialize();
+                UsuarioEN usuen = usuCEN.ReadOID(usuEn[0].Id);
+                UsuarioViewModel usuVM = new UsuarioAssembler().convertirEnToViewModel(usuEn[0]);
+                HttpContext.Session.Set<UsuarioViewModel>("usuario", usuVM);
+                SessionClose();
                 return RedirectToAction("Index", "Home");
             }
                 

@@ -178,14 +178,14 @@ public static void InitializeData ()
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
 
 
-                int publicacionId1 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto no a la venta", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu2);;
-                int publicacionId2 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto a la venta", p_titulo: "Foto2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Producto, p_usuarioPublicacion: usu2);
+                int publicacionId1 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto no a la venta", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu2, p_imagen: "gato.jpg");
+                int publicacionId2 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "esto es una foto a la venta", p_titulo: "Foto2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Producto, p_usuarioPublicacion: usu2, p_imagen: "perro.jpg");
 
-                int publicacionId3 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                int publicacionId4 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId3 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3, p_imagen: "rana.jpg");
+                int publicacionId4 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3, p_imagen: "rata.jpg");
 
-                int publicacionId5 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
-                int publicacionId6 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3);
+                int publicacionId5 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.audio, p_descripcion: "esto es una audio", p_titulo: "Audio2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3, p_imagen: "tigre.jpg");
+                int publicacionId6 = publicacioncen.New_ (p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.video, p_descripcion: "esto es una video", p_titulo: "Video2", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_usuarioPublicacion: usu3, p_imagen: "leon.jpg");
 
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 IList<PublicacionEN> listaPublicacion = publicacioncen.ReadAll (0, 6);
@@ -197,7 +197,7 @@ public static void InitializeData ()
                 Console.WriteLine ("");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
                 Console.WriteLine ("");
-                publicacioncen.Modify (publicacionId1, p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "Esta descripccion a cambiado", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion);
+                publicacioncen.Modify (publicacionId1, p_tipo: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, p_descripcion: "Esta descripccion a cambiado", p_titulo: "Foto1", p_tipoPublicacion: ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, p_imagen: "gato.jpg");
                 PublicacionEN publicacionen = publicacioncen.ReadOID (publicacionId1);
                 Console.WriteLine ("");
                 Console.WriteLine ("// ---------------------------------------------------------------------------------------------------------------------------------//");
@@ -471,7 +471,7 @@ public static void InitializeData ()
                 }
                 /*fin buscar por nombre*/
                 /* Crear mensaje*/
-                int pub1 = publicacioncen.New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, "imagen sobre paisajes indios", "taj mahal", ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, usu3);
+                int pub1 = publicacioncen.New_ (ArthookGen.ApplicationCore.Enumerated.Arthook.TipoProdEnum.imagen, "imagen sobre paisajes indios", "taj mahal", ArthookGen.ApplicationCore.Enumerated.Arthook.TipoPublicacionEnum.Publicacion, usu3, "https://i.pinimg.com/736x/e3/53/6f/e3536f3b9906dce5599a210059463f31.jpg");
                 /*fin crear mensaje*/
                 /*filtrar por publicacion*/
                 IList<PublicacionEN> listaPub = publicacioncen.FiltrarXUsuario (usu3);

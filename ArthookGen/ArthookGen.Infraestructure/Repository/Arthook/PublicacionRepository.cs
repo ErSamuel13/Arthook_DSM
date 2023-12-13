@@ -114,6 +114,9 @@ public void ModifyDefault (PublicacionEN publicacion)
 
 
 
+
+                publicacionNH.Imagen = publicacion.Imagen;
+
                 session.Update (publicacionNH);
                 SessionCommit ();
         }
@@ -186,6 +189,9 @@ public void Modify (PublicacionEN publicacion)
 
 
                 publicacionNH.TipoPublicacion = publicacion.TipoPublicacion;
+
+
+                publicacionNH.Imagen = publicacion.Imagen;
 
                 session.Update (publicacionNH);
                 SessionCommit ();

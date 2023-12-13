@@ -24,6 +24,15 @@ namespace WebArthook
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".Usuario.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(1000);
+                options.Cookie.IsEssential = true;
+            }
+            );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +52,9 @@ namespace WebArthook
             app.UseStaticFiles();
 
             app.UseRouting();
+
+
+            app.UseSession();
 
             app.UseAuthorization();
 
