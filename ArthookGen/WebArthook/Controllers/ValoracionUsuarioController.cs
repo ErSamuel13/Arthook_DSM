@@ -53,6 +53,7 @@ namespace WebArthook.Controllers
             UsuarioCEN usucenr = new UsuarioCEN(usurepor);
             IList<UsuarioEN> listaReceptores = usucenr.ReadAll(0, -1);
             IList<SelectListItem> receptorItems = new List<SelectListItem>();
+            IList<SelectListItem> puntuacionItems = new List<SelectListItem>();
 
             foreach (UsuarioEN usuen in listaReceptores)
             {
@@ -61,6 +62,19 @@ namespace WebArthook.Controllers
             }
             ViewData["receptorItems"] = receptorItems;
 
+          
+           
+            for (float i = 0; i < 5; i ++)
+            {
+                var listItem = new SelectListItem
+                {
+                    Value = i.ToString(),
+                    Text = i.ToString("0.00")
+                };
+
+                puntuacionItems.Add(listItem);
+            }
+            ViewData["puntuacionItems"] = puntuacionItems;
             return View();
         }
 

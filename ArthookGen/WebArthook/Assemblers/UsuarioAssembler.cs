@@ -17,6 +17,7 @@ namespace WebArthook.Assemblers
             usu.nombre = usuen.Nombre;
             usu.email = usuen.Email;
             usu.nickname = usuen.Nickname;
+
             return usu;
         }
 

@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     IEnumerable<SelectListItem> emisorItems = (IEnumerable<SelectListItem>)ViewData["emisorItems"];
     IEnumerable<SelectListItem> receptorItems = (IEnumerable<SelectListItem>)ViewData["receptorItems"];
+    IEnumerable<SelectListItem>puntuacionItems = (IEnumerable<SelectListItem>)ViewData["puntuacionItems"];
 
 }
 
@@ -18,7 +19,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="puntuacion" class="control-label"></label>
-                <input asp-for="puntuacion" class="form-control" />
+                <select class="form-select" asp-for="puntuacion" asp-items="puntuacionItems"> </select>
                 <span asp-validation-for="puntuacion" class="text-danger"></span>
             </div>
             <div class="form-group">
